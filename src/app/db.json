@@ -1,0 +1,456 @@
+{
+	"Missions": [
+		{
+			"IdMission": "1",
+			"IdSociete": "",
+			"Numero": "",
+			"Visibilite_Mission": "",
+			"Nom_Mission": "",
+			"Type_Prospects": "",
+			"Type_Fichier": "",
+			"Pastille_Couleur": "",
+			"Besoin": "",
+			"Nbre_RDV_Mission": "",
+			"Rendez_Vous": "",
+			"Description": "Depuis 17 ans, nous commercialisons auprès de professionnels des solutions permettant de sécuriser les biens, les accès et les personnes, à travers nos solutions de Télésurveillance, Vidéosurveillance, Contrôle d’accès et Défibrillateurs. Nos agences situées sur les plus grandes villes de Frances nous permettent d'assurer à nos clients une grande réactivité et un niveau de satisfaction élevé. Dans un premier temps la mission s'effectuera sur les professionnels du secteur automobile des départements 59, 69, 57 et 34 Nous recherchons pour nos différentes agences, des téléprospecteurs (-trices) pour fournir des rendez-vous qualifiés avec les décisionnaires de sociétés. Une collaboration durable est fortement souhaitée.",
+			"Script_Appel": "",
+			"Nbre_RDV_Teleoperateur": "",
+			"Budget": "75€/RDV max.",
+			"Email_Confirmation_RDV": "",
+			"Email_Rappel_RDV": "",
+			"SMS_Confirmation_RDV": "",
+			"SMS_Rappel_RDV": "",
+			"Email_Teleoperateur": "",
+			"Reception_SMS": "",
+			"Reception_Fiche_RDV": "",
+			"Reception_Fiche_RDV_Commercial": "",
+			"Reception_Mail_Recapitulatif": "",
+			"Visualisation_RDV_Agenda": "",
+			"Visialisation_Itineraire": "",
+			"Duree_RDV": "",
+			"Unite_Duree_RDV": "",
+			"Nbre_Jour_Publication": "",
+			"Date_Debut_Mission": "",
+			"IdCreateur": "",
+			"IdModificateur": "",
+			"DateCreation": "",
+			"DateModification": "",
+			"Publish": "",
+			"NomPrenom": "Thomas ",
+			"Poste": "Directeur d'agence",
+			"Ville": "Paris",
+			"MembreDepuis": "Date de création de la mission : 26 Janv. 2022",
+			"Offres": "3",
+			"Objectif": "5 RDV(s)",
+			"DateDebut": "04/07/2022",
+			"background-image":"assets/images/missions/bg-01.jpg",
+			"image":"assets/images/missions/07.jpg"
+		},
+		{
+			"IdMission": "2",
+			"IdSociete": "",
+			"Numero": "",
+			"Visibilite_Mission": "",
+			"Nom_Mission": "",
+			"Type_Prospects": "",
+			"Type_Fichier": "",
+			"Pastille_Couleur": "",
+			"Besoin": "",
+			"Nbre_RDV_Mission": "",
+			"Rendez_Vous": "",
+			"Description": "Bonjour à tous, Agent d'assurance au sein d'un grand groupe français, je suis spécialisé dans la protection financière de personnes. Je recherche activement un profil de téléopérateur pour me prendre des RDV qualifiés sur une cible de professions libérales, travailleurs indépendan...",
+			"Script_Appel": "",
+			"Nbre_RDV_Teleoperateur": "",
+			"Budget": "40€/RDV max.",
+			"Email_Confirmation_RDV": "",
+			"Email_Rappel_RDV": "",
+			"SMS_Confirmation_RDV": "",
+			"SMS_Rappel_RDV": "",
+			"Email_Teleoperateur": "",
+			"Reception_SMS": "",
+			"Reception_Fiche_RDV": "",
+			"Reception_Fiche_RDV_Commercial": "",
+			"Reception_Mail_Recapitulatif": "",
+			"Visualisation_RDV_Agenda": "",
+			"Visialisation_Itineraire": "",
+			"Duree_RDV": "",
+			"Unite_Duree_RDV": "",
+			"Nbre_Jour_Publication": "",
+			"Date_Debut_Mission": "",
+			"IdCreateur": "",
+			"IdModificateur": "",
+			"DateCreation": "",
+			"DateModification": "",
+			"Publish": "",
+			"NomPrenom": "Florent ",
+			"Poste": "Responsable succursale",
+			"Ville": "Lyon",
+			"MembreDepuis": "Date de création de la mission : 2 Mars 2022",
+			"Offres": "4",
+			"Objectif": "4 RDV(s)",
+			"DateDebut": "02/06/2022",
+			"background-image":"assets/images/missions/bg-02.jpg",
+			"image":"assets/images/missions/07.jpg"
+		},
+		{
+			"IdMission": "3",
+			"IdSociete": "",
+			"Numero": "",
+			"Visibilite_Mission": "",
+			"Nom_Mission": "",
+			"Type_Prospects": "",
+			"Type_Fichier": "",
+			"Pastille_Couleur": "",
+			"Besoin": "",
+			"Nbre_RDV_Mission": "",
+			"Rendez_Vous": "",
+			"Description": "Bonjour à tous, Agent d'assurance au sein d'un grand groupe français, je suis spécialisé dans la protection financière de personnes. Je recherche activement un profil de téléopérateur pour me prendre des RDV qualifiés sur une cible de professions libérales, travailleurs indépendan...",
+			"Script_Appel": "",
+			"Nbre_RDV_Teleoperateur": "",
+			"Budget": "15€/RDV max.",
+			"Email_Confirmation_RDV": "",
+			"Email_Rappel_RDV": "",
+			"SMS_Confirmation_RDV": "",
+			"SMS_Rappel_RDV": "",
+			"Email_Teleoperateur": "",
+			"Reception_SMS": "",
+			"Reception_Fiche_RDV": "",
+			"Reception_Fiche_RDV_Commercial": "",
+			"Reception_Mail_Recapitulatif": "",
+			"Visualisation_RDV_Agenda": "",
+			"Visialisation_Itineraire": "",
+			"Duree_RDV": "",
+			"Unite_Duree_RDV": "",
+			"Nbre_Jour_Publication": "",
+			"Date_Debut_Mission": "",
+			"IdCreateur": "",
+			"IdModificateur": "",
+			"DateCreation": "",
+			"DateModification": "",
+			"Publish": "",
+			"NomPrenom": "Sam  ",
+			"Poste": "Directeur d'agence",
+			"Ville": "Marseille",
+			"MembreDepuis": "Date de création de la mission : 6 Juin 2022",
+			"Offres": "2",
+			"Objectif": "2 RDV(s)",
+			"DateDebut": "01/01/2022",
+			"background-image":"assets/images/missions/bg-04.jpg",
+			"image":"assets/images/missions/07.jpg"
+		}
+	],
+	"Teleoperateurs": [
+		{
+			"IdTeleoperateur": "1",
+			"Civilite": "",
+			"Nom": "Hélène",
+			"Prenom": "Smith",
+			"Date_de_naissance": "",
+			"Nom_Societe": "",
+			"Nom_d_utilisateur": "",
+			"Email": "helene@gmail.com",
+			"telephone":"0625961415",
+			"Mot_de_passe": "",
+			"Code_Parainnage": "",
+			"Comment_connu": "",
+			"Statut": "Téléopératrice sénior",
+			"Pays": "",
+			"Existance": "",
+			"Matricule": "",
+			"Photo_Matricule": "",
+			"Assujetti_TVA": "",
+			"Numero_TVA": "",
+			"Adresse": "",
+			"CP": "",
+			"Ville": "Paris",
+			"Tel_Portable": "",
+			"Tel_Fixe": "",
+			"Voix": "",
+			"Presentation": "Télé-commerciale depuis plus de 12 ans dans différents secteurs d'activité notamment: la publicité, les énergies renouvelables, la gestion de patrimoine, je sais combien il faut être à l'... ",
+			"Photo_Profil": "",
+			"Type_Connexion": "",
+			"Debit": "",
+			"Mail_Mission": "",
+			"Mail_Synthes": "",
+			"Bilan": "",
+			"IdCreateur": "",
+			"IdModificateur": "",
+			"DateCreation": "",
+			"DateModification": "",
+			"Publish": "",
+			"TypesDeMissions": [
+				{
+					"Icon": "print",
+					"Title1": "Prise de RDV ",
+					"Title2":"(BtoB, BtoC)"
+				},
+				{
+					"Icon": "power_settings_new",
+					"Title1": "Prise de RDV ",
+					"Title2":"(BtoB, BtoC)"
+				},
+				{
+					"Icon": "perm_phone_msg",
+					"Title1": "Prise de RDV ",
+					"Title2":"(BtoB, BtoC)"
+				},
+				{
+					"Icon": "play_for_work",
+					"Title1": "Prise de RDV ",
+					"Title2":"(BtoB, BtoC)"
+				}
+			],
+			"SecteursDactivites": [
+				{
+					"icon": "perm_phone_msg",
+					"class":"blue-"
+				},
+				{
+					"icon": "power_settings_new",
+					"class":"blue"
+				},
+				{
+					"icon": "print",
+					"class":"grey"
+				},
+				{
+					"icon": "question_answer",
+					"class":"blue-"
+				},
+				{
+					"icon": "record_voice_over",
+					"class":"red"
+				}
+			],
+			"Evaluations": "121 e",
+			"Note": "4 /10",
+			"NbreMissions": "50"
+		},
+		{
+			"IdTeleoperateur": "2",
+			"Civilite": "",
+			"Nom": "Max",
+			"Prenom": "Smith",
+			"Date_de_naissance": "",
+			"Nom_Societe": "",
+			"Nom_d_utilisateur": "",
+			"Email": "max@hotmail.fr",
+			"Mot_de_passe": "",
+			"Code_Parainnage": "",
+			"Comment_connu": "",
+			"Statut": "Téléopérateur junior",
+			"Pays": "",
+			"Existance": "",
+			"Matricule": "",
+			"Photo_Matricule": "",
+			"Assujetti_TVA": "",
+			"Numero_TVA": "",
+			"Adresse": "",
+			"CP": "",
+			"Ville": "Lille",
+			"Tel_Portable": "",
+			"Tel_Fixe": "",
+			"Voix": "",
+			"Presentation": "Télé-commerciale depuis plus de 12 ans dans différents secteurs d'activité notamment: la publicité, les énergies renouvelables, la gestion de patrimoine, je sais combien il faut être à l'... ",
+			"Photo_Profil": "",
+			"Type_Connexion": "",
+			"Debit": "",
+			"Mail_Mission": "",
+			"Mail_Synthes": "",
+			"Bilan": "",
+			"IdCreateur": "",
+			"IdModificateur": "",
+			"DateCreation": "",
+			"DateModification": "",
+			"Publish": "",
+			"TypesDeMissions": [
+				{
+					"Icon": "print",
+					"Title1": "Prise de RDV ",
+					"Title2":"(BtoB, BtoC)"
+				},
+				{
+					"Icon": "power_settings_new",
+					"Title1": "Prise de RDV ",
+					"Title2":"(BtoB, BtoC)"
+				},
+				{
+					"Icon": "perm_phone_msg",
+					"Title1": "Prise de RDV ",
+					"Title2":"(BtoB, BtoC)"
+				},
+				{
+					"Icon": "play_for_work",
+					"Title1": "Prise de RDV ",
+					"Title2":"(BtoB, BtoC)"
+				}
+			],
+			"SecteursDactivites": [
+			{
+					"icon": "perm_phone_msg",
+					"class":"blue-"
+				},
+				{
+					"icon": "power_settings_new",
+					"class":"blue"
+				},
+				{
+					"icon": "print",
+					"class":"grey"
+				},
+				{
+					"icon": "question_answer",
+					"class":"blue-"
+				},
+				{
+					"icon": "record_voice_over",
+					"class":"red"
+				}
+			],
+			"Evaluations": "121",
+			"Note": "4 /10",
+			"NbreMissions": "50"
+		},
+		{
+			"IdTeleoperateur": "3",
+			"Civilite": "",
+			"Nom": "Julie",
+			"Prenom": "Petit",
+			"Date_de_naissance": "",
+			"Nom_Societe": "",
+			"Nom_d_utilisateur": "",
+			"Email": "Julie@live.com",
+			"Mot_de_passe": "",
+			"Code_Parainnage": "",
+			"Comment_connu": "",
+			"Statut": "Commercial",
+			"Pays": "",
+			"Existance": "",
+			"Matricule": "",
+			"Photo_Matricule": "",
+			"Assujetti_TVA": "",
+			"Numero_TVA": "",
+			"Adresse": "",
+			"CP": "",
+			"Ville": "Marseille",
+			"Tel_Portable": "",
+			"Tel_Fixe": "",
+			"Voix": "",
+			"Presentation": "Télé-commerciale depuis plus de 12 ans dans différents secteurs d'activité notamment: la publicité, les énergies renouvelables, la gestion de patrimoine, je sais combien il faut être à l'... ",
+			"Photo_Profil": "",
+			"Type_Connexion": "",
+			"Debit": "",
+			"Mail_Mission": "",
+			"Mail_Synthes": "",
+			"Bilan": "",
+			"IdCreateur": "",
+			"IdModificateur": "",
+			"DateCreation": "",
+			"DateModification": "",
+			"Publish": "",
+			"TypesDeMissions": [
+				{
+					"Icon": "print",
+					"Title1": "Prise de RDV ",
+					"Title2":"(BtoB, BtoC)"
+				},
+				{
+					"Icon": "power_settings_new",
+					"Title1": "Prise de RDV ",
+					"Title2":"(BtoB, BtoC)"
+				},
+				{
+					"Icon": "perm_phone_msg",
+					"Title1": "Prise de RDV ",
+					"Title2":"(BtoB, BtoC)"
+				},
+				{
+					"Icon": "play_for_work",
+					"Title1": "Prise de RDV ",
+					"Title2":"(BtoB, BtoC)"
+				}
+			],
+			"SecteursDactivites": [
+			{
+					"icon": "perm_phone_msg",
+					"class":"blue-"
+				},
+				{
+					"icon": "power_settings_new",
+					"class":"blue"
+				},
+				{
+					"icon": "print",
+					"class":"grey"
+				},
+				{
+					"icon": "question_answer",
+					"class":"blue-"
+				},
+				{
+					"icon": "record_voice_over",
+					"class":"red"
+				}
+			],
+			"Evaluations": "121",
+			"Note": "4 /10",
+			"NbreMissions": "50"
+		}
+	],
+	"Teleoperateurs__Missions": [
+		{
+			"IdTeleoperateur_Mission": "",
+			"IdTeleoperateur": "",
+			"IdMission": "",
+			"IdCreateur": "",
+			"IdModificateur": "",
+			"DateCreation": "",
+			"DateModification": "",
+			"Publish": "",
+			"Description": "Depuis 17 ans, nous commercialisons auprès de professionnels des solutions permettant de sécuriser les biens, les accès et les personnes, à travers nos solutions de Télésurveillance, Vidéosurveillance, Contrôle d’accès et Défibrillateurs. Nos agences situées sur les plus grandes villes de Frances nous permettent d'assurer à nos clients une grande réactivité et un niveau de satisfaction élevé. Dans un premier temps la mission s'effectuera sur les professionnels du secteur automobile des départements 59, 69, 57 et 34 Nous recherchons pour nos différentes agences, des téléprospecteurs (-trices) pour fournir des rendez-vous qualifiés avec les décisionnaires de sociétés. Une collaboration durable est fortement souhaitée.",
+			"NomPrenom": "Thomas ",
+			"Poste": "Directeur d'agence",
+			"Ville": "Paris",
+			"MembreDepuis": "Date de création de la mission : 26 Janv. 2022",
+			"Offres": "3",
+			"Budget": "75€/RDV max.",
+			"Objectif": "5 RDV(s)",
+			"DateDebut": "04/07/2022",
+			"Fiche Mission": "",
+			"DescriptionMission": "Bonjour, Notre société est spécialisée depuis 20 ans dans la location de systèmes d'impression (photocopieurs, imprimantes, scanner). Le but de la mission est de contacter des prospects ciblés dans l'objectif de vérifier quelques informations à leur sujet. Nous souhaitons nous engager dans une collaboration sur le long terme avec un/une Téléprospecteur-trice.",
+			"Horaires": [
+				{
+					"Jour": "Lundi",
+					"Horaire": "8h00 à 19h00"
+				},
+				{
+					"Jour": "Mardi",
+					"Horaire": "8h00 à 19h00"
+				},
+				{
+					"Jour": "Mercredi",
+					"Horaire": "8h00 à 19h00"
+				},
+				{
+					"Jour": "Jeudi",
+					"Horaire": "8h00 à 19h00"
+				},
+				{
+					"Jour": "Vendredi",
+					"Horaire": "8h00 à 19h00"
+				}
+			],
+			"Teleoperateur": [
+				{
+					"NomPrenom": "Max Smith",
+					"image": "/assets/images/job-phoning/300-1.jpg"
+				}
+			],
+			"URLVoix": "",
+			"Note": "4/10",
+			"Offre": "montant privé ",
+			"URLProfil": "",
+			"BesoinMission": "Régulier de 200 fiche(s) par mois"
+		}
+	]
+}

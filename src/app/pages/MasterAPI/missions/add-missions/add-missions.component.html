@@ -1,0 +1,374 @@
+<div class="p-5 pt-0">
+    <div class="form-group example-container">
+        <h6 class="form-title">Missions</h6>
+        <form [formGroup]="missionsGroup">
+
+            <div class="d-flex justify-content-between" *ngIf="!isVisibleDescription">
+                <label class="Item" (click)="isVisibleDescription = true">▲ Description de la mission:</label>
+            </div>
+            <div class="d-flex justify-content-between" *ngIf="isVisibleDescription">
+                <label class="Item" (click)="isVisibleDescription = false">▼ Description de la mission:</label>
+            </div>
+            <hr>
+            <div *ngIf="isVisibleDescription" class=" padding-bot">
+                <div class="d-flex justify-content-between">
+                    <mat-form-field class="example-full-width " appearance="outline">
+                        <mat-label>Nom_Mission:</mat-label>
+                        <input matInput placeholder="Nom_Mission" formControlName="nom_Mission">
+                    </mat-form-field>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <!--<div class="d-flex">-->
+                    <mat-form-field appearance="outline" class="me-2">
+                        <mat-label>Types de missions:</mat-label>
+                        <mat-select matNativeControl formControlName="libelle_Type_Mission">
+                            <mat-option
+                                *ngFor="let option of keys(Enums.Libelle_Type_MissionTypeMissionsTypeMissions);index as i"
+                                [value]="values(Enums)[i]">{{option}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <!--</div>-->
+
+                    <!--<div class="d-flex">-->
+                    <mat-form-field appearance="outline" class="ms-2">
+                        <mat-label>Secteur d’activité :</mat-label>
+                        <mat-select matNativeControl formControlName="libelle_Type_Secteur_Activite">
+                            <mat-option
+                                *ngFor="let option of keys(Enums.Libelle_Type_Secteur_ActiviteSecteurActivitesSecteurActivites);index as i"
+                                [value]="values(Enums)[i]">{{option}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <!--</div>-->
+
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <!--<div class="d-flex">-->
+                    <mat-form-field appearance="outline" class="me-2">
+                        <mat-label>Type de prospects:</mat-label>
+                        <mat-select matNativeControl formControlName="type_Prospects">
+                            <mat-option *ngFor="let option of keys(Enums.Type_ProspectsMissionsMissions);index as i"
+                                [value]="values(Enums)[i]">{{option}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <!--</div>-->
+
+                    <div class="ms-2">
+                        <mat-label>Pastille de couleur:</mat-label>
+                        <input type="color" formControlName="pastille_Couleur" value="#00A4DD">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <mat-form-field class="example-full-width " appearance="outline">
+                        <mat-label>Description:</mat-label>
+                        <textarea matInput placeholder="Description" formControlName="description"></textarea>
+                    </mat-form-field>
+                </div>
+
+            </div>
+
+            <div class="d-flex justify-content-between" *ngIf="!isVisibleEmail" style="padding-top: 30px;">
+                <label class="Item" (click)="isVisibleEmail = true">▲ Email/SMS de confirmation:</label>
+            </div>
+            <div class="d-flex justify-content-between" *ngIf="isVisibleEmail" style="padding-top: 30px;">
+                <label class="Item" (click)="isVisibleEmail = false">▼ Email/SMS de confirmation:</label>
+            </div>
+            <hr>
+            <div *ngIf="isVisibleEmail">
+
+                <div class="d-flex">
+                    <mat-label style="font-weight: bold;">Email
+                    </mat-label>
+
+                </div>
+                <div class="d-flex padding-bot">
+                    <mat-label style="padding-right: 20px;">Souhaitez-vous qu'un email de confirmation du RDV puisse
+                        être envoyé aux prospects ? &nbsp;
+                    </mat-label>
+                    <mat-radio-group class="" appearance="outline" formControlName="email_Confirmation_rdv">
+                        <mat-radio-button
+                            *ngFor="let option of keys(Enums.email_Confirmation_rdvMissionsMissions);index as i"
+                            [value]="values(Enums)[i]" style="padding-right: 20px;">{{option}}</mat-radio-button>
+                    </mat-radio-group>
+
+                </div>
+                <div class="d-flex padding-bot">
+                    <mat-label style="padding-right: 20px;">Souhaitez-vous programmer un mail de rappel automatique du
+                        RDV pour le prospect ?
+                    </mat-label>
+                    <mat-radio-group class="" appearance="outline" formControlName="email_Rappel_rdv">
+                        <mat-radio-button *ngFor="let option of keys(Enums.email_Rappel_rdvMissionsMissions);index as i"
+                            [value]="values(Enums)[i]" style="padding-right: 20px;">{{option}}</mat-radio-button>
+                    </mat-radio-group>
+
+                </div>
+
+                <div class="d-flex">
+                    <mat-label style="font-weight: bold;">SMS
+                    </mat-label>
+
+                </div>
+                <div class="d-flex padding-bot">
+                    <mat-label style="padding-right: 20px;">Souhaitez-vous qu'un SMS de confirmation du rendez-vous
+                        puisse être envoyé aux prospects
+                        ? (0.10€ par sms) </mat-label>
+                    <mat-radio-group class="" appearance="outline" formControlName="smS_Confirmation_rdv">
+                        <mat-radio-button
+                            *ngFor="let option of keys(Enums.smS_Confirmation_rdvMissionsMissions);index as i"
+                            [value]="values(Enums)[i]" style="padding-right: 20px;">{{option}}</mat-radio-button>
+                    </mat-radio-group>
+
+                </div>
+
+                <div class="d-flex padding-bot">
+                    <mat-label style="padding-right: 20px;">Souhaitez-vous programmer un SMS de rappel automatique du
+                        RDV pour le prospect ?
+                    </mat-label>
+                    <mat-radio-group class="" appearance="outline" formControlName="smS_Rappel_rdv">
+                        <mat-radio-button *ngFor="let option of keys(Enums.smS_Rappel_rdvMissionsMissions);index as i"
+                            [value]="values(Enums)[i]" style="padding-right: 20px;">{{option}}</mat-radio-button>
+                    </mat-radio-group>
+
+                </div>
+
+                <div class="d-flex">
+                    <mat-label style="font-weight: bold;">Envoi de mails libre
+                    </mat-label>
+
+                </div>
+                <div class="d-flex padding-bot">
+                    <mat-label style="padding-right: 20px;">Souhaitez-vous pouvoir envoyer des mails (informatifs,
+                        présentations...) lors de votre
+                        entretien téléphonique ? </mat-label>
+                    <mat-radio-group class="" appearance="outline" formControlName="email_Teleoperateur">
+                        <mat-radio-button
+                            *ngFor="let option of keys(Enums.email_TeleoperateurMissionsMissions);index as i"
+                            [value]="values(Enums)[i]" style="padding-right: 20px;">{{option}}</mat-radio-button>
+                    </mat-radio-group>
+
+                </div>
+            </div>
+            <div class="d-flex justify-content-between" *ngIf="!isVisibleNotification" style="padding-top: 30px;">
+                <label class="Item" (click)="isVisibleNotification = true">▲ Notifications:</label>
+            </div>
+            <div class="d-flex justify-content-between" *ngIf="isVisibleNotification" style="padding-top: 30px;">
+                <label class="Item" (click)="isVisibleNotification = false">▼ Notifications:</label>
+            </div>
+            <hr>
+            <div *ngIf="isVisibleNotification">
+                <div class="d-flex padding-bot">
+                    <mat-label style="font-weight: bold;font-size: 1.3em;">Fiche de rendez-vous
+                    </mat-label>
+
+                </div>
+                <div class="d-flex padding-bot">
+                    <mat-label style="padding-right: 20px;">Souhaitez-vous recevoir la fiche du rendez-vous par mail ?
+                    </mat-label>
+                    <mat-radio-group class="" appearance="outline" formControlName="reception_Fiche_rdv">
+                        <mat-radio-button
+                            *ngFor="let option of keys(Enums.reception_Fiche_rdvMissionsMissions);index as i"
+                            [value]="values(Enums)[i]" style="padding-right: 20px;">{{option}}</mat-radio-button>
+                    </mat-radio-group>
+
+                </div>
+                <div class="d-flex padding-bot">
+                    <mat-label style="padding-right: 20px;">Souhaitez-vous que chaque commercial reçoive la fiche du RDV
+                        par mail quand un RDV est placé dans son agenda ?</mat-label>
+                    <mat-radio-group class="" appearance="outline" formControlName="reception_Fiche_rdV_Commercial">
+                        <mat-radio-button
+                            *ngFor="let option of keys(Enums.reception_Fiche_rdV_CommercialMissionsMissions);index as i"
+                            [value]="values(Enums)[i]" style="padding-right: 20px;">{{option}}</mat-radio-button>
+                    </mat-radio-group>
+
+                </div>
+                <div class="d-flex padding-bot">
+                    <mat-label style="font-weight: bold;font-size: 1.3em;">Récapitulatif journalier
+                    </mat-label>
+
+                </div>
+                <div class="d-flex padding-bot">
+                    <mat-label style="padding-right: 20px;">Souhaitez-vous recevoir un mail récapitulatif quotidien de
+                        l'avancement de cette mission ? </mat-label>
+                    <mat-radio-group class="" appearance="outline" formControlName="reception_Mail_Recapitulatif">
+                        <mat-radio-button
+                            *ngFor="let option of keys(Enums.reception_Mail_RecapitulatifMissionsMissions);index as i"
+                            [value]="values(Enums)[i]" style="padding-right: 20px;">{{option}}</mat-radio-button>
+                    </mat-radio-group>
+
+                </div>
+
+            </div>
+
+            <div class="d-flex justify-content-between" *ngIf="!isVisibleAgenda" style="padding-top: 30px;">
+                <label class="Item" (click)="isVisibleAgenda = true">▲ Agenda de rendez-vous / Calcul
+                    d'itinéraires:</label>
+            </div>
+            <div class="d-flex justify-content-between" *ngIf="isVisibleAgenda" style="padding-top: 30px;">
+                <label class="Item" (click)="isVisibleAgenda = false">▼ Agenda de rendez-vous / Calcul
+                    d'itinéraires:</label>
+            </div>
+            <hr>
+            <div *ngIf="isVisibleAgenda" class="padding-bot">
+
+                <div class="d-flex padding-bot">
+                    <mat-label style="font-weight: bold;">Agenda de rendez-vous
+                    </mat-label>
+
+                </div>
+                <div class="d-flex padding-bot">
+                    <mat-label>Je souhaite que les rendez-vous puissent être positionnés dans les agendas suivants :
+                    </mat-label>
+
+                </div>
+                <div class="d-flex padding-bot" *ngIf="!isVisibleOption">
+                    <mat-label style="cursor: pointer; text-decoration: underline;"><a
+                            (click)="isVisibleOption= true">Options avancées</a>
+                    </mat-label>
+
+                </div>
+                <div class="d-flex padding-bot" *ngIf="isVisibleOption">
+                    <mat-label style="cursor: pointer; font-style: underline;"><a
+                            (click)="isVisibleOption= false">Options avancées</a>
+                    </mat-label>
+
+                </div>
+                <div *ngIf="isVisibleOption" class="padding-bot">
+                    <div class="d-flex padding-bot">
+                        <mat-label style="padding-right: 20px;">Permettre au Téléopérateurs de voir le détail des
+                            évènements personnels (évènements hors JobPhoning) sur les agendas
+                        </mat-label>
+                        <mat-radio-group class="" appearance="outline" formControlName="visialisation_Details">
+                            <mat-radio-button
+                                *ngFor="let option of keys(Enums.visialisation_DetailsMissionsMissions);index as i"
+                                [value]="values(Enums)[i]" style="padding-right: 20px;">{{option}}</mat-radio-button>
+                        </mat-radio-group>
+
+                    </div>
+                    <div class="d-flex padding-bot">
+                        <mat-label style="padding-right: 20px;">Placer les RDV en mode Privé (Google Agenda uniquement)
+                        </mat-label>
+                        <mat-radio-group class="" appearance="outline" formControlName="placement_RDV">
+                            <mat-radio-button
+                                *ngFor="let option of keys(Enums.placement_RDVMissionsMissions);index as i"
+                                [value]="values(Enums)[i]" style="padding-right: 20px;">{{option}}</mat-radio-button>
+                        </mat-radio-group>
+
+                    </div>
+                    <div class="d-flex padding-bot">
+                        <mat-label style="padding-right: 20px;">Afficher les temps de déplacement des commerciaux (zones
+                            claires sur l'agenda avant et après les RDV)
+                        </mat-label>
+                        <mat-radio-group class="" appearance="outline" formControlName="affichage_temps">
+                            <mat-radio-button
+                                *ngFor="let option of keys(Enums.affichage_tempsMissionsMissions);index as i"
+                                [value]="values(Enums)[i]" style="padding-right: 20px;">{{option}}</mat-radio-button>
+                        </mat-radio-group>
+
+                    </div>
+                    <div class="d-flex padding-bot">
+                        <mat-label style="padding-right: 20px;">Autoriser la superposition des RDV
+                        </mat-label>
+                        <mat-radio-group class="" appearance="outline" formControlName="autoriser_Superposition">
+                            <mat-radio-button
+                                *ngFor="let option of keys(Enums.autoriser_SuperpositionMissionsMissions);index as i"
+                                [value]="values(Enums)[i]" style="padding-right: 20px;">{{option}}</mat-radio-button>
+                        </mat-radio-group>
+
+                    </div>
+                </div>
+                <div class="d-flex padding-bot">
+                    <mat-label style="font-weight: bold;">Calcul de l'itinéraire
+                    </mat-label>
+
+                </div>
+                <div class="d-flex padding-bot">
+                    <mat-label style="padding-right: 20px;">Souhaitez-vous pouvoir visualiser les itinéraires ?
+                    </mat-label>
+                    <mat-radio-group class="" appearance="outline" formControlName="visialisation_Itineraire">
+                        <mat-radio-button
+                            *ngFor="let option of keys(Enums.visialisation_ItineraireMissionsMissions);index as i"
+                            [value]="values(Enums)[i]" style="padding-right: 20px;">{{option}}</mat-radio-button>
+                    </mat-radio-group>
+
+                </div>
+
+
+                <div class="d-flex padding-bot">
+                    <mat-label style="font-weight: bold;">Durée de RDV
+                    </mat-label>
+
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <div class="me-2" style="width: 120%;">
+                        <mat-label>Par défaut, les rendez-vous seront positionnés sur une plage de</mat-label>
+                    </div>
+                    <mat-form-field class="example-full-width ms-2 me-2" appearance="outline">
+                        <input matInput placeholder="1" formControlName="duree_rdv">
+                    </mat-form-field>
+                    <!--<div class="d-flex">-->
+                    <mat-form-field appearance="outline" class="ms-2">
+                        <mat-label>Heures:</mat-label>
+                        <mat-select matNativeControl formControlName="unite_Duree_rdv">
+                            <mat-option *ngFor="let option of keys(Enums.Unite_Duree_RDVMissionsMissions);index as i"
+                                [value]="values(Enums)[i]">{{option}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <!--</div>-->
+
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-between" *ngIf="!isVisibleAppels" style="padding-top: 30px;">
+                <label class="Item" (click)="isVisibleAppels = true">▲ Gestion des appels:</label>
+            </div>
+            <div class="d-flex justify-content-between" *ngIf="isVisibleAppels" style="padding-top: 30px;">
+                <label class="Item" (click)="isVisibleAppels = false">▼ Gestion des appels:</label>
+            </div>
+            <hr>
+            <div *ngIf="isVisibleAppels" class="padding-bot">
+                <div class="d-flex padding-bot">
+                    <mat-label style="font-weight: bold;">Pour réaliser la mission vous utiliserez :
+                    </mat-label>
+
+                </div>
+                <div class="d-flex padding-bot">
+                    <mat-radio-group class="example-radio-group" appearance="outline"
+                        formControlName="realisation_Mission">
+                        <mat-radio-button
+                            *ngFor="let option of keys(Enums.realisation_MissionMissionsMissions);index as i"
+                            [value]="values(Enums)[i]" style="padding-bottom: 20px;">{{option}}</mat-radio-button>
+                    </mat-radio-group>
+
+                </div>
+            </div>
+            <div class="d-flex justify-content-between" *ngIf="!isVisibleDivers" style="padding-top: 30px;">
+                <label class="Item" (click)="isVisibleDivers = true">▲ Paramètres divers:</label>
+            </div>
+            <div class="d-flex justify-content-between" *ngIf="isVisibleDivers" style="padding-top: 30px;">
+                <label class="Item" (click)="isVisibleDivers = false">▼ Paramètres divers:</label>
+            </div>
+            <hr>
+            <div *ngIf="isVisibleDivers" class="padding-bot">
+                    <div class="d-flex padding-bot">
+                        <mat-label style="padding-right: 20px;font-weight: bold;">Géolocalisation
+                        </mat-label>
+                        <mat-radio-group class="" appearance="outline" formControlName="geolocalisation">
+                            <mat-radio-button
+                                *ngFor="let option of keys(Enums.geolocalisationMissionsMissions);index as i"
+                                [value]="values(Enums)[i]" style="padding-right: 20px;">{{option}}</mat-radio-button>
+                        </mat-radio-group>
+
+                    </div>
+            </div>
+
+
+
+
+            <input type="submit" (click)="onSubmit()" value="Enregistrer" class="btn-save mt-2">
+            <input type="submit" value="Annuler" class="btn-save mt-2">
+        </form>
+    </div>
+</div>

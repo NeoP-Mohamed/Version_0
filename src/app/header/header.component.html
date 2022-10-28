@@ -1,0 +1,46 @@
+<header class="header">
+  <div class="header__overlay"></div>
+  <div class="header__navbar mobile" [class.header__fixed]="isFixed">
+    <div class="header__logo">
+      <img src="assets/images/logo.png" alt="" />
+    </div>
+    <a class="header__open"><i class="fa fa-thin fa-bars"></i></a>
+  </div>
+  <div class="header__full" [class.header__fixed]="isFixed">
+    <div class="header__navbar desktop">
+      <div class="header__logo">
+        <img src="assets/images/logo.png" alt="" />
+      </div>
+      <ul class="header__links">
+        <li>
+          <a href="#"><span>Accueil</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Nos services</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Donneur d’ordre</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Agent Indépendant</span></a>
+        </li>
+        <li>
+          <a [routerLink]="[ '/login']"><span>Connexion</span></a>
+        </li>
+      </ul>
+      <div class="section-btn">
+        <button class="transparent" routerLink="/inscription">
+          <i class="fa fa-thin fa-comment"></i><span>  Créer un compte </span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__content">
+    <h1 class="header__content__title">Inscription</h1>
+    <ul class="header__content__breadcrumb">
+      <li><span>Accueil</span></li>
+      <li><span>Inscription</span></li>
+    </ul>
+  </div>
+</header>

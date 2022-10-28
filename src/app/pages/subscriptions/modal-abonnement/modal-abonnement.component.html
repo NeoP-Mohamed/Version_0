@@ -1,0 +1,105 @@
+
+
+
+
+<div class="inscription  ">
+  
+  <mat-stepper [linear]="isLinear" #stepper >
+      
+       <!---step 1-->
+      <mat-step >
+        <ng-template matStepLabel>Engagement </ng-template>
+        <div >
+  <div class="" >
+        <mat-checkbox 
+        class=" css-jp7ee5"
+        >
+        Je souhaite bénéficier de
+        l'abonnement Bronze au
+        tarif avantageux de 9.95€ / mois.
+</mat-checkbox><br><br>
+<p class="css-jp7ee5 ">J'ai bien compris que je peux demander l'arrêt de
+  cet abonnement à tout moment depuis mon espace
+  client,
+  mais qu'il ne prendra fin qu'à l'issue de ma période
+  d'engagement de 12 mois. A
+  défaut d'action de ma part avant
+  le 23/08/2023
+  ,
+  il se renouvellera par tacite reconduction pour une
+  durée de 12 mois
+  conformément aux <a class="bluelink">Conditions Générales d'Utilisation</a>
+  de la plateforme JobPhoning que j’ai lues et accepte
+  sans réserve.</p>
+</div>
+        <div class="section-btn-steps" >
+          <button class="btn-save btn-Faire " (click)="onNoClick()" mat-button matStepperPrevious>Annuler</button>
+          <button class="btn-save btn-Faire "  mat-button matStepperNext>Suivant</button>
+        </div>
+      </div>
+      </mat-step>
+       <!---step 2-->
+      <mat-step>
+        <ng-template matStepLabel>Détails Abonnement </ng-template>
+        <div  class="step-content ">
+          <h1  class="first_title">Abonnement Bronze  </h1>
+          <h1  class="first_title"> engagement : 12 mois </h1>
+          <h1  class="first_title">Prix HT : 9.95€</h1>
+          <h1  class="first_title">TVA(20%) : 1.99€</h1>
+
+         
+        </div>
+        <div class="section-btn-steps">
+          <button class="btn-save btn-Faire " mat-button matStepperPrevious>Précédent</button>
+          <button class="btn-save btn-Faire " mat-button matStepperNext>Suivant</button>
+        </div>
+      </mat-step>
+       <!---step 3-->
+      <mat-step> 
+        <ng-template matStepLabel> Paiement </ng-template>
+        <div class=" ">
+          <h1 class="first_title">Abonnement Bronze Engagement de 12 mois ( Montant TTC : 11.94  € )
+          </h1>
+        
+          <div class="d-flex justify-content-between">
+            <mat-form-field class="w-50" appearance="outline">
+              <mat-label>Numéro de carte:</mat-label> <input matInput placeholder="Numéro de carte" >
+          </mat-form-field>
+          <div class="mb-card-credit">
+            <img  class="mb-c" src="./../../../../assets/job-phoning/icons8-credit-card-48.png" alt="">
+            <img  class="mb-c"  src="./../../../../assets/job-phoning/icons8-mastercard-48.png" alt="">
+            <img  class="mb-c"  src="./../../../../assets/job-phoning/icons8-visa-50.png" alt="">
+          </div>
+          </div>
+         
+
+
+<div class=" d-flex justify-content-between">
+  <mat-form-field class="w-50 me-1" appearance="outline">
+    <mat-label>Date d'expiration:</mat-label> <input matInput placeholder="Date d'expiration" >
+</mat-form-field>
+<mat-form-field class=" w-50 ms-1" appearance="outline">
+  <mat-label>Cryptogramme visuel :</mat-label> <input matInput placeholder="Cryptogramme visuel " >
+</mat-form-field>
+</div>
+
+<!-- <div class="image-carte" data-jp-card-initialized="true"><div class="jp-card-container" style="transform: scale(0.739645);"><div class="jp-card"><div class="jp-card-front"><div class="jp-card-logo jp-card-elo"><div class="e">e</div><div class="l">l</div><div class="o">o</div></div><div class="jp-card-logo jp-card-visa">Visa</div><div class="jp-card-logo jp-card-visaelectron">Visa<div class="elec">Electron</div></div><div class="jp-card-logo jp-card-mastercard">Mastercard</div><div class="jp-card-logo jp-card-maestro">Maestro</div><div class="jp-card-logo jp-card-amex"></div><div class="jp-card-logo jp-card-discover">discover</div><div class="jp-card-logo jp-card-dinersclub"></div><div class="jp-card-logo jp-card-dankort"><div class="dk"><div class="d"></div><div class="k"></div></div></div><div class="jp-card-logo jp-card-jcb"><div class="j">J</div><div class="c">C</div><div class="b">B</div></div><div class="jp-card-lower"><div class="jp-card-shiny"></div><div class="jp-card-cvc jp-card-display">•••</div><div class="jp-card-number jp-card-display">•••• •••• •••• ••••</div><div class="jp-card-name jp-card-display">JOBPHONING</div><div class="jp-card-expiry jp-card-display" data-before="mmyy" data-after="valid
+date">••/••</div></div></div><div class="jp-card-back"><div class="jp-card-bar"></div><div class="jp-card-cvc jp-card-display">•••</div><div class="jp-card-shiny"></div></div></div></div></div> -->
+
+<mat-checkbox 
+class="primary text-wrap css-jp7ee5 hidden"
+>
+Enregistrer cette carte pour mes futurs achats
+        </mat-checkbox>
+        <p class="css-jp7ee5 ">
+          Aucune information bancaire n'est stockée sur nos serveurs. Cet opération est réalisée de manière sécurisée par notre prestataire de paiement certifié conforme au Standard PCI/DSS Paybox
+        </p>
+</div>
+        <div class="section-btn-steps">
+          <button class="btn-save btn-Faire "  mat-button matStepperPrevious>Précédent</button>
+          <button class="btn-save btn-Faire " mat-button matStepperNext (click)="terminer()">Valider</button>
+        </div>
+      </mat-step>
+    </mat-stepper>
+  </div>
+

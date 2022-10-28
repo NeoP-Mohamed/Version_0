@@ -1,0 +1,101 @@
+<div class="pt-0">
+    <div class="form-group example-container">
+        <h6 class="form-title">Données de votre entreprise</h6>
+        <form [formGroup]="DonneesEntrepriseGroup">
+
+                    <div class="d-flex justify-content-between">
+        <!--<div class="d-flex">-->
+            <mat-form-field appearance="outline" class="">
+                <mat-label>Statut actuel :</mat-label>
+                <mat-select matNativeControl formControlName="statut">
+                    <mat-option *ngFor="let option of keys(Enums.StatutTeleoperateursTeleoperateurs);index as i" [value]="values(Enums)[i]">{{option}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        <!--</div>-->
+
+        </div>  
+               <div class="d-flex justify-content-between">
+        <mat-form-field class="example-full-width " appearance="outline">
+            <mat-label>Société:</mat-label>
+            <input matInput placeholder="Société" formControlName="nom_Societe">
+        </mat-form-field>
+        </div>  
+               <div class="d-flex justify-content-between">
+        <!--<div class="d-flex">-->
+            <mat-form-field appearance="outline" class="">
+                <mat-label>Pays :</mat-label>
+                <mat-select matNativeControl formControlName="pays">
+                    <mat-option *ngFor="let option of keys(Enums.PaysTeleoperateursTeleoperateurs);index as i" [value]="values(Enums)[i]">{{option}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        <!--</div>-->
+
+        </div>  
+               <div class="d-flex justify-content-between padding-bot">
+            <mat-radio-group class="" appearance="outline"  formControlName="existance">
+                <mat-radio-button *ngFor="let option of keys(Enums.ExistanceTeleoperateursTeleoperateurs);index as i"
+                        [value]="values(Enums)[i]" style="padding-right: 20px;">{{option}}</mat-radio-button>
+            </mat-radio-group>
+
+        </div>  
+               <div class="d-flex justify-content-between">
+        <mat-form-field class="example-full-width " appearance="outline">
+            <mat-label>Numéro de matricule:</mat-label>
+            <input matInput placeholder="Numéro de matricule" formControlName="matricule">
+        </mat-form-field>
+        </div>  
+               <div class="d-flex justify-content-between">
+        <mat-form-field class="example-full-width " appearance="outline">
+            <mat-label>Photo_Matricule:</mat-label>
+            <input matInput placeholder="Photo_Matricule" formControlName="photo_Matricule">
+        </mat-form-field>
+        </div>  
+               <div class="d-flex justify-content-between padding-bot">
+            <mat-radio-group class="" appearance="outline"  formControlName="assujetti_tva">
+                <mat-radio-button *ngFor="let option of keys(Enums.Assujetti_TVATeleoperateursTeleoperateurs);index as i"
+                        [value]="values(Enums)[i]" style="padding-right: 20px;">{{option}}</mat-radio-button>
+            </mat-radio-group>
+
+        </div>  
+               <div class="d-flex justify-content-between">
+        <mat-form-field class="example-full-width " appearance="outline">
+            <mat-label>Numéro de TVA:</mat-label>
+            <input matInput placeholder="Numéro de TVA" formControlName="numero_tva">
+        </mat-form-field>
+        </div>  
+               <div class="d-flex justify-content-between">
+        <mat-form-field class="example-full-width " appearance="outline">
+            <mat-label>Adresse:</mat-label>
+            <input matInput placeholder="Adresse" formControlName="adresse">
+        </mat-form-field>
+        </div>  
+               <div class="d-flex justify-content-between">
+        <mat-form-field class="example-full-width " appearance="outline">
+            <mat-label>Code Postal:</mat-label>
+            <input matInput placeholder="Code Postal" formControlName="cp">
+        </mat-form-field>
+        </div>  
+               <div class="d-flex justify-content-between">
+        <mat-form-field class="example-full-width " appearance="outline">
+            <mat-label>Ville:</mat-label>
+            <input matInput placeholder="Ville" formControlName="ville">
+        </mat-form-field>
+        </div>  
+               <div class="d-flex justify-content-between">
+        <mat-form-field class="example-full-width " appearance="outline">
+            <mat-label>Téléphone portable:</mat-label>
+            <input matInput placeholder="Téléphone portable" formControlName="tel_Portable">
+        </mat-form-field>
+        </div>  
+               <div class="d-flex justify-content-between">
+        <mat-form-field class="example-full-width " appearance="outline">
+            <mat-label>Téléphone fixe:</mat-label>
+            <input matInput placeholder="Téléphone fixe" formControlName="tel_Fixe">
+        </mat-form-field>
+        </div>  
+       
+            <input type="submit" (click)="onSubmit()" value="Enregistrer" class="btn-save mt-2">
+            <input type="submit" value="Annuler" class="btn-save mt-2">
+        </form>
+    </div>
+</div>

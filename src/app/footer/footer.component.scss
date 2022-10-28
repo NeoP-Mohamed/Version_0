@@ -1,0 +1,128 @@
+$color-black: #1d1d1d;
+$color-gray: #9d9d9d;
+$color-white: #ffffff;
+$color-red: #ff6162;
+
+.footer {
+  background-color: $color-black;
+  color: $color-gray;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin: 60px 0 0;
+  
+  &__flex {
+    padding: 60px 0 40px 0;
+    @media only screen and (min-width: 900px) {
+      max-width: 1220px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 140px 0 100px;
+    }
+  }
+
+  &__logo {
+    max-width: 207px;
+    margin: 0 auto 40px;
+    img {
+      width: 100%;
+    }
+    @media only screen and (min-width: 900px) {
+      margin: 0;
+    }
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    margin: 0 0 40px;
+    a {
+      padding: 9px 0;
+      &:hover {
+        color: $color-white;
+      }
+    }
+    @media only screen and (min-width: 900px) {
+      align-items: flex-start;
+    }
+  }
+  &__widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+
+    &__content {
+      width: 100%;
+      margin: 0 0 15px;
+
+      a {
+        line-height: 30px;
+        &:hover {
+          color: $color-red;
+        }
+      }
+      @media only screen and (min-width: 900px) {
+        text-align: left;
+      }
+    }
+  }
+
+  &__s-media {
+    padding: 0 15px;
+    margin: 25px 0 40px;
+
+    &__links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        width: 32px;
+        height: 32px;
+        border: 1px solid $color-gray;
+        line-height: 32px;
+        border-radius: 50%;
+        margin: 0 3px;
+        &:hover {
+          color: $color-white;
+          border: 1px solid $color-red;
+          background-color: $color-red;
+        }
+      }
+    }
+
+    @media only screen and (min-width: 900px) {
+      margin: 0;
+    }
+  }
+
+  &__copyright {
+    border-top: 1px solid $color-gray;
+    padding: 25px 0;
+    text-align: center;
+  }
+  h3 {
+    margin: 0;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    @media only screen and (min-width: 900px) {
+      text-align: left;
+    }
+  }
+  a {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+

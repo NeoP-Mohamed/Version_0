@@ -1,0 +1,34 @@
+<div class="p-5 pt-0">
+    <div class="form-group example-container">
+        <h6 class="form-title">Mes contrats</h6>
+        <form [formGroup]="contratsGroup">
+
+        <div class="d-flex justify-content-between">
+        <mat-form-field class="example-full-width " appearance="outline">
+            <mat-label>Numéro:</mat-label>
+            <input matInput placeholder="Numéro" formControlName="numero">
+        </mat-form-field>
+        </div>  
+       
+        <div class="d-flex justify-content-between">
+        <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Date de signature:</mat-label>
+            <input matInput placeholder="Date de signature" formControlName="date_Signature">
+        </mat-form-field>
+
+        </div>  
+       
+        <div class="d-flex justify-content-between">
+        <mat-form-field class="example-full-width " appearance="outline">
+            <mat-label>Contrat:</mat-label>
+            <input matInput placeholder="Contrat" formControlName="contrat">
+        </mat-form-field>
+        </div>  
+       
+
+         
+            <input type="submit" (click)="onSubmit()" value="Enregistrer" class="btn-save mt-2">
+            <input type="submit" value="Annuler" class="btn-save mt-2">
+        </form>
+    </div>
+</div>

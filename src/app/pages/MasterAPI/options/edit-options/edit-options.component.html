@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>Edit Options</h1>
+<div mat-dialog-content>
+ <app-add-options></app-add-options>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="selected" cdkFocusInitial>Ok</button>
+</div>

@@ -1,0 +1,17 @@
+<div class="pt-0">
+    <div class="form-group example-container">
+        <h6 class="form-title">Votre voix</h6>
+        <form [formGroup]="VotreVoixGroup">
+
+                    <div class="d-flex justify-content-between">
+        <mat-form-field class="example-full-width " appearance="outline">
+            <mat-label>Voix:</mat-label>
+            <input matInput placeholder="Voix" formControlName="voix">
+        </mat-form-field>
+        </div>  
+       
+            <input type="submit" (click)="onSubmit()" value="Enregistrer" class="btn-save mt-2">
+            <input type="submit" value="Annuler" class="btn-save mt-2">
+        </form>
+    </div>
+</div>

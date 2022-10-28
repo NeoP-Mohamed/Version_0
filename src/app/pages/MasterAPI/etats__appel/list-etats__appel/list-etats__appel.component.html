@@ -1,0 +1,57 @@
+<div class="p-5 pt-0">
+  <div class="example-container ">
+    <div class=" header-content">
+      <span class="list-title">Paramètres des états d’appels</span>
+      <button class="btn btn-primary mb-3 mt-2 btn-add" [routerLink]="['/Etats__Appel/add']">Ajouter</button>
+
+    </div>
+
+    <div class="example-table-container">
+
+      <table mat-table [dataSource]="etats__appels" class="example-table" matSort matSortActive="nom"
+        matSortDisableClear matSortDirection="desc">
+
+        <!-- Number Column -->
+        <ng-container matColumnDef="nom">
+          <th mat-header-cell *matHeaderCellDef>Nom</th>
+          <td mat-cell *matCellDef="let row">{{row.nom}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="type_Etat">
+          <th mat-header-cell *matHeaderCellDef>Type d’etat </th>
+          <td mat-cell *matCellDef="let row">{{row.type_Etat}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="type_Mission">
+          <th mat-header-cell *matHeaderCellDef>Type de mission</th>
+          <td mat-cell *matCellDef="let row">{{row.type_Mission}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="fichier_Cible">
+          <th mat-header-cell *matHeaderCellDef>Type de fichier</th>
+          <td mat-cell *matCellDef="let row">{{row.fichier_Cible}}</td>
+        </ng-container>
+
+        
+        <!-- State Column -->
+        <ng-container matColumnDef="Actions">
+          <th mat-header-cell *matHeaderCellDef class="text-end action-title">actions</th>
+          <td mat-cell *matCellDef="let row" class="text-end">
+            <!-- <span class="link" [routerLink]="['/etats__appel/'+row.id]"><fa-icon [icon]="faEdit"></fa-icon></span> -->
+            <button mat-icon-button mat-button class="action-button" (click)="delete(row)">
+              <fa-icon [icon]="faTrashAlt"></fa-icon>
+            </button>
+            <button mat-icon-button mat-button class="action-button" [routerLink]="['/etats__appel/'+row.id]">
+              <fa-icon [icon]="faEdit"></fa-icon>
+            </button>
+          </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+
+    <mat-paginator [length]="resultsLength" [pageSize]="30" aria-label="Select page of GitHub search results">
+    </mat-paginator>
+  </div>
+</div>

@@ -1,0 +1,176 @@
+$color-black: #1d1d1d;
+$color-white: #ffffff;
+$color-overlay: #27205f;
+$color-red: #ff6162;
+
+$tablet: 1090px;
+
+.header {
+  background-image: url("/assets/images/breadcrumbs-bg.jpg");
+  min-height: 240px;
+  background-size: cover;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  margin: 0 0 45px 0;
+
+  @media only screen and (min-width: $tablet) {
+    min-height: 352px;
+  }
+
+  &__overlay {
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: $color-overlay;
+      opacity: 0.5;
+      z-index: 0;
+    }
+  }
+  &__navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+    padding: 0 15px;
+    z-index: 1;
+    height: 60px;
+    &.mobile {
+      display: flex;
+      @media only screen and (min-width: $tablet) {
+        display: none;
+      }
+    }
+    &.desktop {
+      width: auto;
+      max-width: 1750px;
+      margin: 0 auto;
+      height: 105px;
+      display: none;
+      @media only screen and (min-width: $tablet) {
+        display: flex;
+      }
+    }
+  }
+  &__full {
+    width: 100%;
+    height: auto !important;
+    .section-btn {
+      width: 20%;
+      justify-content: end;
+      
+    }
+  }
+  &__fixed {
+    background-color: $color-black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    z-index: 100;
+    &.desktop {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__logo {
+    max-width: 203px;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__open {
+    color: $color-white;
+    font-size: 30px;
+  }
+
+  &__content {
+    padding: 40px 0 0;
+    position: relative;
+    text-align: center;
+    color: $color-white;
+    @media only screen and (min-width: $tablet) {
+      max-width: 1170px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    h1 {
+      font-weight: 600;
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      margin: 0 0 15px 0;
+      @media only screen and (min-width: $tablet) {
+        font-size: 40px;
+        margin: 35px 0 15px 0;
+      }
+    }
+    &__breadcrumb {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 300;
+      font-size: 16px;
+      padding: 0;
+      li + li:before {
+        content: "\f105";
+        font-family: "FontAwesome";
+        padding: 0 10px;
+      }
+      li {
+        &:hover {
+          color: $color-red;
+        }
+      }
+      @media only screen and (min-width: $tablet) {
+        justify-content: flex-start;
+      }
+    }
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      position: relative;
+      a {
+        font-size: 16px;
+        font-weight: 300;
+        color: $color-white;
+        text-decoration: none;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 3px;
+        bottom: -5px;
+        left: 0;
+        background-color: $color-red;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+
+      &:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+      &:first-child {
+        margin: 0 22px 0 0;
+      }
+
+    }
+    li + li {
+      margin: 0 22px;
+    }
+  }
+}

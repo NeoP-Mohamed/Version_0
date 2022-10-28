@@ -1,0 +1,56 @@
+<div class="inscription">
+    <mat-horizontal-stepper [labelPosition]="'bottom'" class="inscription-stepper" #stepper>
+      <mat-step>
+  
+        <div class="inscription__form">
+     11111111111
+        </div>
+        <div class="section-btn">
+          <button mat-button matStepperNext>Suivant</button>
+        </div>
+      </mat-step>
+      <mat-step>
+  
+        <div class="inscription__form">
+        22222222222222222
+        </div>
+        <div class="section-btn">
+          <button mat-button matStepperPrevious>Précédent</button>
+          <button mat-button matStepperNext>Suivant</button>
+        </div>
+      </mat-step>
+      <mat-step>
+  
+        <div class="inscription__form">
+       33333333333333
+        
+  
+        </div>
+        <div class="section-btn">
+          <button mat-button matStepperPrevious>Précédent</button>
+          <button mat-button matStepperNext>Suivant</button>
+        </div>
+      </mat-step>
+      <mat-step>
+        <div class="inscription__form">
+          444444444444
+               
+               </div>
+       
+        <div class="section-btn">
+          <button mat-button matStepperPrevious>Précédent</button>
+          <button mat-button matStepperNext>Suivant</button>
+        </div>
+      </mat-step>
+      <mat-step>
+        <div class="inscription__form">
+        55555555555555
+  
+        </div>
+        <div class="section-btn">
+          <button mat-button matStepperPrevious>Précédent</button>
+          <button mat-button matStepperNext (click)="terminer()">Terminer</button>
+        </div>
+      </mat-step>
+    </mat-horizontal-stepper>
+  </div>

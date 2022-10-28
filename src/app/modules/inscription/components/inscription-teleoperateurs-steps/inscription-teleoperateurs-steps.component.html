@@ -1,0 +1,1051 @@
+<div class="inscription">
+
+  <mat-horizontal-stepper [labelPosition]="'bottom'" class="inscription-stepper" [linear]="true" #stepper>
+    <mat-step>
+
+      <div class="inscription__form">
+          <div class="">
+              <h2 class="center">
+                <span class="bold color-default"
+                  >Félicitation Chloé, votre compte a été validé avec succès !</span
+                >
+              </h2>
+              <h4 class="center color-default">
+                Veuillez à présent compléter votre profil afin de finaliser votre
+                inscription.
+              </h4>
+                 <!--@Ines-Start→--->
+            <div class="fmt-5">
+              <div class="form flex mt-5" >
+                <label class="control control-radio">
+                  En France
+                  <input type="radio" [(ngModel)]="radioSelected" value="false" />
+                  <div class="control_indicator"></div>
+                </label>
+                <label class="control control-radio">
+                  Étranger
+                  <input type="radio" [(ngModel)]="radioSelected" value="true" />
+                  <div class="control_indicator"></div>
+                </label>
+              </div>
+            </div>
+            <div  *ngIf="radioSelected === 'false'">
+              <!-----------------*************** Start  En France *************----------------->
+            <div class="form">
+              <input
+                type="text"
+                id="tel_Fixe"
+                class="form__control"
+                autocomplete="off"
+                placeholder=" "
+              />
+              <label for="tel_Fixe" class="form__label">SIRET</label>
+            </div>
+            <div class="form">
+              <input
+                type="text"
+                id="nom_Societe"
+                class="form__control"
+                autocomplete="off"
+                placeholder=" "
+              />
+              <label for="nom_Societe" class="form__label">Société</label>
+            </div>
+            <div class="form">
+              <input
+                type="text"
+                id="adresse"
+                class="form__control"
+                autocomplete="off"
+                placeholder=" "
+              />
+              <label for="adresse" class="form__label">Adresse</label>
+            </div>
+            <!----->
+            <div class="row">
+              <div class=" col-sm-6 ">
+                <div class="form">
+                <input
+                  type="text"
+                  id="ville"
+                  class="form__control"
+                  autocomplete="off"
+                  placeholder=" "
+                />
+                <label for="ville" class="form__label">Ville</label>
+              </div>
+              </div>
+            <div class=" col-sm-6 ">
+              <div class="form">
+              <input
+                type="text"
+                id="cp"
+                class="form__control"
+                autocomplete="off"
+                placeholder=" "
+              />
+              <label for="cp" class="form__label">Code Postal</label>
+              </div>
+            </div>
+          </div>
+          <!------>
+          <div class="row">
+            <div class="col-sm-6">   <div class="form">
+              <input
+                type="text"
+                id="tel_Portable"
+                class="form__control"
+                autocomplete="off"
+                placeholder=" "
+              />
+              <label for="tel_Portable" class="form__label"
+                >Téléphone fixe </label
+              >
+            </div></div>
+            <div class="col-sm-6">
+              <div class="form">
+                <input
+                  type="text"
+                  id="tel_Fixe"
+                  class="form__control"
+                  autocomplete="off"
+                  placeholder=" "
+                />
+                <label for="tel_Fixe" class="form__label">Téléphone portable</label>
+              </div></div>
+          </div>
+           <!------->
+           <div class="form file">
+            <input type="file" id="formFileMultiple" multiple hidden />
+            <span class="form__control file " for="formFileMultiple"
+              >Pièce d’identité du gérant
+    
+            </span>
+            <label class="file-upload-button-pdf" for="formFileMultiple"
+              >Ajouter </label
+            >
+          </div>
+          <!------->
+          <div class="form file">
+            <input type="file" id="formFileMultiple" multiple hidden />
+            <span class="form__control file " for="formFileMultiple"
+              >Document de la société
+            </span>
+            <label class="file-upload-button-pdf ml-5" for="formFileMultiple"
+              >Ajouter </label
+            >
+          </div>
+          <!------------>
+          <div class="inscription__form__flex">
+            <!-- <div class="form flex">
+              <label class="control control-radio">
+                Société non assujettie à la TVA
+                <input type="radio" name="assujetti_TVA" [(ngModel)]="TVASelected" value="false" />
+                <div class="control_indicator"></div>
+              </label>
+              <label class="control control-radio">
+                Société assujettie à la TVA
+                <input type="radio" [(ngModel)]="TVASelected" name="assujetti_TVA" value="true" />
+                <div class="control_indicator"></div>
+              </label>
+            </div> -->
+            
+            <mat-slide-toggle>Assujettie à la TVA</mat-slide-toggle>
+          </div>
+             <!-----------------*************** End En France *************----------------->
+            </div>
+            <div *ngIf="radioSelected === 'true'">
+               <!-----------------*************** Start  Étranger *************----------------->
+               <div class="form">
+                <select id="select" class="form__control">
+                  <Option value="0">Pays</Option>
+                  <Option value="1">Afghanistan</Option>
+                  <Option value="10">Antigua-et-Barbuda</Option>
+                  <Option value="100">Îles Marshall</Option>
+                  <Option value="101">Îles Mineures Éloignées des États-Unis</Option>
+                  <Option value="102">Îles Salomon</Option>
+                  <Option value="103">Îles Turks et Caïques</Option>
+                  <Option value="104">Îles Vierges Britanniques</Option>
+                  <Option value="105">Îles Vierges des États-Unis</Option>
+                  <Option value="106">Inde</Option>
+                  <Option value="107">Indonésie</Option>
+                  <Option value="108">Iraq</Option>
+                  <Option value="109">Irlande</Option>
+                  <Option value="11">Antilles Néerlandaises</Option>
+                  <Option value="110">Islande</Option>
+                  <Option value="111">Italie</Option>
+                  <Option value="112">Jamahiriya Arabe Libyenne</Option>
+                  <Option value="113">Jamaïque</Option>
+                  <Option value="114">Japon</Option>
+                  <Option value="115">Jordanie</Option>
+                  <Option value="116">Kazakhstan</Option>
+                  <Option value="117">Kenya</Option>
+                  <Option value="118">Kirghizistan</Option>
+                  <Option value="119">Kiribati</Option>
+                  <Option value="12">Arabie Saoudite</Option>
+                  <Option value="120">Koweït</Option>
+                  <Option value="121">L’ex-République Yougoslave de Macédoine</Option>
+                  <Option value="122">Lesotho</Option>
+                  <Option value="123">Lettonie</Option>
+                  <Option value="124">Liban</Option>
+                  <Option value="125">Libéria</Option>
+                  <Option value="126">Liechtenstein</Option>
+                  <Option value="127">Lituanie</Option>
+                  <Option value="128">Luxembourg</Option>
+                  <Option value="129">Macao</Option>
+                  <Option value="13">Argentine</Option>
+                  <Option value="130">Madagascar</Option>
+                  <Option value="131">Malaisie</Option>
+                  <Option value="132">Malawi</Option>
+                  <Option value="133">Maldives</Option>
+                  <Option value="134">Mali</Option>
+                  <Option value="135">Malte</Option>
+                  <Option value="136">Maroc</Option>
+                  <Option value="137">Martinique</Option>
+                  <Option value="138">Maurice</Option>
+                  <Option value="139">Mauritanie</Option>
+                  <Option value="14">Arménie</Option>
+                  <Option value="140">Mayotte</Option>
+                  <Option value="141">Mexique</Option>
+                  <Option value="142">Monaco</Option>
+                  <Option value="143">Mongolie</Option>
+                  <Option value="144">Montserrat</Option>
+                  <Option value="145">Mozambique</Option>
+                  <Option value="146">Myanmar</Option>
+                  <Option value="147">Namibie</Option>
+                  <Option value="148">Nauru</Option>
+                  <Option value="149">Népal</Option>
+                  <Option value="15">Aruba</Option>
+                  <Option value="150">Nicaragua</Option>
+                  <Option value="151">Niger</Option>
+                  <Option value="152">Nigéria</Option>
+                  <Option value="153">Niué</Option>
+                  <Option value="154">Non défini</Option>
+                  <Option value="155">Norvège</Option>
+                  <Option value="156">Nouvelle-Calédonie</Option>
+                  <Option value="157">Nouvelle-Zélande</Option>
+                  <Option value="158">Oman</Option>
+                  <Option value="159">Ouganda</Option>
+                  <Option value="16">Australie</Option>
+                  <Option value="160">Ouzbékistan</Option>
+                  <Option value="161">Pakistan</Option>
+                  <Option value="162">Palaos</Option>
+                  <Option value="163">Panama</Option>
+                  <Option value="164">Papouasie-Nouvelle-Guinée</Option>
+                  <Option value="165">Paraguay</Option>
+                  <Option value="166">Pays-Bas</Option>
+                  <Option value="167">Pérou</Option>
+                  <Option value="168">Philippines</Option>
+                  <Option value="169">Pitcairn</Option>
+                  <Option value="17">Autriche</Option>
+                  <Option value="170">Pologne</Option>
+                  <Option value="171">Polynésie Française</Option>
+                  <Option value="172">Porto Rico</Option>
+                  <Option value="173">Portugal</Option>
+                  <Option value="174">Qatar</Option>
+                  <Option value="175">République Arabe Syrienne</Option>
+                  <Option value="176">République Centrafricaine</Option>
+                  <Option value="177">République de Corée</Option>
+                  <Option value="178">République de Moldova</Option>
+                  <Option value="179">République Démocratique du Congo</Option>
+                  <Option value="18">Azerbaïdjan</Option>
+                  <Option value="180">République Démocratique Populaire Lao</Option>
+                  <Option value="181">République Dominicaine</Option>
+                  <Option value="182">République du Congo</Option>
+                  <Option value="183">République Islamique d’Iran</Option>
+                  <Option value="184"
+                    >République Populaire Démocratique de Corée</Option
+                  >
+                  <Option value="185">République Tchèque</Option>
+                  <Option value="186">République-Unie de Tanzanie</Option>
+                  <Option value="187">Réunion</Option>
+                  <Option value="188">Roumanie</Option>
+                  <Option value="189">Royaume-Uni</Option>
+                  <Option value="19">Bahamas</Option>
+                  <Option value="190">Rwanda</Option>
+                  <Option value="191">Sahara Occidental</Option>
+                  <Option value="192">Saint-Kitts-et-Nevis</Option>
+                  <Option value="193">Saint-Marin</Option>
+                  <Option value="194">Saint-Pierre-et-Miquelon</Option>
+                  <Option value="195"
+                    >Saint-Siège (état de la Cité du Vatican)</Option
+                  >
+                  <Option value="196">Saint-Vincent-et-les Grenadines</Option>
+                  <Option value="197">Sainte-Hélène</Option>
+                  <Option value="198">Sainte-Lucie</Option>
+                  <Option value="199">Samoa</Option>
+                  <Option value="2">Afrique du Sud</Option>
+                  <Option value="20">Bahreïn</Option>
+                  <Option value="200">Samoa Américaines</Option>
+                  <Option value="201">Sao Tomé-et-Principe</Option>
+                  <Option value="202">Sénégal</Option>
+                  <Option value="203">Serbie-et-Monténégro</Option>
+                  <Option value="204">Seychelles</Option>
+                  <Option value="205">Sierra Leone</Option>
+                  <Option value="206">Singapour</Option>
+                  <Option value="207">Slovaquie</Option>
+                  <Option value="208">Slovénie</Option>
+                  <Option value="209">Somalie</Option>
+                  <Option value="21">Bangladesh</Option>
+                  <Option value="210">Soudan</Option>
+                  <Option value="211">Sri Lanka</Option>
+                  <Option value="212">Suède</Option>
+                  <Option value="213">Suisse</Option>
+                  <Option value="214">Suriname</Option>
+                  <Option value="215">Svalbard etÎle Jan Mayen</Option>
+                  <Option value="216">Swaziland</Option>
+                  <Option value="217">Tadjikistan</Option>
+                  <Option value="218">Taïwan</Option>
+                  <Option value="219">Tchad</Option>
+                  <Option value="22">Barbade</Option>
+                  <Option value="220">Terres Australes Françaises</Option>
+                  <Option value="221"
+                    >Territoire Britannique de l’Océan Indien</Option
+                  >
+                  <Option value="23">Bélarus</Option>
+                  <Option value="24">Belgique</Option>
+                  <Option value="25">Belize</Option>
+                  <Option value="26">Bénin</Option>
+                  <Option value="27">Bermudes</Option>
+                  <Option value="28">Bhoutan</Option>
+                  <Option value="29">Bolivie</Option>
+                  <Option value="3">Albanie</Option>
+                  <Option value="30">Bosnie-Herzégovine</Option>
+                  <Option value="31">Botswana</Option>
+                  <Option value="32">Brésil</Option>
+                  <Option value="33">Brunéi Darussalam</Option>
+                  <Option value="34">Bulgarie</Option>
+                  <Option value="35">Burkina Faso</Option>
+                  <Option value="36">Burundi</Option>
+                  <Option value="37">Cambodge</Option>
+                  <Option value="38">Cameroun</Option>
+                  <Option value="39">Canada</Option>
+                  <Option value="4">Algérie</Option>
+                  <Option value="40">Cap-vert</Option>
+                  <Option value="41">Chili</Option>
+                  <Option value="42">Chine</Option>
+                  <Option value="43">Chypre</Option>
+                  <Option value="44">Colombie</Option>
+                  <Option value="45">Comores</Option>
+                  <Option value="46">Costa Rica</Option>
+                  <Option value="47">Côte d’Ivoire</Option>
+                  <Option value="48">Croatie</Option>
+                  <Option value="49">Cuba</Option>
+                  <Option value="5">Allemagne</Option>
+                  <Option value="50">Danemark</Option>
+                  <Option value="51">Djibouti</Option>
+                  <Option value="52">Dominique</Option>
+                  <Option value="53">Égypte</Option>
+                  <Option value="54">El Salvador</Option>
+                  <Option value="55">Émirats Arabes Unis</Option>
+                  <Option value="56">Équateur</Option>
+                  <Option value="57">Érythrée</Option>
+                  <Option value="58">Espagne</Option>
+                  <Option value="59">Estonie</Option>
+                  <Option value="6">Andorre</Option>
+                  <Option value="60">États Fédérés de Micronésie</Option>
+                  <Option value="61">États-Unis</Option>
+                  <Option value="62">Éthiopie</Option>
+                  <Option value="63">Fédération de Russie</Option>
+                  <Option value="64">Fidji</Option>
+                  <Option value="65">Finlande</Option>
+                  <Option value="66">France</Option>
+                  <Option value="67">Gabon</Option>
+                  <Option value="68">Gambie</Option>
+                  <Option value="69">Géorgie</Option>
+                  <Option value="7">Angola</Option>
+                  <Option value="70"
+                    >Géorgie du Sud et les Îles Sandwich du Sud</Option
+                  >
+                  <Option value="71">Ghana</Option>
+                  <Option value="72">Gibraltar</Option>
+                  <Option value="73">Grèce</Option>
+                  <Option value="74">Grenade</Option>
+                  <Option value="75">Groenland</Option>
+                  <Option value="76">Guadeloupe</Option>
+                  <Option value="77">Guam</Option>
+                  <Option value="78">Guatemala</Option>
+                  <Option value="79">Guinée</Option>
+                  <Option value="8">Anguilla</Option>
+                  <Option value="80">Guinée Équatoriale</Option>
+                  <Option value="81">Guinée-Bissau</Option>
+                  <Option value="82">Guyana</Option>
+                  <Option value="83">Guyane Française</Option>
+                  <Option value="84">Haïti</Option>
+                  <Option value="85">Honduras</Option>
+                  <Option value="86">Hong-Kong</Option>
+                  <Option value="87">Hongrie</Option>
+                  <Option value="88">Île Bouvet</Option>
+                  <Option value="89">Île Christmas</Option>
+                  <Option value="9">Antarctique</Option>
+                  <Option value="90">Île de Man</Option>
+                  <Option value="91">Île Norfolk</Option>
+                  <Option value="92">Îles (malvinas) Falkland</Option>
+                  <Option value="93">Îles Åland</Option>
+                  <Option value="94">Îles Caïmanes</Option>
+                  <Option value="95">Îles Cocos (Keeling)</Option>
+                  <Option value="96">Îles Cook</Option>
+                  <Option value="97">Îles Féroé</Option>
+                  <Option value="98">Îles Heard et Mcdonald</Option>
+                  <Option value="99">Îles Mariannes du Nord</Option>
+                </select>
+              </div>
+              <!----->
+              <div class="form">
+                <input
+                  type="text"
+                  id="nom_Societe"
+                  class="form__control"
+                  autocomplete="off"
+                  placeholder=" "
+                />
+                <label for="nom_Societe" class="form__label">Société</label>
+              </div>
+          <!---->
+          <div class="form">
+            <input
+              type="text"
+              id="adresse"
+              class="form__control"
+              autocomplete="off"
+              placeholder=" "
+            />
+            <label for="adresse" class="form__label">Adresse</label>
+          </div>
+              <!----->
+              <div class="row">
+                <div class=" col-sm-6 ">
+                  <div class="form">
+                  <input
+                    type="text"
+                    id="ville"
+                    class="form__control"
+                    autocomplete="off"
+                    placeholder=" "
+                  />
+                  <label for="ville" class="form__label">Ville</label>
+                </div>
+                </div>
+              <div class=" col-sm-6 ">
+                <div class="form">
+                <input
+                  type="text"
+                  id="cp"
+                  class="form__control"
+                  autocomplete="off"
+                  placeholder=" "
+                />
+                <label for="cp" class="form__label">Code Postal</label>
+                </div>
+              </div>
+            </div>
+            <!------>
+            <div class="row">
+              <div class="col-sm-6">   <div class="form">
+                <input
+                  type="text"
+                  id="tel_Portable"
+                  class="form__control"
+                  autocomplete="off"
+                  placeholder=" "
+                />
+                <label for="tel_Portable" class="form__label"
+                  >Téléphone fixe </label
+                >
+              </div></div>
+              <div class="col-sm-6">
+                <div class="form">
+                  <input
+                    type="text"
+                    id="tel_Fixe"
+                    class="form__control"
+                    autocomplete="off"
+                    placeholder=" "
+                  />
+                  <label for="tel_Fixe" class="form__label">Téléphone portable</label>
+                </div></div>
+            </div>
+              <!------->
+              <div class="form">
+                <input
+                  type="text"
+                  id="matricule"
+                  class="form__control"
+                  autocomplete="off"
+                  placeholder=" "
+                />
+                <label for="matricule" class="form__label">Numéro fiscal de la société selon votre pays</label>
+              </div>
+              <!----->
+              <div class="form">
+                <select id="select" class="form__control">
+                  <Option value="1"> Type Société</Option>
+                  <Option value="2"> Société (EURL, SARL, SA, SAS)</Option>
+                  <Option value="3"> Entreprise Individuelle</Option>
+                  <Option value="5"> Agent commercial</Option>
+                </select>
+              </div>
+              <!------>
+              <!-- <div class="form  flex">
+                <input
+                  type="text"
+                  id="tel_Fixe"
+                  class="form__control w-50"
+                  autocomplete="off"
+                  placeholder=" "
+                />
+                <label for="tel_Fixe" class="form__label">SIRET </label>
+        
+             
+                <div class="form file">
+                  <input type="file" id="formFileMultiple" multiple hidden />
+                  <span class="form__control file " for="formFileMultiple"
+                    >Registre de commerce
+                  </span>
+                  <label class="file-upload-button-pdf" for="formFileMultiple"
+                    >Ajouter </label
+                  >
+                </div>
+              </div> -->
+              <div class="inscription__form__flex">
+                <div class="form flex" *ngIf="ParrainageValue?.length === maxChars">
+                  <label class="control control-radio"
+                    >Vous souhaitez que votre parrain facture pour vous ? :
+                  </label>
+                  <label class="control control-radio">
+                    Oui
+                    <input type="radio" name="existance" value="false" />
+                    <div class="control_indicator"></div>
+                  </label>
+                  <label class="control control-radio">
+                    Non
+                    <input type="radio" name="existance" value="true" />
+                    <div class="control_indicator"></div>
+                  </label>
+                </div>
+              </div>
+        
+              <!--@Ines-End→--->
+              
+             
+              
+               
+                <div class="inscription__form__flex" hidden>
+                  <div class="form flex" hidden>
+                    <label class="control control-radio">
+                      En cours de création
+                      <input type="radio" name="existance" value="false" />
+                      <div class="control_indicator"></div>
+                    </label>
+                    <label class="control control-radio">
+                      Existante
+                      <input type="radio" name="existance" value="true" />
+                      <div class="control_indicator"></div>
+                    </label>
+                  </div>
+                </div>
+              
+             
+              
+                <div class="form" *ngIf="TVASelected === 'true'   ">
+                  <input
+                    type="text"
+                    id="numero_TVA"
+                    class="form__control"
+                    autocomplete="off"
+                    placeholder=" "
+                  />
+                  <label for="numero_TVA" class="form__label">Numéro de TVA</label>
+                </div>
+           
+             
+               <!------->
+               <div class="form file">
+                <input type="file" id="formFileMultiple" multiple hidden />
+                <span class="form__control file " for="formFileMultiple"
+                  >Pièce d’identité du gérant
+        
+                </span>
+                <label class="file-upload-button-pdf" for="formFileMultiple"
+                  >Ajouter </label
+                >
+              </div>
+              <!------->
+              <div class="form file">
+                <input type="file" id="formFileMultiple" multiple hidden />
+                <span class="form__control file " for="formFileMultiple"
+                  >Document de la société
+                </span>
+                <label class="file-upload-button-pdf ml-5" for="formFileMultiple"
+                  >Ajouter </label
+                >
+              </div>
+              <!------------>
+               
+                <div class="form">
+                  <input
+                    type="text"
+                    [attr.maxlength]="maxChars"
+                    [(ngModel)]="ParrainageValue"
+                    id="Parrainage"
+                    class="form__control"
+                    autocomplete="off"
+                    placeholder=" "
+                  />
+                  <label for="Parrainage" class="form__label">Code Parrainage</label>
+                </div>
+                <!-----------------*************** end  Étranger *************----------------->
+            </div>
+      
+           
+         
+              <p><span class="color-default small">* champs obligatoires</span></p>
+              <p>
+                <span class="color-default small"
+                  >** au moins un numéro de téléphone doit être renseigné</span
+                >
+              </p>
+            </div>
+      </div>
+      
+      <div class="section-btn">
+       <a (click)="enregistrer()"><button mat-button matStepperPrevious>Précédent</button></a> 
+        <button  mat-button matStepperNext>Suivant</button>
+      </div>
+    </mat-step>
+    <mat-step>
+
+      <div class="inscription__form">
+          <div >
+              <h2 class="color-default">Votre voix</h2>
+              <div class="container" >
+          
+                <!-- <app-audio-recorder></app-audio-recorder> -->
+              </div>
+              <p class="color-default">
+                Pour enregistrer votre voix, cliquer sur le bouton rouge et lisez le
+                texte ci-dessous après le bip sonore :
+              </p>
+              <p class="color-red">
+                Le texte est à titre d’exemple
+              </p>
+      
+      
+              <p class="color-default">
+              Bonjour, je suis  <span class="bold">Chloé </span> , j’ai <span class="bold">7</span> années d'expérience dans la
+                téléprospection, j’ai une préférence pour le domaine
+                <span class="bold">assurances/mutuelle/energie</span>  j’ai connu Neoprospection via <span class="bold">Google</span> ”
+              </p>
+              <!-- <div class="form">
+                <input
+                  type="text"
+                  id="voix"
+                  class="form__control"
+                  autocomplete="off"
+                  placeholder=" "
+                />
+                <label for="voix" class="form__label">Voix</label>
+              </div> -->
+              <div class="container" >
+          
+                <app-audio-recorder></app-audio-recorder>
+              </div>
+             
+              <h2 class="color-default enregistrer">POURQUOI NEOPROSPECTION DOIT VOUS CHOISIR ?</h2>
+              <p class="color-default italic">
+               <i>Neoprospection est la seul plateforme qui permet de travailler depuis n’importe ou TOTALEMENT GRATUITEMENT c’est pour cette raison que la sélection de nos Néo Prospecteurs reste à ce jour très sélective.
+      </i>
+              </p>
+              <div class="form inscription__form__flex">
+                <textarea
+                  rows="4"
+                  id="presentation"
+                  class="form__control"
+                  autocomplete="off"
+                  placeholder=" "
+                ></textarea>
+                <label for="presentation" class="form__label">Presentation</label>
+              </div>
+              <h2 class="color-default">Choisissez votre avatar</h2>
+      
+              <div class="inscription__form__flex">
+                <div class="form file">
+                  <input type="file" id="formFileMultiple"  multiple hidden />
+                  <span class="form__control file">Aucune image ajouter</span>
+                  <label class="file-upload-button" for="formFileMultiple"
+                    >Ajouter image</label
+                  >
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="section-btn">
+        <button   mat-button matStepperPrevious>Précédent</button>
+        <button mat-button matStepperNext>Suivant</button>
+      </div>
+    </mat-step>
+    <mat-step>
+
+      <div class="inscription__form">
+       
+              <h2 class="color-default center">
+                En tant que Téléopérateur, vous avez de l’expérience en :
+              </h2>
+
+              <div class="inscription__form__flex">
+                <div class="form">
+                  <label
+                    class="control control-checkbox"
+                    (click)="
+                      checkedf00adf45_afa8_45e6_908b_c200fc619060Val1(
+                        $event
+                      )
+                    "
+                  >
+                    Appels sortants
+                    <input type="checkbox" value="1" />
+                    <div class="control_indicator"></div>
+                  </label>
+                  <div
+                    *ngIf="
+                      showCheckboxf00adf45_afa8_45e6_908b_c200fc619060Val1
+                    "
+                    class="control-checkbox-padding"
+                  >
+                    <p class="bold">
+                      Combien d’années d’expérience avez-vous ?
+                    </p>
+                    <div class="inscription__form__flex">
+                      <div class="form flex">
+                        <label class="control control-radio">
+                          De 1 à 3 ans
+                          <input
+                            type="radio"
+                            name="nbre_Annee1"
+                            value="2"
+                          />
+                          <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-radio">
+                          Plus de 5 ans
+                          <input
+                            type="radio"
+                            name="nbre_Annee1"
+                            value="4"
+                          />
+                          <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-radio">
+                          Moins de 1 an
+                          <input
+                            type="radio"
+                            name="nbre_Annee1"
+                            value="1"
+                          />
+                          <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-radio">
+                          De 3 à 5 ans
+                          <input
+                            type="radio"
+                            name="nbre_Annee1"
+                            value="3"
+                          />
+                          <div class="control_indicator"></div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <label
+                    class="control control-checkbox"
+                    (click)="
+                      checkedf00adf45_afa8_45e6_908b_c200fc619060Val2(
+                        $event
+                      )
+                    "
+                  >
+                    Appels entrants
+                    <input type="checkbox" value="2" />
+                    <div class="control_indicator"></div>
+                  </label>
+                  <div
+                    *ngIf="
+                      showCheckboxf00adf45_afa8_45e6_908b_c200fc619060Val2
+                    "
+                    class="control-checkbox-padding"
+                  >
+                    <p>Combien d’années d’expérience avez-vous ?</p>
+                    <div class="inscription__form__flex">
+                      <div class="form flex">
+                        <label class="control control-radio">
+                          De 1 à 3 ans
+                          <input
+                            type="radio"
+                            name="nbre_Annee2"
+                            value="2"
+                          />
+                          <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-radio">
+                          Plus de 5 ans
+                          <input
+                            type="radio"
+                            name="nbre_Annee2"
+                            value="4"
+                          />
+                          <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-radio">
+                          Moins de 1 an
+                          <input
+                            type="radio"
+                            name="nbre_Annee2"
+                            value="1"
+                          />
+                          <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-radio">
+                          De 3 à 5 ans
+                          <input
+                            type="radio"
+                            name="nbre_Annee2"
+                            value="3"
+                          />
+                          <div class="control_indicator"></div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <label
+                    class="control control-checkbox"
+                    (click)="
+                      checkedf00adf45_afa8_45e6_908b_c200fc619060Val3(
+                        $event
+                      )
+                    "
+                  >
+                    Aucun des deux
+                    <input type="checkbox" value="3" />
+                    <div class="control_indicator"></div>
+                  </label>
+                  <div
+                    *ngIf="
+                      showCheckboxf00adf45_afa8_45e6_908b_c200fc619060Val3
+                    "
+                    class="control-checkbox-padding"
+                  >
+                    <p>Combien d’années d’expérience avez-vous ?</p>
+                    <div class="inscription__form__flex">
+                      <div class="form flex">
+                        <label class="control control-radio">
+                          De 1 à 3 ans
+                          <input
+                            type="radio"
+                            name="nbre_Annee3"
+                            value="2"
+                          />
+                          <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-radio">
+                          Plus de 5 ans
+                          <input
+                            type="radio"
+                            name="nbre_Annee3"
+                            value="4"
+                          />
+                          <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-radio">
+                          Moins de 1 an
+                          <input
+                            type="radio"
+                            name="nbre_Annee3"
+                            value="1"
+                          />
+                          <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-radio">
+                          De 3 à 5 ans
+                          <input
+                            type="radio"
+                            name="nbre_Annee3"
+                            value="3"
+                          />
+                          <div class="control_indicator"></div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
+      
+
+      </div>
+      <div class="section-btn">
+        <button mat-button matStepperPrevious>Précédent</button>
+        <button mat-button matStepperNext>Suivant</button>
+      </div>
+    </mat-step>
+    <mat-step>
+      <div class="inscription__form">
+          <div >
+              <p>Mon parcours</p>
+  
+              <div class="inscription__form__flex">
+                <div class="form">
+                  <label
+                    class="control control-checkbox"
+                    (click)="
+                      checked74720253_0e9d_4b99_a6d7_bb70186ab55bVal1(
+                        $event
+                      )
+                    "
+                  >
+                    Prise de RDV.
+                    <input type="checkbox" value="1" />
+                    <div class="control_indicator"></div>
+                  </label>
+                  <div
+                    *ngIf="
+                      showCheckbox74720253_0e9d_4b99_a6d7_bb70186ab55bVal1
+                    "
+                    class="control-checkbox-padding"
+                  >
+                    <p>Dans quel secteur ?</p>
+  
+                    <div class="inscription__form__flex">
+                      <div class="form">
+                        <label class="control control-checkbox">
+                          Vente aux particuliers (BtoC)
+                          <input type="checkbox" value="1" />
+                          <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-checkbox">
+                          Ventre aux professionnels (BtoB)
+                          <input type="checkbox" value="2" />
+                          <div class="control_indicator"></div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <label
+                    class="control control-checkbox"
+                    (click)="
+                      checked74720253_0e9d_4b99_a6d7_bb70186ab55bVal2(
+                        $event
+                      )
+                    "
+                  >
+                    Qualifications de fichiers.
+                    <input type="checkbox" value="2" />
+                    <div class="control_indicator"></div>
+                  </label>
+                  <div
+                    *ngIf="
+                      showCheckbox74720253_0e9d_4b99_a6d7_bb70186ab55bVal2
+                    "
+                    class="control-checkbox-padding"
+                  >
+                    <p>Dans quel secteur ?</p>
+  
+                    <div class="inscription__form__flex">
+                      <div class="form">
+                        <label class="control control-checkbox">
+                          Vente aux particuliers (BtoC)
+                          <input type="checkbox" value="1" />
+                          <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-checkbox">
+                          Ventre aux professionnels (BtoB)
+                          <input type="checkbox" value="2" />
+                          <div class="control_indicator"></div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+               
+                
+                  <label
+                    class="control control-checkbox"
+                    (click)="
+                      checked74720253_0e9d_4b99_a6d7_bb70186ab55bVal4(
+                        $event
+                      )
+                    "
+                  >
+                    Enquêtes et sondages téléphonique.
+                    <input type="checkbox" value="4" />
+                    <div class="control_indicator"></div>
+                  </label>
+                  <div
+                    *ngIf="
+                      showCheckbox74720253_0e9d_4b99_a6d7_bb70186ab55bVal4
+                    "
+                    class="control-checkbox-padding"
+                  >
+                    <p>Dans quel secteur ?</p>
+  
+                    <div class="inscription__form__flex">
+                      <div class="form">
+                        <label class="control control-checkbox">
+                          Vente aux particuliers (BtoC)
+                          <input type="checkbox" value="1" />
+                          <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-checkbox">
+                          Ventre aux professionnels (BtoB)
+                          <input type="checkbox" value="2" />
+                          <div class="control_indicator"></div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+             
+                </div>
+              </div>
+            </div>
+             
+             </div>
+     
+      <div class="section-btn">
+        <button mat-button matStepperPrevious>Précédent</button>
+        <button mat-button matStepperNext>Suivant</button>
+      </div>
+    </mat-step>
+    <mat-step>
+      <div class="inscription__form">
+          <div >
+              <p>Test de connectivité à Neo Prospection</p>
+              <p>
+                Avant de lancer le test, assurez-vous d’avoir fermé toutes vos
+                applications Internet.
+              </p>
+              <p>
+                N’intéragissez pas avec votre ordinateur durant la durée du test
+                (celui-ci ne dure que quelques minutes).
+              </p>
+              <div class="inscription__form__flex">
+                <div class="form flex">
+                  <label class="control control-radio">
+                    WiFi (sans-fil)
+                    <input type="radio" name="type_Connexion" value="1" />
+                    <div class="control_indicator"></div>
+                  </label>
+                  <label class="control control-radio">
+                    Câble ethernet (filaire)
+                    <input type="radio" name="type_Connexion" value="2" />
+                    <div class="control_indicator"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+      </div>
+      <div class="section-btn">
+        <button mat-button matStepperPrevious>Précédent</button>
+        <button mat-button matStepperNext (click)="terminer()">Terminer</button>
+      </div>
+    </mat-step>
+  </mat-horizontal-stepper>
+</div>

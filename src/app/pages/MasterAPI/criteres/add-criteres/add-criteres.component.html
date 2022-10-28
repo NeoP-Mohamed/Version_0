@@ -1,0 +1,31 @@
+<div class="p-5 pt-0">
+    <div class="form-group example-container">
+        <h6 class="form-title">Criteres</h6>
+        <form [formGroup]="criteresGroup">
+
+        <div class="d-flex justify-content-between">
+        <!--<div class="d-flex">-->
+            <mat-form-field appearance="outline" class="">
+                <mat-label>IdMission:</mat-label>
+                <mat-select matNativeControl formControlName="idMission">
+                    <mat-option *ngFor="let option of missionss" [value]="option?.idMission">{{option?.numero}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        <!--</div>-->
+
+        </div>  
+       
+        <div class="d-flex justify-content-between">
+        <mat-form-field class="example-full-width " appearance="outline">
+            <mat-label>Critère:</mat-label>
+            <input matInput placeholder="Critère" formControlName="libelle_Critere">
+        </mat-form-field>
+        </div>  
+       
+
+         
+            <input type="submit" (click)="onSubmit()" value="Enregistrer" class="btn-save mt-2">
+            <input type="submit" value="Annuler" class="btn-save mt-2">
+        </form>
+    </div>
+</div>

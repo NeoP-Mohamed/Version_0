@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>Edit Moyens__Paiement</h1>
+<div mat-dialog-content>
+ <app-add-moyens__paiement></app-add-moyens__paiement>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="selected" cdkFocusInitial>Ok</button>
+</div>

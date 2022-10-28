@@ -1,0 +1,1087 @@
+<div class="content-container greyback">
+    <div class="container">
+        <section class="content">
+
+            <h1 class="titre-important text-center">Formules d'abonnement pour les téléprospecteurs indépendants</h1>
+            <div class="row">
+              <div class="col-lg-3-to col-md-4 col-sm-6 col-xs-12 basique">
+                    <div class="box text-center">
+                        <div class="overflow-h">
+                            <div class="ribbon ribbon-right bg-secondary" id="texte-reduction-basique"
+                                style="display: none;">
+                                <span class="reduction" id="reduction-basique">-25%</span>
+                            </div>
+                            <i class="mdi mdi-shield"></i>
+                            <div class="lettre-abonnement">B</div>
+                            <div style="display:none" id="lettre-abo" data-abo="B">B</div>
+                            <h2 class="text-uppercase" id="couleur-abo" style="color:black">Basique</h2>
+                            <div class="price" id="prix-basique">Gratuit</div>
+                        </div>
+                        <div class="dropdown">
+
+
+                            <select data-idabonnement="1"
+                                class="form-control marker_changement_engagement marker-je-m-abonne-Basique"
+                                style="display: none;">
+                            </select>
+
+                            <div style="display:none;" id="data-prix">69.95</div>
+                            <div style="display:none;" id="data-prix-afficher"></div>
+                            <div style="display:none;" id="data-engagement">12</div>
+                            <div style="display:none;" id="data-lettre">B</div>
+
+                        </div>
+                        <div class="commission">
+                            <div class="en-avant" style="color:black;">
+                                +20%
+                            </div>
+                            <div>de commission sur<br> chaque transaction
+                                <a href="#" data-toggle="tooltip" data-placement="top" class="tooltip-jobphoning"
+                                    title=""
+                                    data-original-title="Cette commission est prélevée sur chaque transaction effectuée sur la plateforme JobPhoning."><i
+                                        class="mdi mdi-information-outline"></i></a>
+                            </div>
+                        </div>
+
+
+                        <b>Cette formule comprend :</b>
+
+                        <div class="fonctionnalites-standards">
+                            <span class="en-avant vert-promo"><i class="mdi mdi-check" aria-hidden="true"></i></span>
+                            <div class="texte-fonctionnalite">Les fonctionnalitées de base
+                                <a href="#fonctionnalites-standards"><i class="mdi mdi-plus-circle-outline"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="credits-communications" style="display:none;">
+                            <span class="en-avant vert-promo"><i class="mdi mdi-check" aria-hidden="true"></i></span>
+                            <div class="texte-fonctionnalite">0
+                                € de crédits d'appels
+                                <a href="#" data-toggle="tooltip" data-placement="top" class="tooltip-jobphoning"
+                                    title=""
+                                    data-original-title="Crédits de communications compris dans votre abonnement. Pour travailler sur la plateforme, vous n'avez pas besoin de logiciels ou de lignes téléphoniques. Toutes les communications passent à travers le site Internet, ce qui permet de les enregistrer et de les conserver. Les coûts des appels et de leur enregistrement sont à votre charge à hauteur de 0.0201€/min pour les téléphones fixes, et 0.0495€/min pour les mobiles (Voir les Conditions Générales d'Utilisations)."><i
+                                        class="mdi mdi-information-outline"></i></a>
+                            </div>
+                        </div>
+
+                        <a  (click)="openModalAbonnement()"  class="btn btn-block btn-success open-popup-connexion">Je
+                            m'abonne</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3-to col-md-4 col-sm-6 col-xs-12 bronze">
+                    <div class="box text-center">
+                        <div class="overflow-h">
+                            <div class="ribbon ribbon-right bg-secondary" id="texte-reduction-bronze"
+                                style="display: block;">
+                                <span class="reduction" id="reduction-bronze">-50%</span>
+                            </div>
+                            <i class="mdi mdi-shield"></i>
+                            <div class="lettre-abonnement">B</div>
+                            <div style="display:none" id="lettre-abo" data-abo="B">B</div>
+                            <h2 class="text-uppercase" id="couleur-abo" style="color:#D16718">Bronze</h2>
+                            <div class="price" id="prix-bronze">9.95€<span class="mois">HT/mois</span></div>
+                        </div>
+                        <p>Période d'engagement:</p>
+                        <div class="dropdown">
+
+
+                            <select data-idabonnement="2"
+                                class="form-control marker_changement_engagement marker-je-m-abonne-Bronze">
+
+
+
+                                <option data-dureeperiodeessai="0" data-id="3" data-abonnement="bronze"
+                                    data-pourcentageredurection="50" data-prix="9.95" data-dureeengagement="12"
+                                    data-idabonnement="2">
+
+                                    12 mois</option>
+
+
+                                <option data-dureeperiodeessai="0" data-id="2" data-abonnement="bronze"
+                                    data-pourcentageredurection="25" data-prix="14.95" data-dureeengagement="6"
+                                    data-idabonnement="2">
+
+                                    6 mois</option>
+
+
+                                <option data-dureeperiodeessai="0" data-id="1" data-abonnement="bronze"
+                                    data-pourcentageredurection="0" data-prix="19.95" data-dureeengagement="3"
+                                    data-idabonnement="2">
+
+                                    3 mois</option>
+
+
+                            </select>
+
+
+                            <div style="display:none" class="modelePopup" id="modelePopup_2_3">
+                                <i class="mdi mdi-shield" id="popup-couleur-logo-engagement"></i>
+                                <div id="lettre-abonnement-popup"></div>
+                                <div class="price form-inline" id="prix">
+                                    <b class=" price popup-prix-abonnement"></b>€ HT /mois<br>
+                                </div>
+                                <h2 class="form-inline marker_cacher_engagement_0_mois">Engagement
+                                    de <b class="form-inline" id="popup-mois-engagement"></b> mois
+                                </h2>
+                                <h2 class="form-inline marker_afficher_sans_engagement" style="display: none">
+                                    Sans Engagement</h2>
+                                <br>
+                                <div class="condtion-general-abonnement">
+                                    <div style="display: none" id="typeAbonnement">Bronze</div>
+                                    <input id="checkbox-engagement" class="form-check-input" type="checkbox"><label
+                                        class="form-check-label" for="checkbox-engagement" id="label-abonnemnent">
+                                        <p>Je souhaite bénéficier de
+                                            l'abonnement Bronze au
+                                            tarif avantageux de 9.95€ / mois.</p>
+                                        <br>
+
+
+                                        <p>J'ai bien compris que je peux demander l'arrêt de
+                                            cet abonnement à tout moment depuis mon espace
+                                            client,
+                                            mais qu'il ne prendra fin qu'à l'issue de ma période
+                                            d'engagement de 12 mois. A
+                                            défaut d'action de ma part avant
+                                            le 04/07/2023
+                                            ,
+                                            il se renouvellera par tacite reconduction pour une
+                                            durée de 12 mois
+                                            conformément aux <a href="https://jobphoning.com/conditions-generales"
+                                                class="bluelink">Conditions Générales d'Utilisation</a>
+                                            de la plateforme JobPhoning que j’ai lues et accepte
+                                            sans réserve.</p>
+                                    </label>
+                                </div>
+
+
+                                <div class="margin-boutons">
+                                    <a class="btn btn-block btn-retour-popup-abonnement" role="button">Retour</a>
+                                    <button class="btn  btn-success btn-suivant-popup-abonnement" type="button"
+                                        role="button" disabled="disabled">Suivant</button>
+                                </div>
+                            </div>
+                            <div style="display:none" class="modelePopup" id="modelePopup_2_2">
+                                <i class="mdi mdi-shield" id="popup-couleur-logo-engagement"></i>
+                                <div id="lettre-abonnement-popup"></div>
+                                <div class="price form-inline" id="prix">
+                                    <b class=" price popup-prix-abonnement"></b>€ HT /mois<br>
+                                </div>
+                                <h2 class="form-inline marker_cacher_engagement_0_mois">Engagement
+                                    de <b class="form-inline" id="popup-mois-engagement"></b> mois
+                                </h2>
+                                <h2 class="form-inline marker_afficher_sans_engagement" style="display: none">
+                                    Sans Engagement</h2>
+                                <br>
+                                <div class="condtion-general-abonnement">
+                                    <div style="display: none" id="typeAbonnement">Bronze</div>
+                                    <input id="checkbox-engagement" class="form-check-input" type="checkbox"><label
+                                        class="form-check-label" for="checkbox-engagement" id="label-abonnemnent">
+                                        <p>Je souhaite bénéficier de
+                                            l'abonnement Bronze au
+                                            tarif avantageux de 14.95€ / mois.</p>
+                                        <br>
+
+
+                                        <p>J'ai bien compris que je peux demander l'arrêt de
+                                            cet abonnement à tout moment depuis mon espace
+                                            client,
+                                            mais qu'il ne prendra fin qu'à l'issue de ma période
+                                            d'engagement de 6 mois. A
+                                            défaut d'action de ma part avant
+                                            le 04/01/2023
+                                            ,
+                                            il se renouvellera par tacite reconduction pour une
+                                            durée de 6 mois
+                                            conformément aux <a href="https://jobphoning.com/conditions-generales"
+                                                class="bluelink">Conditions Générales d'Utilisation</a>
+                                            de la plateforme JobPhoning que j’ai lues et accepte
+                                            sans réserve.</p>
+                                    </label>
+                                </div>
+
+
+                                <div class="margin-boutons">
+                                    <a class="btn btn-block btn-retour-popup-abonnement" role="button">Retour</a>
+                                    <button class="btn  btn-success btn-suivant-popup-abonnement" type="button"
+                                        role="button" disabled="disabled">Suivant</button>
+                                </div>
+                            </div>
+                            <div style="display:none" class="modelePopup" id="modelePopup_2_1">
+                                <i class="mdi mdi-shield" id="popup-couleur-logo-engagement"></i>
+                                <div id="lettre-abonnement-popup"></div>
+                                <div class="price form-inline" id="prix">
+                                    <b class=" price popup-prix-abonnement"></b>€ HT /mois<br>
+                                </div>
+                                <h2 class="form-inline marker_cacher_engagement_0_mois">Engagement
+                                    de <b class="form-inline" id="popup-mois-engagement"></b> mois
+                                </h2>
+                                <h2 class="form-inline marker_afficher_sans_engagement" style="display: none">
+                                    Sans Engagement</h2>
+                                <br>
+                                <div class="condtion-general-abonnement">
+                                    <div style="display: none" id="typeAbonnement">Bronze</div>
+                                    <input id="checkbox-engagement" class="form-check-input" type="checkbox"><label
+                                        class="form-check-label" for="checkbox-engagement" id="label-abonnemnent">
+                                        <p>Je souhaite bénéficier de
+                                            l'abonnement Bronze au
+                                            tarif avantageux de 19.95€ / mois.</p>
+                                        <br>
+
+
+                                        <p>J'ai bien compris que je peux demander l'arrêt de
+                                            cet abonnement à tout moment depuis mon espace
+                                            client,
+                                            mais qu'il ne prendra fin qu'à l'issue de ma période
+                                            d'engagement de 3 mois. A
+                                            défaut d'action de ma part avant
+                                            le 04/10/2022
+                                            ,
+                                            il se renouvellera par tacite reconduction pour une
+                                            durée de 3 mois
+                                            conformément aux <a href="https://jobphoning.com/conditions-generales"
+                                                class="bluelink">Conditions Générales d'Utilisation</a>
+                                            de la plateforme JobPhoning que j’ai lues et accepte
+                                            sans réserve.</p>
+                                    </label>
+                                </div>
+
+
+                                <div class="margin-boutons">
+                                    <a class="btn btn-block btn-retour-popup-abonnement" role="button">Retour</a>
+                                    <button class="btn  btn-success btn-suivant-popup-abonnement" type="button"
+                                        role="button" disabled="disabled">Suivant</button>
+                                </div>
+                            </div>
+
+                            <div style="display:none;" id="data-prix"></div>
+                            <div style="display:none;" id="data-prix-afficher"></div>
+                            <div style="display:none;" id="data-engagement"></div>
+                            <div style="display:none;" id="data-lettre">B</div>
+
+                        </div>
+                        <div class="commission">
+                            <div class="en-avant" style="color:#D16718;">
+                                +15%
+                            </div>
+                            <div>de commission sur<br> chaque transaction
+                                <a href="#" data-toggle="tooltip" data-placement="top" class="tooltip-jobphoning"
+                                    title=""
+                                    data-original-title="Cette commission est prélevée sur chaque transaction effectuée sur la plateforme JobPhoning."><i
+                                        class="mdi mdi-information-outline"></i></a>
+                            </div>
+                        </div>
+
+
+                        <b>Cette formule comprend :</b>
+
+                        <div class="fonctionnalites-standards">
+                            <span class="en-avant vert-promo"><i class="mdi mdi-check" aria-hidden="true"></i></span>
+                            <div class="texte-fonctionnalite">Les fonctionnalitées de base
+                                <a href="#fonctionnalites-standards"><i class="mdi mdi-plus-circle-outline"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="credits-communications" style="display:none;">
+                            <span class="en-avant vert-promo"><i class="mdi mdi-check" aria-hidden="true"></i></span>
+                            <div class="texte-fonctionnalite">0
+                                € de crédits d'appels
+                                <a href="#" data-toggle="tooltip" data-placement="top" class="tooltip-jobphoning"
+                                    title=""
+                                    data-original-title="Crédits de communications compris dans votre abonnement. Pour travailler sur la plateforme, vous n'avez pas besoin de logiciels ou de lignes téléphoniques. Toutes les communications passent à travers le site Internet, ce qui permet de les enregistrer et de les conserver. Les coûts des appels et de leur enregistrement sont à votre charge à hauteur de 0.0201€/min pour les téléphones fixes, et 0.0495€/min pour les mobiles (Voir les Conditions Générales d'Utilisations)."><i
+                                        class="mdi mdi-information-outline"></i></a>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <a  (click)="openModalAbonnement()" class="btn btn-block btn-success open-popup-connexion">Je
+                            m'abonne </a>
+
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-3-to col-md-4 col-sm-6 col-xs-12 argent">
+                    <div class="box text-center">
+                        <div class="overflow-h">
+                            <div class="ribbon ribbon-right bg-secondary" id="texte-reduction-argent"
+                                style="display: block;">
+                                <span class="reduction" id="reduction-argent">-40%</span>
+                            </div>
+                            <i class="mdi mdi-shield"></i>
+                            <div class="lettre-abonnement">A</div>
+                            <div style="display:none" id="lettre-abo" data-abo="A">A</div>
+                            <h2 class="text-uppercase" id="couleur-abo" style="color:#A2A19F">Argent</h2>
+                            <div class="price" id="prix-argent">34.95€<span class="mois">HT/mois</span></div>
+                        </div>
+                        <p>Période d'engagement:</p>
+                        <div class="dropdown">
+
+
+                            <select data-idabonnement="3"
+                                class="form-control marker_changement_engagement marker-je-m-abonne-Argent">
+
+
+
+                                <option data-dureeperiodeessai="0" data-id="6" data-abonnement="argent"
+                                    data-pourcentageredurection="40" data-prix="34.95" data-dureeengagement="12"
+                                    data-idabonnement="3">
+
+                                    12 mois</option>
+
+
+                                <option data-dureeperiodeessai="0" data-id="5" data-abonnement="argent"
+                                    data-pourcentageredurection="20" data-prix="44.95" data-dureeengagement="6"
+                                    data-idabonnement="3">
+
+                                    6 mois</option>
+
+
+                                <option data-dureeperiodeessai="0" data-id="4" data-abonnement="argent"
+                                    data-pourcentageredurection="0" data-prix="54.95" data-dureeengagement="3"
+                                    data-idabonnement="3">
+
+                                    3 mois</option>
+
+
+                            </select>
+
+
+                            <div style="display:none" class="modelePopup" id="modelePopup_3_6">
+                                <i class="mdi mdi-shield" id="popup-couleur-logo-engagement"></i>
+                                <div id="lettre-abonnement-popup"></div>
+                                <div class="price form-inline" id="prix">
+                                    <b class=" price popup-prix-abonnement"></b>€ HT /mois<br>
+                                </div>
+                                <h2 class="form-inline marker_cacher_engagement_0_mois">Engagement
+                                    de <b class="form-inline" id="popup-mois-engagement"></b> mois
+                                </h2>
+                                <h2 class="form-inline marker_afficher_sans_engagement" style="display: none">
+                                    Sans Engagement</h2>
+                                <br>
+                                <div class="condtion-general-abonnement">
+                                    <div style="display: none" id="typeAbonnement">Argent</div>
+                                    <input id="checkbox-engagement" class="form-check-input" type="checkbox"><label
+                                        class="form-check-label" for="checkbox-engagement" id="label-abonnemnent">
+                                        <p>Je souhaite bénéficier de
+                                            l'abonnement Argent au
+                                            tarif avantageux de 34.95€ / mois.</p>
+                                        <br>
+
+
+                                        <p>J'ai bien compris que je peux demander l'arrêt de
+                                            cet abonnement à tout moment depuis mon espace
+                                            client,
+                                            mais qu'il ne prendra fin qu'à l'issue de ma période
+                                            d'engagement de 12 mois. A
+                                            défaut d'action de ma part avant
+                                            le 04/07/2023
+                                            ,
+                                            il se renouvellera par tacite reconduction pour une
+                                            durée de 12 mois
+                                            conformément aux <a href="https://jobphoning.com/conditions-generales"
+                                                class="bluelink">Conditions Générales d'Utilisation</a>
+                                            de la plateforme JobPhoning que j’ai lues et accepte
+                                            sans réserve.</p>
+                                    </label>
+                                </div>
+
+
+                                <div class="margin-boutons">
+                                    <a class="btn btn-block btn-retour-popup-abonnement" role="button">Retour</a>
+                                    <button class="btn  btn-success btn-suivant-popup-abonnement" type="button"
+                                        role="button" disabled="disabled">Suivant</button>
+                                </div>
+                            </div>
+                            <div style="display:none" class="modelePopup" id="modelePopup_3_5">
+                                <i class="mdi mdi-shield" id="popup-couleur-logo-engagement"></i>
+                                <div id="lettre-abonnement-popup"></div>
+                                <div class="price form-inline" id="prix">
+                                    <b class=" price popup-prix-abonnement"></b>€ HT /mois<br>
+                                </div>
+                                <h2 class="form-inline marker_cacher_engagement_0_mois">Engagement
+                                    de <b class="form-inline" id="popup-mois-engagement"></b> mois
+                                </h2>
+                                <h2 class="form-inline marker_afficher_sans_engagement" style="display: none">
+                                    Sans Engagement</h2>
+                                <br>
+                                <div class="condtion-general-abonnement">
+                                    <div style="display: none" id="typeAbonnement">Argent</div>
+                                    <input id="checkbox-engagement" class="form-check-input" type="checkbox"><label
+                                        class="form-check-label" for="checkbox-engagement" id="label-abonnemnent">
+                                        <p>Je souhaite bénéficier de
+                                            l'abonnement Argent au
+                                            tarif avantageux de 44.95€ / mois.</p>
+                                        <br>
+
+
+                                        <p>J'ai bien compris que je peux demander l'arrêt de
+                                            cet abonnement à tout moment depuis mon espace
+                                            client,
+                                            mais qu'il ne prendra fin qu'à l'issue de ma période
+                                            d'engagement de 6 mois. A
+                                            défaut d'action de ma part avant
+                                            le 04/01/2023
+                                            ,
+                                            il se renouvellera par tacite reconduction pour une
+                                            durée de 6 mois
+                                            conformément aux <a href="https://jobphoning.com/conditions-generales"
+                                                class="bluelink">Conditions Générales d'Utilisation</a>
+                                            de la plateforme JobPhoning que j’ai lues et accepte
+                                            sans réserve.</p>
+                                    </label>
+                                </div>
+
+
+                                <div class="margin-boutons">
+                                    <a class="btn btn-block btn-retour-popup-abonnement" role="button">Retour</a>
+                                    <button class="btn  btn-success btn-suivant-popup-abonnement" type="button"
+                                        role="button" disabled="disabled">Suivant</button>
+                                </div>
+                            </div>
+                            <div style="display:none" class="modelePopup" id="modelePopup_3_4">
+                                <i class="mdi mdi-shield" id="popup-couleur-logo-engagement"></i>
+                                <div id="lettre-abonnement-popup"></div>
+                                <div class="price form-inline" id="prix">
+                                    <b class=" price popup-prix-abonnement"></b>€ HT /mois<br>
+                                </div>
+                                <h2 class="form-inline marker_cacher_engagement_0_mois">Engagement
+                                    de <b class="form-inline" id="popup-mois-engagement"></b> mois
+                                </h2>
+                                <h2 class="form-inline marker_afficher_sans_engagement" style="display: none">
+                                    Sans Engagement</h2>
+                                <br>
+                                <div class="condtion-general-abonnement">
+                                    <div style="display: none" id="typeAbonnement">Argent</div>
+                                    <input id="checkbox-engagement" class="form-check-input" type="checkbox"><label
+                                        class="form-check-label" for="checkbox-engagement" id="label-abonnemnent">
+                                        <p>Je souhaite bénéficier de
+                                            l'abonnement Argent au
+                                            tarif avantageux de 54.95€ / mois.</p>
+                                        <br>
+
+
+                                        <p>J'ai bien compris que je peux demander l'arrêt de
+                                            cet abonnement à tout moment depuis mon espace
+                                            client,
+                                            mais qu'il ne prendra fin qu'à l'issue de ma période
+                                            d'engagement de 3 mois. A
+                                            défaut d'action de ma part avant
+                                            le 04/10/2022
+                                            ,
+                                            il se renouvellera par tacite reconduction pour une
+                                            durée de 3 mois
+                                            conformément aux <a href="https://jobphoning.com/conditions-generales"
+                                                class="bluelink">Conditions Générales d'Utilisation</a>
+                                            de la plateforme JobPhoning que j’ai lues et accepte
+                                            sans réserve.</p>
+                                    </label>
+                                </div>
+
+
+                                <div class="margin-boutons">
+                                    <a class="btn btn-block btn-retour-popup-abonnement" role="button">Retour</a>
+                                    <button class="btn  btn-success btn-suivant-popup-abonnement" type="button"
+                                        role="button" disabled="disabled">Suivant</button>
+                                </div>
+                            </div>
+
+                            <div style="display:none;" id="data-prix"></div>
+                            <div style="display:none;" id="data-prix-afficher"></div>
+                            <div style="display:none;" id="data-engagement"></div>
+                            <div style="display:none;" id="data-lettre">A</div>
+
+                        </div>
+                        <div class="commission">
+                            <div class="en-avant" style="color:#A2A19F;">
+                                +10%
+                            </div>
+                            <div>de commission sur<br> chaque transaction
+                                <a href="#" data-toggle="tooltip" data-placement="top" class="tooltip-jobphoning"
+                                    title=""
+                                    data-original-title="Cette commission est prélevée sur chaque transaction effectuée sur la plateforme JobPhoning."><i
+                                        class="mdi mdi-information-outline"></i></a>
+                            </div>
+                        </div>
+
+
+                        <b>Cette formule comprend :</b>
+
+                        <div class="fonctionnalites-standards">
+                            <span class="en-avant vert-promo"><i class="mdi mdi-check" aria-hidden="true"></i></span>
+                            <div class="texte-fonctionnalite">Les fonctionnalitées de base
+                                <a href="#fonctionnalites-standards"><i class="mdi mdi-plus-circle-outline"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="credits-communications">
+                            <span class="en-avant vert-promo"><i class="mdi mdi-check" aria-hidden="true"></i></span>
+                            <div class="texte-fonctionnalite">25
+                                € de crédits d'appels
+                                <a href="#" data-toggle="tooltip" data-placement="top" class="tooltip-jobphoning"
+                                    title=""
+                                    data-original-title="Crédits de communications compris dans votre abonnement. Pour travailler sur la plateforme, vous n'avez pas besoin de logiciels ou de lignes téléphoniques. Toutes les communications passent à travers le site Internet, ce qui permet de les enregistrer et de les conserver. Les coûts des appels et de leur enregistrement sont à votre charge à hauteur de 0.0201€/min pour les téléphones fixes, et 0.0495€/min pour les mobiles (Voir les Conditions Générales d'Utilisations)."><i
+                                        class="mdi mdi-information-outline"></i></a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="conferences-audio">
+                            <span class="en-avant vert-promo"><i class="mdi mdi-check" aria-hidden="true"></i></span>
+                            <div class="texte-fonctionnalite">L'audio conférence
+                                <a href="#" data-toggle="tooltip" data-placement="top" class="tooltip-jobphoning"
+                                    title=""
+                                    data-original-title="Depuis la plateforme, vous pouvez communiquer avec les Donneurs d'Ordres soit à l'aide d'une messagerie instantanée (chat), soit à l'aide de votre micro-casque en audio conférence. Vous pouvez ainsi vous entretenir avec eux sur l'avancement de vos missions."><i
+                                        class="mdi mdi-information-outline"></i></a>
+                            </div>
+                        </div>
+
+
+
+                        <a   (click)="openModalAbonnement()" class="btn btn-block btn-success open-popup-connexion">Je
+                            m'abonne</a>
+
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-3-to col-md-4 col-sm-6 col-xs-12 or">
+                    <div class="box text-center">
+                        <div class="overflow-h">
+                            <div class="ribbon ribbon-right bg-secondary" id="texte-reduction-or"
+                                style="display: block;">
+                                <span class="reduction" id="reduction-or">-45%</span>
+                            </div>
+                            <i class="mdi mdi-shield"></i>
+                            <div class="lettre-abonnement">O</div>
+                            <div style="display:none" id="lettre-abo" data-abo="O">O</div>
+                            <h2 class="text-uppercase" id="couleur-abo" style="color:#E9B80D">Or</h2>
+                            <div class="price" id="prix-or">54.95€<span class="mois">HT/mois</span></div>
+                        </div>
+                        <p>Période d'engagement:</p>
+                        <div class="dropdown">
+
+
+                            <select data-idabonnement="4"
+                                class="form-control marker_changement_engagement marker-je-m-abonne-Or">
+
+
+
+                                <option data-dureeperiodeessai="0" data-id="9" data-abonnement="or"
+                                    data-pourcentageredurection="45" data-prix="54.95" data-dureeengagement="12"
+                                    data-idabonnement="4">
+
+                                    12 mois</option>
+
+
+                                <option data-dureeperiodeessai="0" data-id="8" data-abonnement="or"
+                                    data-pourcentageredurection="20" data-prix="79.95" data-dureeengagement="6"
+                                    data-idabonnement="4">
+
+                                    6 mois</option>
+
+
+                                <option data-dureeperiodeessai="0" data-id="7" data-abonnement="or"
+                                    data-pourcentageredurection="0" data-prix="94.95" data-dureeengagement="3"
+                                    data-idabonnement="4">
+
+                                    3 mois</option>
+
+
+                            </select>
+
+
+                            <div style="display:none" class="modelePopup" id="modelePopup_4_9">
+                                <i class="mdi mdi-shield" id="popup-couleur-logo-engagement"></i>
+                                <div id="lettre-abonnement-popup"></div>
+                                <div class="price form-inline" id="prix">
+                                    <b class=" price popup-prix-abonnement"></b>€ HT /mois<br>
+                                </div>
+                                <h2 class="form-inline marker_cacher_engagement_0_mois">Engagement
+                                    de <b class="form-inline" id="popup-mois-engagement"></b> mois
+                                </h2>
+                                <h2 class="form-inline marker_afficher_sans_engagement" style="display: none">
+                                    Sans Engagement</h2>
+                                <br>
+                                <div class="condtion-general-abonnement">
+                                    <div style="display: none" id="typeAbonnement">Or</div>
+                                    <input id="checkbox-engagement" class="form-check-input" type="checkbox"><label
+                                        class="form-check-label" for="checkbox-engagement" id="label-abonnemnent">
+                                        <p>Je souhaite bénéficier de
+                                            l'abonnement Or au
+                                            tarif avantageux de 54.95€ / mois.</p>
+                                        <br>
+
+
+                                        <p>J'ai bien compris que je peux demander l'arrêt de
+                                            cet abonnement à tout moment depuis mon espace
+                                            client,
+                                            mais qu'il ne prendra fin qu'à l'issue de ma période
+                                            d'engagement de 12 mois. A
+                                            défaut d'action de ma part avant
+                                            le 04/07/2023
+                                            ,
+                                            il se renouvellera par tacite reconduction pour une
+                                            durée de 12 mois
+                                            conformément aux <a href="https://jobphoning.com/conditions-generales"
+                                                class="bluelink">Conditions Générales d'Utilisation</a>
+                                            de la plateforme JobPhoning que j’ai lues et accepte
+                                            sans réserve.</p>
+                                    </label>
+                                </div>
+
+
+                                <div class="margin-boutons">
+                                    <a class="btn btn-block btn-retour-popup-abonnement" role="button">Retour</a>
+                                    <button class="btn  btn-success btn-suivant-popup-abonnement" type="button"
+                                        role="button" disabled="disabled">Suivant</button>
+                                </div>
+                            </div>
+                            <div style="display:none" class="modelePopup" id="modelePopup_4_8">
+                                <i class="mdi mdi-shield" id="popup-couleur-logo-engagement"></i>
+                                <div id="lettre-abonnement-popup"></div>
+                                <div class="price form-inline" id="prix">
+                                    <b class=" price popup-prix-abonnement"></b>€ HT /mois<br>
+                                </div>
+                                <h2 class="form-inline marker_cacher_engagement_0_mois">Engagement
+                                    de <b class="form-inline" id="popup-mois-engagement"></b> mois
+                                </h2>
+                                <h2 class="form-inline marker_afficher_sans_engagement" style="display: none">
+                                    Sans Engagement</h2>
+                                <br>
+                                <div class="condtion-general-abonnement">
+                                    <div style="display: none" id="typeAbonnement">Or</div>
+                                    <input id="checkbox-engagement" class="form-check-input" type="checkbox"><label
+                                        class="form-check-label" for="checkbox-engagement" id="label-abonnemnent">
+                                        <p>Je souhaite bénéficier de
+                                            l'abonnement Or au
+                                            tarif avantageux de 79.95€ / mois.</p>
+                                        <br>
+
+
+                                        <p>J'ai bien compris que je peux demander l'arrêt de
+                                            cet abonnement à tout moment depuis mon espace
+                                            client,
+                                            mais qu'il ne prendra fin qu'à l'issue de ma période
+                                            d'engagement de 6 mois. A
+                                            défaut d'action de ma part avant
+                                            le 04/01/2023
+                                            ,
+                                            il se renouvellera par tacite reconduction pour une
+                                            durée de 6 mois
+                                            conformément aux <a href="https://jobphoning.com/conditions-generales"
+                                                class="bluelink">Conditions Générales d'Utilisation</a>
+                                            de la plateforme JobPhoning que j’ai lues et accepte
+                                            sans réserve.</p>
+                                    </label>
+                                </div>
+
+
+                                <div class="margin-boutons">
+                                    <a class="btn btn-block btn-retour-popup-abonnement" role="button">Retour</a>
+                                    <button class="btn  btn-success btn-suivant-popup-abonnement" type="button"
+                                        role="button" disabled="disabled">Suivant</button>
+                                </div>
+                            </div>
+                            <div style="display:none" class="modelePopup" id="modelePopup_4_7">
+                                <i class="mdi mdi-shield" id="popup-couleur-logo-engagement"></i>
+                                <div id="lettre-abonnement-popup"></div>
+                                <div class="price form-inline" id="prix">
+                                    <b class=" price popup-prix-abonnement"></b>€ HT /mois<br>
+                                </div>
+                                <h2 class="form-inline marker_cacher_engagement_0_mois">Engagement
+                                    de <b class="form-inline" id="popup-mois-engagement"></b> mois
+                                </h2>
+                                <h2 class="form-inline marker_afficher_sans_engagement" style="display: none">
+                                    Sans Engagement</h2>
+                                <br>
+                                <div class="condtion-general-abonnement">
+                                    <div style="display: none" id="typeAbonnement">Or</div>
+                                    <input id="checkbox-engagement" class="form-check-input" type="checkbox"><label
+                                        class="form-check-label" for="checkbox-engagement" id="label-abonnemnent">
+                                        <p>Je souhaite bénéficier de
+                                            l'abonnement Or au
+                                            tarif avantageux de 94.95€ / mois.</p>
+                                        <br>
+
+
+                                        <p>J'ai bien compris que je peux demander l'arrêt de
+                                            cet abonnement à tout moment depuis mon espace
+                                            client,
+                                            mais qu'il ne prendra fin qu'à l'issue de ma période
+                                            d'engagement de 3 mois. A
+                                            défaut d'action de ma part avant
+                                            le 04/10/2022
+                                            ,
+                                            il se renouvellera par tacite reconduction pour une
+                                            durée de 3 mois
+                                            conformément aux <a href="https://jobphoning.com/conditions-generales"
+                                                class="bluelink">Conditions Générales d'Utilisation</a>
+                                            de la plateforme JobPhoning que j’ai lues et accepte
+                                            sans réserve.</p>
+                                    </label>
+                                </div>
+
+
+                                <div class="margin-boutons">
+                                    <a class="btn btn-block btn-retour-popup-abonnement" role="button">Retour</a>
+                                    <button class="btn  btn-success btn-suivant-popup-abonnement" type="button"
+                                        role="button" disabled="disabled">Suivant</button>
+                                </div>
+                            </div>
+
+                            <div style="display:none;" id="data-prix"></div>
+                            <div style="display:none;" id="data-prix-afficher"></div>
+                            <div style="display:none;" id="data-engagement"></div>
+                            <div style="display:none;" id="data-lettre">O</div>
+
+                        </div>
+                        <div class="commission">
+                            <div class="en-avant" style="color:#E9B80D;">
+                                +5%
+                            </div>
+                            <div>de commission sur<br> chaque transaction
+                                <a href="#" data-toggle="tooltip" data-placement="top" class="tooltip-jobphoning"
+                                    title=""
+                                    data-original-title="Cette commission est prélevée sur chaque transaction effectuée sur la plateforme JobPhoning."><i
+                                        class="mdi mdi-information-outline"></i></a>
+                            </div>
+                        </div>
+
+
+                        <b>Cette formule comprend :</b>
+
+                        <div class="fonctionnalites-standards">
+                            <span class="en-avant vert-promo"><i class="mdi mdi-check" aria-hidden="true"></i></span>
+                            <div class="texte-fonctionnalite">Les fonctionnalitées de base
+                                <a href="#fonctionnalites-standards"><i class="mdi mdi-plus-circle-outline"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="credits-communications">
+                            <span class="en-avant vert-promo"><i class="mdi mdi-check" aria-hidden="true"></i></span>
+                            <div class="texte-fonctionnalite">45
+                                € de crédits d'appels
+                                <a href="#" data-toggle="tooltip" data-placement="top" class="tooltip-jobphoning"
+                                    title=""
+                                    data-original-title="Crédits de communications compris dans votre abonnement. Pour travailler sur la plateforme, vous n'avez pas besoin de logiciels ou de lignes téléphoniques. Toutes les communications passent à travers le site Internet, ce qui permet de les enregistrer et de les conserver. Les coûts des appels et de leur enregistrement sont à votre charge à hauteur de 0.0201€/min pour les téléphones fixes, et 0.0495€/min pour les mobiles (Voir les Conditions Générales d'Utilisations)."><i
+                                        class="mdi mdi-information-outline"></i></a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="conferences-audio">
+                            <span class="en-avant vert-promo"><i class="mdi mdi-check" aria-hidden="true"></i></span>
+                            <div class="texte-fonctionnalite">L'audio conférence
+                                <a href="#" data-toggle="tooltip" data-placement="top" class="tooltip-jobphoning"
+                                    title=""
+                                    data-original-title="Depuis la plateforme, vous pouvez communiquer avec les Donneurs d'Ordres soit à l'aide d'une messagerie instantanée (chat), soit à l'aide de votre micro-casque en audio conférence. Vous pouvez ainsi vous entretenir avec eux sur l'avancement de vos missions."><i
+                                        class="mdi mdi-information-outline"></i></a>
+                            </div>
+                        </div>
+
+
+
+                        <a   (click)="openModalAbonnement()"  class="btn btn-block btn-success open-popup-connexion">Je
+                            m'abonne</a>
+
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-3-to col-md-4 col-sm-6 col-xs-12 premium">
+                    <div class="box text-center">
+                        <div class="overflow-h">
+                            <div class="ribbon ribbon-right bg-secondary" id="texte-reduction-premium"
+                                style="display: block;">
+                                <span class="reduction" id="reduction-premium">-40%</span>
+                            </div>
+                            <i class="mdi mdi-shield"></i>
+                            <div class="lettre-abonnement">P</div>
+                            <div style="display:none" id="lettre-abo" data-abo="P">P</div>
+                            <h2 class="text-uppercase" id="couleur-abo" style="color:#C90000">Premium</h2>
+                            <div class="price" id="prix-premium">69.95€<span class="mois">HT/mois</span></div>
+                        </div>
+                        <p>Période d'engagement:</p>
+                        <div class="dropdown">
+
+
+                            <select data-idabonnement="5"
+                                class="form-control marker_changement_engagement marker-je-m-abonne-Premium">
+
+
+
+                                <option data-dureeperiodeessai="0" data-id="12" data-abonnement="premium"
+                                    data-pourcentageredurection="40" data-prix="69.95" data-dureeengagement="12"
+                                    data-idabonnement="5">
+
+                                    12 mois</option>
+
+
+                                <option data-dureeperiodeessai="0" data-id="11" data-abonnement="premium"
+                                    data-pourcentageredurection="25" data-prix="85.95" data-dureeengagement="6"
+                                    data-idabonnement="5">
+
+                                    6 mois</option>
+
+
+                                <option data-dureeperiodeessai="0" data-id="10" data-abonnement="premium"
+                                    data-pourcentageredurection="0" data-prix="109.95" data-dureeengagement="3"
+                                    data-idabonnement="5">
+
+                                    3 mois</option>
+
+
+                            </select>
+
+
+                            <div style="display:none" class="modelePopup" id="modelePopup_5_12">
+                                <i class="mdi mdi-shield" id="popup-couleur-logo-engagement"></i>
+                                <div id="lettre-abonnement-popup"></div>
+                                <div class="price form-inline" id="prix">
+                                    <b class=" price popup-prix-abonnement"></b>€ HT /mois<br>
+                                </div>
+                                <h2 class="form-inline marker_cacher_engagement_0_mois">Engagement
+                                    de <b class="form-inline" id="popup-mois-engagement"></b> mois
+                                </h2>
+                                <h2 class="form-inline marker_afficher_sans_engagement" style="display: none">
+                                    Sans Engagement</h2>
+                                <br>
+                                <div class="condtion-general-abonnement">
+                                    <div style="display: none" id="typeAbonnement">Premium</div>
+                                    <input id="checkbox-engagement" class="form-check-input" type="checkbox"><label
+                                        class="form-check-label" for="checkbox-engagement" id="label-abonnemnent">
+                                        <p>Je souhaite bénéficier de
+                                            l'abonnement Premium au
+                                            tarif avantageux de 69.95€ / mois.</p>
+                                        <br>
+
+
+                                        <p>J'ai bien compris que je peux demander l'arrêt de
+                                            cet abonnement à tout moment depuis mon espace
+                                            client,
+                                            mais qu'il ne prendra fin qu'à l'issue de ma période
+                                            d'engagement de 12 mois. A
+                                            défaut d'action de ma part avant
+                                            le 04/07/2023
+                                            ,
+                                            il se renouvellera par tacite reconduction pour une
+                                            durée de 12 mois
+                                            conformément aux <a href="https://jobphoning.com/conditions-generales"
+                                                class="bluelink">Conditions Générales d'Utilisation</a>
+                                            de la plateforme JobPhoning que j’ai lues et accepte
+                                            sans réserve.</p>
+                                    </label>
+                                </div>
+
+
+                                <div class="margin-boutons">
+                                    <a class="btn btn-block btn-retour-popup-abonnement" role="button">Retour</a>
+                                    <button class="btn  btn-success btn-suivant-popup-abonnement" type="button"
+                                        role="button" disabled="disabled">Suivant</button>
+                                </div>
+                            </div>
+                            <div style="display:none" class="modelePopup" id="modelePopup_5_11">
+                                <i class="mdi mdi-shield" id="popup-couleur-logo-engagement"></i>
+                                <div id="lettre-abonnement-popup"></div>
+                                <div class="price form-inline" id="prix">
+                                    <b class=" price popup-prix-abonnement"></b>€ HT /mois<br>
+                                </div>
+                                <h2 class="form-inline marker_cacher_engagement_0_mois">Engagement
+                                    de <b class="form-inline" id="popup-mois-engagement"></b> mois
+                                </h2>
+                                <h2 class="form-inline marker_afficher_sans_engagement" style="display: none">
+                                    Sans Engagement</h2>
+                                <br>
+                                <div class="condtion-general-abonnement">
+                                    <div style="display: none" id="typeAbonnement">Premium</div>
+                                    <input id="checkbox-engagement" class="form-check-input" type="checkbox"><label
+                                        class="form-check-label" for="checkbox-engagement" id="label-abonnemnent">
+                                        <p>Je souhaite bénéficier de
+                                            l'abonnement Premium au
+                                            tarif avantageux de 85.95€ / mois.</p>
+                                        <br>
+
+
+                                        <p>J'ai bien compris que je peux demander l'arrêt de
+                                            cet abonnement à tout moment depuis mon espace
+                                            client,
+                                            mais qu'il ne prendra fin qu'à l'issue de ma période
+                                            d'engagement de 6 mois. A
+                                            défaut d'action de ma part avant
+                                            le 04/01/2023
+                                            ,
+                                            il se renouvellera par tacite reconduction pour une
+                                            durée de 6 mois
+                                            conformément aux <a href="https://jobphoning.com/conditions-generales"
+                                                class="bluelink">Conditions Générales d'Utilisation</a>
+                                            de la plateforme JobPhoning que j’ai lues et accepte
+                                            sans réserve.</p>
+                                    </label>
+                                </div>
+
+
+                                <div class="margin-boutons">
+                                    <a class="btn btn-block btn-retour-popup-abonnement" role="button">Retour</a>
+                                    <button class="btn  btn-success btn-suivant-popup-abonnement" type="button"
+                                        role="button" disabled="disabled">Suivant</button>
+                                </div>
+                            </div>
+                            <div style="display:none" class="modelePopup" id="modelePopup_5_10">
+                                <i class="mdi mdi-shield" id="popup-couleur-logo-engagement"></i>
+                                <div id="lettre-abonnement-popup"></div>
+                                <div class="price form-inline" id="prix">
+                                    <b class=" price popup-prix-abonnement"></b>€ HT /mois<br>
+                                </div>
+                                <h2 class="form-inline marker_cacher_engagement_0_mois">Engagement
+                                    de <b class="form-inline" id="popup-mois-engagement"></b> mois
+                                </h2>
+                                <h2 class="form-inline marker_afficher_sans_engagement" style="display: none">
+                                    Sans Engagement</h2>
+                                <br>
+                                <div class="condtion-general-abonnement">
+                                    <div style="display: none" id="typeAbonnement">Premium</div>
+                                    <input id="checkbox-engagement" class="form-check-input" type="checkbox"><label
+                                        class="form-check-label" for="checkbox-engagement" id="label-abonnemnent">
+                                        <p>Je souhaite bénéficier de
+                                            l'abonnement Premium au
+                                            tarif avantageux de 109.95€ / mois.</p>
+                                        <br>
+
+
+                                        <p>J'ai bien compris que je peux demander l'arrêt de
+                                            cet abonnement à tout moment depuis mon espace
+                                            client,
+                                            mais qu'il ne prendra fin qu'à l'issue de ma période
+                                            d'engagement de 3 mois. A
+                                            défaut d'action de ma part avant
+                                            le 04/10/2022
+                                            ,
+                                            il se renouvellera par tacite reconduction pour une
+                                            durée de 3 mois
+                                            conformément aux <a href="https://jobphoning.com/conditions-generales"
+                                                class="bluelink">Conditions Générales d'Utilisation</a>
+                                            de la plateforme JobPhoning que j’ai lues et accepte
+                                            sans réserve.</p>
+                                    </label>
+                                </div>
+
+
+                                <div class="margin-boutons">
+                                    <a class="btn btn-block btn-retour-popup-abonnement" role="button">Retour</a>
+                                    <button class="btn  btn-success btn-suivant-popup-abonnement" type="button"
+                                        role="button" disabled="disabled">Suivant</button>
+                                </div>
+                            </div>
+
+                            <div style="display:none;" id="data-prix"></div>
+                            <div style="display:none;" id="data-prix-afficher"></div>
+                            <div style="display:none;" id="data-engagement"></div>
+                            <div style="display:none;" id="data-lettre">P</div>
+
+                        </div>
+                        <div class="commission">
+                            <div class="en-avant" style="color:#C90000;">
+                                +0%
+                            </div>
+                            <div>de commission sur<br> chaque transaction
+                                <a href="#" data-toggle="tooltip" data-placement="top" class="tooltip-jobphoning"
+                                    title=""
+                                    data-original-title="Cette commission est prélevée sur chaque transaction effectuée sur la plateforme JobPhoning."><i
+                                        class="mdi mdi-information-outline"></i></a>
+                            </div>
+                        </div>
+
+
+                        <b>Cette formule comprend :</b>
+
+                        <div class="fonctionnalites-standards">
+                            <span class="en-avant vert-promo"><i class="mdi mdi-check" aria-hidden="true"></i></span>
+                            <div class="texte-fonctionnalite">Les fonctionnalitées de base
+                                <a href="#fonctionnalites-standards"><i class="mdi mdi-plus-circle-outline"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="credits-communications">
+                            <span class="en-avant vert-promo"><i class="mdi mdi-check" aria-hidden="true"></i></span>
+                            <div class="texte-fonctionnalite">60
+                                € de crédits d'appels
+                                <a href="#" data-toggle="tooltip" data-placement="top" class="tooltip-jobphoning"
+                                    title=""
+                                    data-original-title="Crédits de communications compris dans votre abonnement. Pour travailler sur la plateforme, vous n'avez pas besoin de logiciels ou de lignes téléphoniques. Toutes les communications passent à travers le site Internet, ce qui permet de les enregistrer et de les conserver. Les coûts des appels et de leur enregistrement sont à votre charge à hauteur de 0.0201€/min pour les téléphones fixes, et 0.0495€/min pour les mobiles (Voir les Conditions Générales d'Utilisations)."><i
+                                        class="mdi mdi-information-outline"></i></a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="conferences-audio">
+                            <span class="en-avant vert-promo"><i class="mdi mdi-check" aria-hidden="true"></i></span>
+                            <div class="texte-fonctionnalite">L'audio conférence
+                                <a href="#" data-toggle="tooltip" data-placement="top" class="tooltip-jobphoning"
+                                    title=""
+                                    data-original-title="Depuis la plateforme, vous pouvez communiquer avec les Donneurs d'Ordres soit à l'aide d'une messagerie instantanée (chat), soit à l'aide de votre micro-casque en audio conférence. Vous pouvez ainsi vous entretenir avec eux sur l'avancement de vos missions."><i
+                                        class="mdi mdi-information-outline"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="affichage-offres">
+                            <span class="en-avant vert-promo"><i class="mdi mdi-check" aria-hidden="true"></i></span>
+                            <div class="texte-fonctionnalite">L'aperçu de toutes les offres
+                                <a href="#" data-toggle="tooltip" data-placement="top" class="tooltip-jobphoning"
+                                    title=""
+                                    data-original-title="Vous aurez la possibilité de voir les offres des Téléopérateurs concurrents (Tarif, temps estimé pour accomplir la mission…) et pourrez ainsi optimiser au mieux votre offre afin d’augmenter vos chances d’être sélectionné."><i
+                                        class="mdi mdi-information-outline"></i></a>
+                            </div>
+                        </div>
+
+
+                        <a  (click)="openModalAbonnement()"  class="btn btn-block btn-success open-popup-connexion">Je
+                            m'abonne</a>
+
+
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+            <div class="box">
+
+                <div class="box-body">
+
+                    <p class="text-center info-abonnement">
+                        Quelque soit l’abonnement auquel vous souscrivez, vous pouvez l’arrêter à tout moment
+                        sans frais. Il prendra alors fin au terme de votre période d’engagement. Sans action de
+                        votre part, votre abonnement sera renouvelé automatiquement pour une durée équivalente
+                        conformément à nos
+                        <a href="https://jobphoning.com/JobPhoning/conditiongenerale.php" target="_blank"
+                            rel="nofollow">CGU</a>.<br>
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</div>
+

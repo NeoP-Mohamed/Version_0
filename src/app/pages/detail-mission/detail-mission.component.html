@@ -1,0 +1,137 @@
+<div fxFlex.gt-sm="100%" fxFlex="100">
+  <div class="all-section-profil" *ngFor="let item of detailMission">
+    <!--------------->
+
+    <!-- My profile START -->
+    <mat-card class="all-section">
+      <!-- Cover image -->
+      <div class="h-200px rounded-top"
+                          style="background-image:url(assets/images/missions/bg-01.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                      </div>
+      <!-- Card body START -->
+      <div class="card-body py-0">
+        <div class="d-sm-flex align-items-start text-center text-sm-start">
+          <div>
+            <!-- Avatar -->
+             <!-- Avatar -->
+             <div class="avatar avatar-xxl mt-n5 mb-3">
+              <img class="avatar-img rounded-circle border border-white border-3"
+                  src="assets/images/image-profile/avatar-1.jpg" alt="">
+          </div>
+      </div>
+      <div class=" row mt-sm-3 d-flex">
+          <!-- Info -->
+          <h1 class="mb-0 h5">{{item.NomPrenom}} <img class="ml-5" src="assets/images/countries/France.png" alt="" />
+          </h1>
+
+         
+          <ul class="d-flex w-100 list-inline mb-0 text-center text-sm-start mt-3 mt-sm-0">
+              <!-- <li class="list-inline-item"><mat-icon class="blue-">perm_phone_msg</mat-icon>{{item.Poste}}
+              </li> -->
+              <li class="list-inline-item"><mat-icon class="blue-">question_answer</mat-icon>  {{item.Ville}}</li>
+              <li class="list-inline-item"><mat-icon class="blue-">power_settings_new</mat-icon>  {{item.MembreDepuis}}
+              </li>
+          </ul>
+      </div>
+        </div>
+       
+        <!-- List profile -->
+        <div class="">
+          <div class="col-lg">
+            <p> {{item.Description}} </p>
+        </div>
+        </div>
+        <div>
+          <div class="info-mission">
+            <div class="row">
+             
+              <div class="col-md-2">
+                <div class="budget-mission centrer centrer-v">
+                  <div class="titre-colonne">Commissions</div>
+                  <b> {{item.Budget}} </b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----------**********************************************************************************************************************************************************-->
+        <div class="all-new-section">
+          <blockquote>
+            <div fxLayout="row wrap" >
+              <div class="first_title">Description de la mission:</div>
+              <span
+                class="bullet-custom position-absolute bottom-0 w-100 h-4px bg-primary"
+              ></span>
+              <p> {{item.DescriptionMission}} </p>
+              <div class="first_title">Besoin:</div>
+              <span
+                class="bullet-custom position-absolute bottom-0 w-100 h-4px bg-primary"
+              ></span>
+              <p class="p-Besoin"> {{item.BesoinMission}} </p>
+            </div>
+          </blockquote>
+        </div>
+        <!-----------**********************************************************************************************************************************************************-->
+ <!-----------**********************************************************************************************************************************************************-->
+         <div fxLayout="row wrap mt-3" >
+         
+          <table
+          
+            class="table table-striped table-borderless mt-3 mb-3 "
+          >
+            <!--Table head-->
+            <thead class="thead">
+              <tr class="text-center">
+                <th>NeoProspecteur</th>
+                <th>Voix</th>
+                <th>Note</th>
+                <th>Offres</th>
+                <th>Profil</th>
+               
+              
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="text-center">  
+                <td class="identite-teleoperateur " *ngFor="let T of item.Teleoperateur">
+                  <img
+                  src=" {{T.image}}"
+                  alt="Metornic" class="avatar"
+                />
+                <br>      
+                   
+                            <span class="nom-prospect "> {{item.NomPrenom}} </span>
+                </td>
+                <td><mat-icon class="volume-icon">volume_up</mat-icon></td>
+                <td> <div
+                  class=""
+                >
+                  <div >
+                    <div class="fs-2 fw-bolder">
+                      <span> {{item.Note}} </span>
+                    </div>
+                  </div>
+                  <div class="all-star mt-2">
+                    <mat-icon>star</mat-icon><mat-icon>star</mat-icon
+                    ><mat-icon>star</mat-icon><mat-icon>star</mat-icon>
+                  </div>
+                </div></td>
+                <td> {{item.Offre}} <mat-icon>https</mat-icon></td>
+                <td> <a routerLink="/Pages/Profile">
+                  <button
+                
+                  class="btn-saves "
+                >
+                  Voir le profil
+                </button></a></td>
+              </tr>
+            
+                
+            
+            </tbody>
+            <!--Table body-->
+          </table>
+         
+          </div>
+          <!-----************************************************************************************************************************************************************-->
+       

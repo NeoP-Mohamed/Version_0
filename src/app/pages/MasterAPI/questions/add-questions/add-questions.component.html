@@ -1,0 +1,19 @@
+<div class="p-5 pt-0">
+    <div class="form-group example-container">
+        <h6 class="form-title">Questions</h6>
+        <form [formGroup]="questionsGroup">
+
+        <div class="d-flex justify-content-between">
+        <mat-form-field class="example-full-width " appearance="outline">
+            <mat-label>Question:</mat-label>
+            <input matInput placeholder="Question" formControlName="question">
+        </mat-form-field>
+        </div>  
+       
+
+         
+            <input type="submit" (click)="onSubmit()" value="Enregistrer" class="btn-save mt-2">
+            <input type="submit" value="Annuler" class="btn-save mt-2">
+        </form>
+    </div>
+</div>

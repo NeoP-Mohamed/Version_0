@@ -1,0 +1,427 @@
+<div class="inscription">
+  <mat-horizontal-stepper [labelPosition]="'bottom'" class="inscription-stepper" #stepper>
+    <mat-step>
+
+      <div class="inscription__form">
+        <h2 class="center"><span class="bold color-default">Félicitation Bilel, votre compte a été validé avec succès
+            !</span></h2>
+        <h4 class="center color-default">Veuillez à présent compléter votre profil afin de finaliser votre inscription.
+        </h4>
+        <div class="form">
+          <input type="text" id="nom_Societe" class="form__control" autocomplete="off" placeholder=" " />
+          <label for="nom_Societe" class="form__label">Nom de la société</label>
+        </div>
+        <div class="form">
+          <select id="select" class="form__control">
+            <Option value="0">Pays</Option>
+            <Option value="1">Afghanistan</Option>
+            <Option value="10">Antigua-et-Barbuda</Option>
+            <Option value="100">Îles Marshall</Option>
+            <Option value="101">Îles Mineures Éloignées des États-Unis</Option>
+            <Option value="102">Îles Salomon</Option>
+            <Option value="103">Îles Turks et Caïques</Option>
+            <Option value="104">Îles Vierges Britanniques</Option>
+            <Option value="105">Îles Vierges des États-Unis</Option>
+            <Option value="106">Inde</Option>
+            <Option value="107">Indonésie</Option>
+            <Option value="108">Iraq</Option>
+            <Option value="109">Irlande</Option>
+            <Option value="11">Antilles Néerlandaises</Option>
+            <Option value="110">Islande</Option>
+            <Option value="111">Italie</Option>
+            <Option value="112">Jamahiriya Arabe Libyenne</Option>
+            <Option value="113">Jamaïque</Option>
+            <Option value="114">Japon</Option>
+            <Option value="115">Jordanie</Option>
+            <Option value="116">Kazakhstan</Option>
+            <Option value="117">Kenya</Option>
+            <Option value="118">Kirghizistan</Option>
+            <Option value="119">Kiribati</Option>
+            <Option value="12">Arabie Saoudite</Option>
+            <Option value="120">Koweït</Option>
+            <Option value="121">L’ex-République Yougoslave de Macédoine</Option>
+            <Option value="122">Lesotho</Option>
+            <Option value="123">Lettonie</Option>
+            <Option value="124">Liban</Option>
+            <Option value="125">Libéria</Option>
+            <Option value="126">Liechtenstein</Option>
+            <Option value="127">Lituanie</Option>
+            <Option value="128">Luxembourg</Option>
+            <Option value="129">Macao</Option>
+            <Option value="13">Argentine</Option>
+            <Option value="130">Madagascar</Option>
+            <Option value="131">Malaisie</Option>
+            <Option value="132">Malawi</Option>
+            <Option value="133">Maldives</Option>
+            <Option value="134">Mali</Option>
+            <Option value="135">Malte</Option>
+            <Option value="136">Maroc</Option>
+            <Option value="137">Martinique</Option>
+            <Option value="138">Maurice</Option>
+            <Option value="139">Mauritanie</Option>
+            <Option value="14">Arménie</Option>
+            <Option value="140">Mayotte</Option>
+            <Option value="141">Mexique</Option>
+            <Option value="142">Monaco</Option>
+            <Option value="143">Mongolie</Option>
+            <Option value="144">Montserrat</Option>
+            <Option value="145">Mozambique</Option>
+            <Option value="146">Myanmar</Option>
+            <Option value="147">Namibie</Option>
+            <Option value="148">Nauru</Option>
+            <Option value="149">Népal</Option>
+            <Option value="15">Aruba</Option>
+            <Option value="150">Nicaragua</Option>
+            <Option value="151">Niger</Option>
+            <Option value="152">Nigéria</Option>
+            <Option value="153">Niué</Option>
+            <Option value="154">Non défini</Option>
+            <Option value="155">Norvège</Option>
+            <Option value="156">Nouvelle-Calédonie</Option>
+            <Option value="157">Nouvelle-Zélande</Option>
+            <Option value="158">Oman</Option>
+            <Option value="159">Ouganda</Option>
+            <Option value="16">Australie</Option>
+            <Option value="160">Ouzbékistan</Option>
+            <Option value="161">Pakistan</Option>
+            <Option value="162">Palaos</Option>
+            <Option value="163">Panama</Option>
+            <Option value="164">Papouasie-Nouvelle-Guinée</Option>
+            <Option value="165">Paraguay</Option>
+            <Option value="166">Pays-Bas</Option>
+            <Option value="167">Pérou</Option>
+            <Option value="168">Philippines</Option>
+            <Option value="169">Pitcairn</Option>
+            <Option value="17">Autriche</Option>
+            <Option value="170">Pologne</Option>
+            <Option value="171">Polynésie Française</Option>
+            <Option value="172">Porto Rico</Option>
+            <Option value="173">Portugal</Option>
+            <Option value="174">Qatar</Option>
+            <Option value="175">République Arabe Syrienne</Option>
+            <Option value="176">République Centrafricaine</Option>
+            <Option value="177">République de Corée</Option>
+            <Option value="178">République de Moldova</Option>
+            <Option value="179">République Démocratique du Congo</Option>
+            <Option value="18">Azerbaïdjan</Option>
+            <Option value="180">République Démocratique Populaire Lao</Option>
+            <Option value="181">République Dominicaine</Option>
+            <Option value="182">République du Congo</Option>
+            <Option value="183">République Islamique d’Iran</Option>
+            <Option value="184">République Populaire Démocratique de Corée</Option>
+            <Option value="185">République Tchèque</Option>
+            <Option value="186">République-Unie de Tanzanie</Option>
+            <Option value="187">Réunion</Option>
+            <Option value="188">Roumanie</Option>
+            <Option value="189">Royaume-Uni</Option>
+            <Option value="19">Bahamas</Option>
+            <Option value="190">Rwanda</Option>
+            <Option value="191">Sahara Occidental</Option>
+            <Option value="192">Saint-Kitts-et-Nevis</Option>
+            <Option value="193">Saint-Marin</Option>
+            <Option value="194">Saint-Pierre-et-Miquelon</Option>
+            <Option value="195">Saint-Siège (état de la Cité du Vatican)</Option>
+            <Option value="196">Saint-Vincent-et-les Grenadines</Option>
+            <Option value="197">Sainte-Hélène</Option>
+            <Option value="198">Sainte-Lucie</Option>
+            <Option value="199">Samoa</Option>
+            <Option value="2">Afrique du Sud</Option>
+            <Option value="20">Bahreïn</Option>
+            <Option value="200">Samoa Américaines</Option>
+            <Option value="201">Sao Tomé-et-Principe</Option>
+            <Option value="202">Sénégal</Option>
+            <Option value="203">Serbie-et-Monténégro</Option>
+            <Option value="204">Seychelles</Option>
+            <Option value="205">Sierra Leone</Option>
+            <Option value="206">Singapour</Option>
+            <Option value="207">Slovaquie</Option>
+            <Option value="208">Slovénie</Option>
+            <Option value="209">Somalie</Option>
+            <Option value="21">Bangladesh</Option>
+            <Option value="210">Soudan</Option>
+            <Option value="211">Sri Lanka</Option>
+            <Option value="212">Suède</Option>
+            <Option value="213">Suisse</Option>
+            <Option value="214">Suriname</Option>
+            <Option value="215">Svalbard etÎle Jan Mayen</Option>
+            <Option value="216">Swaziland</Option>
+            <Option value="217">Tadjikistan</Option>
+            <Option value="218">Taïwan</Option>
+            <Option value="219">Tchad</Option>
+            <Option value="22">Barbade</Option>
+            <Option value="220">Terres Australes Françaises</Option>
+            <Option value="221">Territoire Britannique de l’Océan Indien</Option>
+            <Option value="23">Bélarus</Option>
+            <Option value="24">Belgique</Option>
+            <Option value="25">Belize</Option>
+            <Option value="26">Bénin</Option>
+            <Option value="27">Bermudes</Option>
+            <Option value="28">Bhoutan</Option>
+            <Option value="29">Bolivie</Option>
+            <Option value="3">Albanie</Option>
+            <Option value="30">Bosnie-Herzégovine</Option>
+            <Option value="31">Botswana</Option>
+            <Option value="32">Brésil</Option>
+            <Option value="33">Brunéi Darussalam</Option>
+            <Option value="34">Bulgarie</Option>
+            <Option value="35">Burkina Faso</Option>
+            <Option value="36">Burundi</Option>
+            <Option value="37">Cambodge</Option>
+            <Option value="38">Cameroun</Option>
+            <Option value="39">Canada</Option>
+            <Option value="4">Algérie</Option>
+            <Option value="40">Cap-vert</Option>
+            <Option value="41">Chili</Option>
+            <Option value="42">Chine</Option>
+            <Option value="43">Chypre</Option>
+            <Option value="44">Colombie</Option>
+            <Option value="45">Comores</Option>
+            <Option value="46">Costa Rica</Option>
+            <Option value="47">Côte d’Ivoire</Option>
+            <Option value="48">Croatie</Option>
+            <Option value="49">Cuba</Option>
+            <Option value="5">Allemagne</Option>
+            <Option value="50">Danemark</Option>
+            <Option value="51">Djibouti</Option>
+            <Option value="52">Dominique</Option>
+            <Option value="53">Égypte</Option>
+            <Option value="54">El Salvador</Option>
+            <Option value="55">Émirats Arabes Unis</Option>
+            <Option value="56">Équateur</Option>
+            <Option value="57">Érythrée</Option>
+            <Option value="58">Espagne</Option>
+            <Option value="59">Estonie</Option>
+            <Option value="6">Andorre</Option>
+            <Option value="60">États Fédérés de Micronésie</Option>
+            <Option value="61">États-Unis</Option>
+            <Option value="62">Éthiopie</Option>
+            <Option value="63">Fédération de Russie</Option>
+            <Option value="64">Fidji</Option>
+            <Option value="65">Finlande</Option>
+            <Option value="66">France</Option>
+            <Option value="67">Gabon</Option>
+            <Option value="68">Gambie</Option>
+            <Option value="69">Géorgie</Option>
+            <Option value="7">Angola</Option>
+            <Option value="70">Géorgie du Sud et les Îles Sandwich du Sud</Option>
+            <Option value="71">Ghana</Option>
+            <Option value="72">Gibraltar</Option>
+            <Option value="73">Grèce</Option>
+            <Option value="74">Grenade</Option>
+            <Option value="75">Groenland</Option>
+            <Option value="76">Guadeloupe</Option>
+            <Option value="77">Guam</Option>
+            <Option value="78">Guatemala</Option>
+            <Option value="79">Guinée</Option>
+            <Option value="8">Anguilla</Option>
+            <Option value="80">Guinée Équatoriale</Option>
+            <Option value="81">Guinée-Bissau</Option>
+            <Option value="82">Guyana</Option>
+            <Option value="83">Guyane Française</Option>
+            <Option value="84">Haïti</Option>
+            <Option value="85">Honduras</Option>
+            <Option value="86">Hong-Kong</Option>
+            <Option value="87">Hongrie</Option>
+            <Option value="88">Île Bouvet</Option>
+            <Option value="89">Île Christmas</Option>
+            <Option value="9">Antarctique</Option>
+            <Option value="90">Île de Man</Option>
+            <Option value="91">Île Norfolk</Option>
+            <Option value="92">Îles (malvinas) Falkland</Option>
+            <Option value="93">Îles Åland</Option>
+            <Option value="94">Îles Caïmanes</Option>
+            <Option value="95">Îles Cocos (Keeling)</Option>
+            <Option value="96">Îles Cook</Option>
+            <Option value="97">Îles Féroé</Option>
+            <Option value="98">Îles Heard et Mcdonald</Option>
+            <Option value="99">Îles Mariannes du Nord</Option>
+
+          </select>
+        </div>
+        <div class="form">
+          <input type="text" id="matricule" class="form__control" autocomplete="off" placeholder=" " />
+          <label for="matricule" class="form__label">Numéro de matricule</label>
+        </div>
+        <div class="form">
+          <input type="text" id="numero_TVA" class="form__control" autocomplete="off" placeholder=" " />
+          <label for="numero_TVA" class="form__label">Numéro de TVA</label>
+        </div>
+        <div class="form">
+          <input type="text" id="adresse" class="form__control" autocomplete="off" placeholder=" " />
+          <label for="adresse" class="form__label">Adresse</label>
+        </div>
+        <div class="form">
+          <input type="text" id="cp" class="form__control" autocomplete="off" placeholder=" " />
+          <label for="cp" class="form__label">Code Postal</label>
+        </div>
+        <div class="form">
+          <input type="text" id="ville" class="form__control" autocomplete="off" placeholder=" " />
+          <label for="ville" class="form__label">Ville</label>
+        </div>
+        <div class="form">
+          <input type="text" id="tel_Portable" class="form__control" autocomplete="off" placeholder=" " />
+          <label for="tel_Portable" class="form__label">Téléphone portable</label>
+        </div>
+        <div class="form">
+          <input type="text" id="tel_Fixe" class="form__control" autocomplete="off" placeholder=" " />
+          <label for="tel_Fixe" class="form__label">Téléphone fixe</label>
+        </div>
+        <p><span class="color-default small">* champs obligatoires</span></p>
+        <p><span class="color-default small">** au moins un numéro de téléphone doit être renseigné</span></p>
+
+      </div>
+      <div class="section-btn">
+        <button mat-button matStepperNext>Suivant</button>
+      </div>
+    </mat-step>
+    <mat-step>
+
+      <div class="inscription__form">
+        <h2 class="center"><span class="bold color-default">Votre inscription est bientôt terminée !</span></h2>
+        <h4 class="center color-default">Veuillez à présent répondre à ces dernières questions.</h4>
+        <p><span class="color-default bold">Secteurs d’activité / Types de vente</span></p>
+        <p><span class="color-default italic">Quel(s) type(s) de vente réalisez-vous ?</span></p>
+
+        <div class="inscription__form__flex">
+          <div class="form">
+            <label class="control control-checkbox">
+              Vente aux particuliers (BtoC)
+              <input type="checkbox" value="1" />
+              <div class="control_indicator"></div>
+            </label>
+            <label class="control control-checkbox">
+              Ventre aux professionnels (BtoB)
+              <input type="checkbox" value="2" />
+              <div class="control_indicator"></div>
+            </label>
+
+          </div>
+        </div>
+        <p><span class="color-default italic">Quel est votre secteur d’activité ?</span></p>
+        <div class="inscription__form__flex">
+          <div class="form flex" style="display: block;">
+            <label class="control control-radio">
+              Vente de produits
+              <input type="radio" name="domaine_Activite" value="1" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Industrie
+              <input type="radio" name="domaine_Activite" value="10" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Amélioration de l'habitat (fenêtres, isolation, toiture...)
+              <input type="radio" name="domaine_Activite" value="11" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Chauffage, climatisation, énergies renouvelables
+              <input type="radio" name="domaine_Activite" value="12" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Sécurité (alarme, controle d'accès, gardiennage, télésurveillance...)
+              <input type="radio" name="domaine_Activite" value="13" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Conseil (accompagnement, management, gestion...)
+              <input type="radio" name="domaine_Activite" value="14" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Autre....
+              <input type="radio" name="domaine_Activite" value="15" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Communication (site internet, publicité...)
+              <input type="radio" name="domaine_Activite" value="16" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Conseil (management, gestion...)
+              <input type="radio" name="domaine_Activite" value="17" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Formation professionnelle (opco, cpf...)
+              <input type="radio" name="domaine_Activite" value="18" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Communication digitale (site internet, application...
+              <input type="radio" name="domaine_Activite" value="19" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Informatique (infogérance, sécurité, support/maintenance)
+              <input type="radio" name="domaine_Activite" value="2" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Publicité (encarts journaux/magazines, TV, véhicules, bornes, digital...)
+              <input type="radio" name="domaine_Activite" value="20" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Evènementiel (salons, séminaires, foires, portes ouvertes, street marketing)
+              <input type="radio" name="domaine_Activite" value="21" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Énergie (fournisseurs, courtiers...)
+              <input type="radio" name="domaine_Activite" value="22" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Formation médicale (dpc)
+              <input type="radio" name="domaine_Activite" value="23" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Logiciels, CRM, plateformes
+              <input type="radio" name="domaine_Activite" value="24" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Télécommunications (courtage, opérateurs / fournisseurs d'accès)
+              <input type="radio" name="domaine_Activite" value="25" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Formation
+              <input type="radio" name="domaine_Activite" value="26" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Télécommunications (matériel, logiciel)
+              <input type="radio" name="domaine_Activite" value="3" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Assurance, mutuelle, prévoyance, crédits, retraite
+              <input type="radio" name="domaine_Activite" value="4" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Gestion de patrimoine, défiscalisation
+              <input type="radio" name="domaine_Activite" value="5" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Immobilier
+              <input type="radio" name="domaine_Activite" value="6" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Bien-être (beauté, nutrition...)
+              <input type="radio" name="domaine_Activite" value="7" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Service à la personne
+              <input type="radio" name="domaine_Activite" value="8" />
+              <div class="control_indicator"></div>
+            </label> <label class="control control-radio">
+              Prestation de service (RH, externalisation diverses...)
+              <input type="radio" name="domaine_Activite" value="9" />
+              <div class="control_indicator"></div>
+            </label>
+          </div>
+        </div>
+        <h2 class="color-default">Photo de profil</h2>
+
+        <div class="inscription__form__flex">
+          <div class="form file">
+            <input type="file" id="formFileMultiple" multiple hidden />
+            <span class="form__control file">Aucune image ajouter</span>
+            <label class="file-upload-button" for="formFileMultiple">Ajouter image</label>
+          </div>
+        </div>
+
+      </div>
+      <div class="section-btn">
+        <button mat-button matStepperPrevious>Précédent</button>
+        <button mat-button matStepperNext (click)="terminer()">Terminer</button>
+      </div>
+    </mat-step>
+  </mat-horizontal-stepper>
+</div>

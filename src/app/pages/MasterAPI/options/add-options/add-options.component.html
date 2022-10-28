@@ -1,0 +1,38 @@
+<div class="p-5 pt-0">
+    <div class="form-group example-container">
+        <h6 class="form-title">Options</h6>
+        <form [formGroup]="optionsGroup">
+
+        <div class="d-flex justify-content-between">
+        <!--<div class="d-flex">-->
+            <mat-form-field appearance="outline" class="">
+                <mat-label>IdAbonnement:</mat-label>
+                <mat-select matNativeControl formControlName="idAbonnement">
+                    <mat-option *ngFor="let option of abonnementss" [value]="option?.idAbonnement">{{option?.libelle_Abonnement}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        <!--</div>-->
+
+        </div>  
+       
+        <div class="d-flex justify-content-between">
+        <mat-form-field class="example-full-width " appearance="outline">
+            <mat-label>Libelle_Option:</mat-label>
+            <input matInput placeholder="Libelle_Option" formControlName="libelle_Option">
+        </mat-form-field>
+        </div>  
+       
+        <div class="d-flex justify-content-between">
+        <mat-form-field class="example-full-width " appearance="outline">
+            <mat-label>Description:</mat-label>
+            <input matInput placeholder="Description" formControlName="description">
+        </mat-form-field>
+        </div>  
+       
+
+         
+            <input type="submit" (click)="onSubmit()" value="Enregistrer" class="btn-save mt-2">
+            <input type="submit" value="Annuler" class="btn-save mt-2">
+        </form>
+    </div>
+</div>

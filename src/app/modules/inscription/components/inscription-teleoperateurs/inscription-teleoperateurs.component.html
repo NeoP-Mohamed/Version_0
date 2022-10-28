@@ -1,0 +1,97 @@
+
+<section class="ls ms c-gutter-60        s-pt-55 s-pb-0     s-pt-lg-95 s-pb-lg-100 s-pt-xl-145 s-pb-xl-150"
+  id="section-be48bd6">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-12 col-lg-12">
+        <div class="inscription">
+          <div class="inscription__form">
+            <div class="form">
+              <select id="select" class="form__control">
+                <Option value="1"> Mr</Option>
+                <Option value="2"> Mme</Option>
+                <Option value="3"> Mlle</Option>
+
+              </select>
+            </div>
+            <div class="inscription__form__flex">
+              <div class="form inscription__form__w-50">
+                <input type="text" id="nom" class="form__control" autocomplete="off" placeholder=" " />
+                <label for="nom" class="form__label">Nom</label>
+              </div>
+              <div class="form inscription__form__w-50">
+                <input type="text" id="prenom" class="form__control" autocomplete="off" placeholder=" " />
+                <label for="prenom" class="form__label">Prénom</label>
+              </div>
+            </div>
+         
+            <div class="inscription__form__flex">
+              <div class="form inscription__form__w-50">
+                <input type="text" id="nom_d_utilisateur" class="form__control" autocomplete="off" placeholder=" " />
+                <label for="nom_d_utilisateur" class="form__label">Pseudo</label>
+              </div>
+              <div class="form inscription__form__w-50">
+                <input type="text" id="email" class="form__control" autocomplete="off" placeholder=" " />
+                <label for="email" class="form__label">Email</label>
+              </div>
+            </div>
+            <div class="inscription__form__flex">
+              <div class="form inscription__form__w-50">
+                <input type="text" id="mot_de_passe" class="form__control" autocomplete="off" placeholder=" " />
+                <label for="mot_de_passe" class="form__label">Mot de passe</label>
+              </div>
+              <div class="form inscription__form__w-50">
+                <input type="text" id="confirm_mot_de_passe" class="form__control" autocomplete="off" placeholder=" " />
+                <label for="confirm_mot_de_passe" class="form__label">Confirmation du mot de passe</label>
+              </div>
+            </div>
+            <div class="inscription__form__flex">
+              <div class="form inscription__form__w-50">
+                <input type="text" id="code_Parainnage" class="form__control" autocomplete="off" placeholder=" " />
+                <label for="code_Parainnage" class="form__label">Code de parainnage</label>
+              </div>
+              <div class="form inscription__form__w-50">
+                <select id="select" class="form__control">
+                  <Option value="1"> Comment vous nous avez connu? </Option>
+                  <Option value="1"> Google</Option>
+                  <Option value="2"> Youtube</Option>
+                  <Option value="3"> Forum</Option>
+                  <Option value="4"> Bouche à oreille</Option>
+                  <Option value="5"> J'ai reçu un email</Option>
+                  <Option value="6"> Facebook</Option>
+                  <Option value="7"> LinkedIn</Option>
+                  <Option value="8"> Jooble</Option>
+                  <Option value="9"> Pole Emploi</Option>
+                  <Option value="10"> Indeed</Option>
+                  <Option value="11"> Seniors à votre service</Option>
+                  <Option value="12"> 1001 Auto-Entrepreneurs</Option>
+                  <Option value="13"> Autre:</Option>
+
+                </select>
+              </div>
+            </div>
+            <hr>
+            <div class="inscription__form__flex2">
+              <div class="form">
+                <label class="control control-checkbox">
+                  J'ai lu et j'accepte sans réserve les Conditions Générales d'Utilisation et la Politique de protection
+                  des
+                  données personnelles de Neo Prospection.com conformément au RGPD.
+                  <input type="checkbox" checked="checked" />
+                  <div class="control_indicator"></div>
+                </label>
+              </div>
+            </div>
+
+                <div class="section-btn">
+                  <button  mat-button (click)="enregistrer()">
+                    <span>Envoyer</span>
+                  </button>
+                </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

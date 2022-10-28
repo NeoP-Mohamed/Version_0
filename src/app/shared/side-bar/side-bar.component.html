@@ -1,0 +1,139 @@
+
+<div *ngFor="let asideItems of menuItems.getAll()" class="header">
+    <div class="title">
+      <img
+        class="logo"
+        src="/assets/images/image-profile/Logo_e_robot.png"
+        alt=""
+      />
+      <span class="title-text"></span>
+    </div>
+    <div class="pages-header">
+      <h6 class="pages">{{ asideItems.label }}</h6>
+    </div>
+  
+    <div *ngFor="let asideItem of asideItems.main" class="menu ">
+      <div class="menu-section css-1lio2zr subitem">
+        <!-- <fa-icon [icon]="faSlidersH faLight" class="me-2 gray"></fa-icon> -->
+        <!-- <img src="assets/images/sliders.svg" alt="" class="me-2 gray"> -->
+       
+        <mat-icon *ngIf="!asideItem.state" (click)="asideItem.state = asideItem.true">{{ asideItem.icon }}</mat-icon>
+        <mat-icon  *ngIf="asideItem.state" (click)="asideItem.state = asideItem.false">{{ asideItem.icon }}</mat-icon>
+        <span class="gray">
+       
+        </span>
+        <div class="css-hz2w8h mt-1">
+          <!------------->
+          <span  *ngIf="asideItem.type === 'sub' && !asideItem.state" (click)="asideItem.state = asideItem.true"class="css-q536xx">{{ asideItem.name }}</span>
+          <span  *ngIf="asideItem.type === 'sub' && asideItem.state" (click)="asideItem.state = asideItem.false" class="css-q536xx">{{ asideItem.name }}</span>
+          <!------------->
+        <!--<a  [routerLink]="['/'+asideItem.name]"> <span *ngIf="asideItem.type === 'link'" class="css-q536xx">{{ asideItem.name }}</span></a> -->
+        <a  [routerLink]="['/'+asideItem.short_label]"> <span *ngIf="asideItem.type === 'link'" class="css-q536xx">{{ asideItem.name }}</span></a> 
+        </div>
+        <span *ngIf="asideItem.type === 'sub'" class="gray">
+          <svg
+            *ngIf="!asideItem.state"
+            (click)="asideItem.state = asideItem.true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-8cy11v"
+            focusable="false"
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            data-testid="ExpandMoreIcon"
+          >
+            <path
+              d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              fill="#eeeeee"
+            ></path>
+          </svg>
+          <svg
+            *ngIf="asideItem.state"
+            (click)="asideItem.state = asideItem.false"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-8cy11v"
+            focusable="false"
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            data-testid="ExpandLessIcon"
+          >
+            <path
+              d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+              fill="#eeeeee"
+            ></path>
+          </svg>
+        </span>
+        <!-- <img src="assets/images/chevron-down.svg" alt="" class="gray"> -->
+        <!-- <fa-icon [icon]="faAngleUp" class="me-2 gray"></fa-icon>  -->
+      </div>
+      <div *ngIf="asideItem.state" class="submenues">
+        <div
+          *ngFor="let asideChildren of asideItem.children"
+          class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-c4sutr "
+          style="min-height: 0px; height: auto; transition-duration: 300ms"
+        >
+          <div class="MuiCollapse-wrapper MuiCollapse-vertical css-hboir5">
+            <div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-8atqhb">
+              <div>
+                <a *ngIf="asideItem.num>=2"
+                  tabindex="0"
+                  depth="1"
+                  activeclassname="active"
+                  class="MuiListItemButton-root MuiListItemButton-gutters MuiButtonBase-root css-14woi69"
+                  [routerLink]="['/'+asideChildren.state]"
+                >
+                  <div class="MuiListItemText-root css-1xtkrdi" depth="1">
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-q536xx"
+                      >{{ asideChildren.name }}</span
+                    >
+                  </div>
+                </a>
+                <a *ngIf="asideItem.num<2"
+                  tabindex="0"
+                  depth="1"
+                  activeclassname="active"
+                  class="MuiListItemButton-root MuiListItemButton-gutters MuiButtonBase-root css-14woi69"
+                  [routerLink]="['/'+asideItem.name+'/'+asideChildren.state]"
+                >
+                  <div class="MuiListItemText-root css-1xtkrdi" depth="1">
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-q536xx"
+                      >{{ asideChildren.name }}</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <ul class="sidebar-nav">
+      
+      <li class="sidebar-header">
+          <ul class="sidebar-nav">
+              <fa-icon [icon]="faCoffee" class="me-2"></fa-icon>Products
+              <li class="sidebar-header">
+                  <a [routerLink]="'/products'" class="sidebar-link subitem">
+                     Products list
+                  </a>
+              </li>
+              <li class="sidebar-header"><a [routerLink]="'/products/add'" class="sidebar-link subitem">
+                      New product
+                  </a></li>         
+             
+          </ul>
+          
+      </li>
+      <li class="sidebar-header"><a [routerLink]="'/products/add'" class="sidebar-link">
+              <fa-icon [icon]="faCoffee" class="me-2"></fa-icon>New product
+          </a></li>
+      <li class="sidebar-header"> <a [routerLink]="'/'" class="sidebar-link">
+              <fa-icon [icon]="faCoffee" class="me-2"></fa-icon>Home
+          </a></li>
+      <li class="sidebar-header">
+          <fa-icon [icon]="faCoffee" class="me-2"></fa-icon>item4
+      </li>
+  </ul> -->
+  
+  
+  

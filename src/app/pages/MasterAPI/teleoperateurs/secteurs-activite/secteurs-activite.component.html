@@ -1,0 +1,19 @@
+<div class="pt-0">
+    <div class="form-group example-container">
+        <h6 class="form-title">Secteurs d’activité</h6>
+        <form [formGroup]="SecteursActiviteGroup">
+            <div class="d-flex justify-content-between padding-bot">
+                <ul>
+                    <li *ngFor="let option of keys(Enums.Libelle_Type_Secteur_ActiviteSecteurActivitesSecteurActivites);index as i">
+                      <mat-checkbox  >
+                                    {{option}}
+                      </mat-checkbox>
+                    </li>
+                  </ul>
+            </div> 
+       
+            <input type="submit" (click)="onSubmit()" value="Enregistrer" class="btn-save mt-2">
+            <input type="submit" value="Annuler" class="btn-save mt-2">
+        </form>
+    </div>
+</div>

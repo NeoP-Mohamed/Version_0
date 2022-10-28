@@ -1,0 +1,138 @@
+.container{
+    width:80%;
+    margin:auto;
+}
+/* Structure */
+.example-container {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: rgb(50 50 93 / 2%) 0px 2px 5px -1px, rgb(0 0 0 / 5%) 0px 1px 3px -1px;
+    background-image: none;
+    margin-bottom: 24px;
+  }
+  
+  .example-table-container {
+    position: relative;
+    min-height: 200px;
+    max-height: 400px;
+    overflow: auto;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  .example-loading-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 56px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-rate-limit-reached {
+    max-width: 360px;
+    text-align: center;
+  }
+  
+  /* Column Widths */
+  .cdk-column-price,
+  .mat-column-state {
+    max-width: 64px;
+  }
+  
+  /*Class (commence par point)*/
+  .mat-column-created {
+    max-width: 124px;
+  }
+
+/*Composant (sans point)*/
+  fa-icon.ng-fa-icon {
+    font-size: 16px;
+    padding: 5px;
+    cursor: pointer;
+}
+.btn-add{
+    
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0px;
+  border: 0px;
+  margin: 12px 0px 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  text-transform: none;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1.75;
+  min-width: 64px;
+  padding: 6px 16px;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: rgb(255, 255, 255);
+  background-color: rgb(55, 111, 208);
+  width: 150px;
+ 
+}
+.btn-add:hover {
+    text-decoration: none;
+    background-color: rgb(38, 77, 145);
+}
+.list-title{
+  font-size: 16px;;
+ 
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+}
+.header-content{
+  padding:16px 0 0 16px;
+  display:flex;
+   flex-direction:column;
+   background: white;
+   border-radius: 6px;
+}
+
+.mat-header-cell{
+font-size: 13px;
+color: rgba(0, 0, 0, 0.87);
+font-family: 'Inter';
+font-weight: 500;
+}
+.mat-cell{
+  font-size: 13px;
+
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+}
+.active{
+  color: green;
+}
+.inactive{
+  color: red;
+}
+.action-button{
+  color: gray;
+}
+.action-title{
+  padding-right: 36px!important;
+}

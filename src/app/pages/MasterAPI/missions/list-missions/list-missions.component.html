@@ -1,0 +1,215 @@
+<div class="p-5 pt-0">
+  <div class="example-container ">
+    <div class=" header-content">
+      <span class="list-title">Missions</span>
+      <button class="btn btn-primary mb-3 mt-2 btn-add" [routerLink]="['/Missions/add']">Ajouter</button>
+
+    </div>
+
+    <div class="example-table-container">
+
+      <table mat-table [dataSource]="missionss" class="example-table" matSort matSortActive="numero"
+        matSortDisableClear matSortDirection="desc">
+
+        <!-- State Column -->
+        <ng-container matColumnDef="societes">
+          <th mat-header-cell *matHeaderCellDef>IdSociete</th>
+          <td mat-cell *matCellDef="let row">{{row.societes}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="numero">
+          <th mat-header-cell *matHeaderCellDef>Numéro</th>
+          <td mat-cell *matCellDef="let row">{{row.numero}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="visibilite_Mission">
+          <th mat-header-cell *matHeaderCellDef>Visibilité du mission</th>
+          <td mat-cell *matCellDef="let row">{{row.visibilite_Mission}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="nom_Mission">
+          <th mat-header-cell *matHeaderCellDef>Nom_Mission</th>
+          <td mat-cell *matCellDef="let row">{{row.nom_Mission}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="type_Prospects">
+          <th mat-header-cell *matHeaderCellDef>Type de prospects</th>
+          <td mat-cell *matCellDef="let row">{{row.type_Prospects}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="type_Fichier">
+          <th mat-header-cell *matHeaderCellDef>Type de fichier</th>
+          <td mat-cell *matCellDef="let row">{{row.type_Fichier}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="pastille_Couleur">
+          <th mat-header-cell *matHeaderCellDef>Pastille de couleur</th>
+          <td mat-cell *matCellDef="let row">{{row.pastille_Couleur}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="besoin">
+          <th mat-header-cell *matHeaderCellDef>Besoin</th>
+          <td mat-cell *matCellDef="let row">{{row.besoin}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="nbre_rdV_Mission">
+          <th mat-header-cell *matHeaderCellDef>Nombre de rendez-vous</th>
+          <td mat-cell *matCellDef="let row">{{row.nbre_rdV_Mission}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="rendez_Vous">
+          <th mat-header-cell *matHeaderCellDef>Rendez-vous par</th>
+          <td mat-cell *matCellDef="let row">{{row.rendez_Vous}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="description">
+          <th mat-header-cell *matHeaderCellDef>Description</th>
+          <td mat-cell *matCellDef="let row">{{row.description}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="script_Appel">
+          <th mat-header-cell *matHeaderCellDef>Script_Appel</th>
+          <td mat-cell *matCellDef="let row">{{row.script_Appel}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="nbre_rdV_Teleoperateur">
+          <th mat-header-cell *matHeaderCellDef>Nbre_RDV_Teleoperateur</th>
+          <td mat-cell *matCellDef="let row">{{row.nbre_rdV_Teleoperateur}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="budget">
+          <th mat-header-cell *matHeaderCellDef>Budget</th>
+          <td mat-cell *matCellDef="let row">{{row.budget}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="email_Confirmation_rdv">
+          <th mat-header-cell *matHeaderCellDef>Email_Confirmation_RDV</th>
+          <td mat-cell *matCellDef="let row">
+            <fa-icon *ngIf="row.email_Confirmation_rdv" [icon]="faCheckDouble" class="active"></fa-icon>
+            <fa-icon *ngIf="!row.email_Confirmation_rdv" [icon]="faCheckCircle" class="inactive"></fa-icon>
+          </td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="email_Rappel_rdv">
+          <th mat-header-cell *matHeaderCellDef>Email_Rappel_RDV</th>
+          <td mat-cell *matCellDef="let row">
+            <fa-icon *ngIf="row.email_Rappel_rdv" [icon]="faCheckDouble" class="active"></fa-icon>
+            <fa-icon *ngIf="!row.email_Rappel_rdv" [icon]="faCheckCircle" class="inactive"></fa-icon>
+          </td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="smS_Confirmation_rdv">
+          <th mat-header-cell *matHeaderCellDef>SMS_Confirmation_RDV</th>
+          <td mat-cell *matCellDef="let row">
+            <fa-icon *ngIf="row.smS_Confirmation_rdv" [icon]="faCheckDouble" class="active"></fa-icon>
+            <fa-icon *ngIf="!row.smS_Confirmation_rdv" [icon]="faCheckCircle" class="inactive"></fa-icon>
+          </td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="smS_Rappel_rdv">
+          <th mat-header-cell *matHeaderCellDef>SMS_Rappel_RDV</th>
+          <td mat-cell *matCellDef="let row">
+            <fa-icon *ngIf="row.smS_Rappel_rdv" [icon]="faCheckDouble" class="active"></fa-icon>
+            <fa-icon *ngIf="!row.smS_Rappel_rdv" [icon]="faCheckCircle" class="inactive"></fa-icon>
+          </td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="email_Teleoperateur">
+          <th mat-header-cell *matHeaderCellDef>Email_Teleoperateur</th>
+          <td mat-cell *matCellDef="let row">
+            <fa-icon *ngIf="row.email_Teleoperateur" [icon]="faCheckDouble" class="active"></fa-icon>
+            <fa-icon *ngIf="!row.email_Teleoperateur" [icon]="faCheckCircle" class="inactive"></fa-icon>
+          </td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="reception_sms">
+          <th mat-header-cell *matHeaderCellDef>Reception_SMS</th>
+          <td mat-cell *matCellDef="let row">
+            <fa-icon *ngIf="row.reception_sms" [icon]="faCheckDouble" class="active"></fa-icon>
+            <fa-icon *ngIf="!row.reception_sms" [icon]="faCheckCircle" class="inactive"></fa-icon>
+          </td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="reception_Fiche_rdv">
+          <th mat-header-cell *matHeaderCellDef>Reception_Fiche_RDV</th>
+          <td mat-cell *matCellDef="let row">
+            <fa-icon *ngIf="row.reception_Fiche_rdv" [icon]="faCheckDouble" class="active"></fa-icon>
+            <fa-icon *ngIf="!row.reception_Fiche_rdv" [icon]="faCheckCircle" class="inactive"></fa-icon>
+          </td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="reception_Fiche_rdV_Commercial">
+          <th mat-header-cell *matHeaderCellDef>Reception_Fiche_RDV_Commercial</th>
+          <td mat-cell *matCellDef="let row">
+            <fa-icon *ngIf="row.reception_Fiche_rdV_Commercial" [icon]="faCheckDouble" class="active"></fa-icon>
+            <fa-icon *ngIf="!row.reception_Fiche_rdV_Commercial" [icon]="faCheckCircle" class="inactive"></fa-icon>
+          </td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="reception_Mail_Recapitulatif">
+          <th mat-header-cell *matHeaderCellDef>Reception_Mail_Recapitulatif</th>
+          <td mat-cell *matCellDef="let row">
+            <fa-icon *ngIf="row.reception_Mail_Recapitulatif" [icon]="faCheckDouble" class="active"></fa-icon>
+            <fa-icon *ngIf="!row.reception_Mail_Recapitulatif" [icon]="faCheckCircle" class="inactive"></fa-icon>
+          </td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="visualisation_rdV_Agenda">
+          <th mat-header-cell *matHeaderCellDef>Visualisation_RDV_Agenda</th>
+          <td mat-cell *matCellDef="let row">
+            <fa-icon *ngIf="row.visualisation_rdV_Agenda" [icon]="faCheckDouble" class="active"></fa-icon>
+            <fa-icon *ngIf="!row.visualisation_rdV_Agenda" [icon]="faCheckCircle" class="inactive"></fa-icon>
+          </td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="visialisation_Itineraire">
+          <th mat-header-cell *matHeaderCellDef>Visialisation_Itineraire</th>
+          <td mat-cell *matCellDef="let row">
+            <fa-icon *ngIf="row.visialisation_Itineraire" [icon]="faCheckDouble" class="active"></fa-icon>
+            <fa-icon *ngIf="!row.visialisation_Itineraire" [icon]="faCheckCircle" class="inactive"></fa-icon>
+          </td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="duree_rdv">
+          <th mat-header-cell *matHeaderCellDef>Duree_RDV</th>
+          <td mat-cell *matCellDef="let row">{{row.duree_rdv}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="unite_Duree_rdv">
+          <th mat-header-cell *matHeaderCellDef>Durée RDV</th>
+          <td mat-cell *matCellDef="let row">{{row.unite_Duree_rdv}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="nbre_Jour_Publication">
+          <th mat-header-cell *matHeaderCellDef>Nbre_Jour_Publication</th>
+          <td mat-cell *matCellDef="let row">{{row.nbre_Jour_Publication}}</td>
+        </ng-container>
+        <!-- Number Column -->
+        <ng-container matColumnDef="date_Debut_Mission">
+          <th mat-header-cell *matHeaderCellDef>Date_Debut_Mission</th>
+          <td mat-cell *matCellDef="let row">{{row.date_Debut_Mission}}</td>
+        </ng-container>
+
+        
+        <!-- State Column -->
+        <ng-container matColumnDef="Actions">
+          <th mat-header-cell *matHeaderCellDef class="text-end action-title">actions</th>
+          <td mat-cell *matCellDef="let row" class="text-end">
+            <!-- <span class="link" [routerLink]="['/missions/'+row.id]"><fa-icon [icon]="faEdit"></fa-icon></span> -->
+            <button mat-icon-button mat-button class="action-button" (click)="delete(row)">
+              <fa-icon [icon]="faTrashAlt"></fa-icon>
+            </button>
+            <button mat-icon-button mat-button class="action-button" [routerLink]="['/missions/'+row.id]">
+              <fa-icon [icon]="faEdit"></fa-icon>
+            </button>
+          </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+
+    <mat-paginator [length]="resultsLength" [pageSize]="30" aria-label="Select page of GitHub search results">
+    </mat-paginator>
+  </div>
+</div>

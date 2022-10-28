@@ -1,0 +1,181 @@
+.center-box{
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.record-card{
+  background-color: white;
+  border: transparent;
+  height: 300px;
+}
+
+h4{
+  letter-spacing: 1px;
+}
+
+.btn-circle.btn-xl {
+  width: 75px;
+  height: 75px;
+  padding: 10px 16px;
+  border-radius: 52px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #233044;
+}
+
+.stopBtn{
+  padding-right: 28px;
+  padding-left: 28px;
+
+}
+
+.downloadBtn{
+  height: 48px;
+  background-color: #233044;
+
+}
+.text-right{
+  color: #233044;
+}
+.container{
+
+}
+#lancerrecordtwilio, #lancerrecordtwilio2{
+
+  font-size: 2em;
+margin-top: 2em;
+  color: red;
+  margin-right: 1.4rem;
+  cursor: pointer;
+  top:0.35em;
+
+}
+
+.left-player {
+    z-index: 3;
+    margin-right: 0px;
+    position: absolute;
+    left: 17.5em;
+    height: 54px;
+    width: 5.4rem;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: #F1F3F4;
+}
+.right-player{
+  z-index: 3;
+  margin-bottom: 2px;
+  position: absolute;
+ 
+  right: 55.5em;
+  height: 3em;
+  width: 4rem;
+
+  border-bottom-right-radius: 25px ;
+  border-top-right-radius: 25px;
+  background-color: #F1F3F4;
+
+}
+
+.download-audio{
+  height: 20px; width: 20px;
+  font-size: 2em;
+  margin-top: 0.6em;
+
+  cursor: pointer;
+
+}
+.stop-recording{
+  height: 25px;
+  width: 25px;
+  margin-top: 1em;
+  margin-right: 1.4rem;
+  cursor: pointer;
+}
+.Rec{
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+button {
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  background-color: red;
+  border: 0;
+  border-radius: 35px;
+  margin-left: 7px;
+  outline: none;
+  margin-top: 12px;
+}
+
+// #lefty{
+
+//   left: 3em!important;
+// }
+
+audio{
+  width:425px;
+  margin-right: 10px;
+}
+.rowy{
+  margin-left: 74px;
+}
+
+@keyframes pulse{
+  0%{
+    box-shadow: 0px 0px 5px 0px rgba(173,0,0,.3);
+  }
+  65%{
+    box-shadow: 0px 0px 5px 13px rgba(173,0,0,.3);
+  }
+  90%{
+    box-shadow: 0px 0px 5px 13px rgba(173,0,0,0);
+  }
+}
+@media screen and (max-width: 1500px) {
+  .left-player{
+    z-index: 3;
+    left: 2em;
+
+    border-bottom-left-radius: 25px ;
+    border-top-left-radius: 25px;
+    background-color: #F1F3F4;
+
+  }
+  .right-player{
+    z-index: 3;
+    padding-top: 2px;
+    position: absolute;
+    right:2.3em;
+    padding-right: 0;
+
+  }
+audio{
+  width:220px;
+}
+
+  // #lefty{
+  //   left: 2em !important;
+
+ // }
+
+  .Rec{
+    width: 15px;
+    height: 15px;
+  }
+  .recordedTime{
+    font-size: 10px !important;
+  }
+  .rowy{
+    margin-left: 16.66666667%;
+  }
+
+}
+.recordedTime{
+  font-size: 13px !important;
+}

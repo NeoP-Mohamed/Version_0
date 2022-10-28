@@ -1,0 +1,14 @@
+
+  <app-headerI></app-headerI>
+
+   
+    <router-outlet></router-outlet>
+    <div *ngIf="path!='/Inscription/teleoperateurs'&&
+    path!='/Inscription/teleoperateurssteps' &&
+    path!='/Inscription/societes' &&
+    path!='/Inscription/societessteps' &&
+    path!='/Inscription/terminer' 
+     "> 
+    <app-inscription-menu></app-inscription-menu>
+  </div>
+<app-footerI></app-footerI>

@@ -1,0 +1,2309 @@
+.content-header>.breadcrumb,
+.content-header>.container>.breadcrumb {
+    font-size: 1.2em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#topbar .row {
+    padding-top: 0 !important;
+}
+
+.btn,
+.btn:hover {
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+body,
+.btn {
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+.mdi.mdi-help-circle-outline {
+    cursor: help;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: 37px;
+}
+
+.secteur-mission {
+    font-size: 1.2em;
+}
+
+header {
+    height: 60px;
+}
+
+.main-header {
+    box-shadow: none !important;
+    background-color: #00A4DD;
+    color: #fff;
+}
+
+.main-header a,
+.main-header a:hover {
+    color: #fff;
+}
+
+#barre-de-recherche,
+#barre-de-recherche-fichier-seul {
+    display: inline;
+    width: 220px;
+    border-radius: 4px;
+    font-size: 1em;
+    position: relative;
+    top: 2px;
+    font-family: 'Source Sans Pro', FontAwesome;
+}
+
+.row {
+    padding: 0;
+    padding-top: 15px !important;
+}
+
+.format-logo {
+    height: 100%;
+    display: inline-block;
+    margin: 0 45px;
+    position: absolute;
+    top: 0;
+}
+
+.content-header {
+    border: 1px solid #dce3e6;
+    -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    border-top: none;
+    z-index: 2;
+    height: auto !important;
+}
+
+#header {
+    padding-top: 0 !important;
+}
+
+.mdi,
+.mdi:hover {
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer {
+    background-color: #333;
+    padding: 12px;
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.user-body .mdi {
+    font-size: 1.4em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.float-left.rounded-circle {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+[type="radio"]:not(:checked)+label {
+    display: block;
+}
+
+a .mdi:hover {
+    color: #FFCF00 !important;
+}
+
+a i {
+    transition: none !important;
+}
+
+.navbar-custom-menu .navbar-nav li>a.dropdown-toggle,
+.navbar-custom-menu .navbar-nav>li:last-child>a {
+    font-size: 0.9em;
+}
+
+.navbar-custom-menu .navbar-nav li>a.dropdown-toggle .mdi {
+    font-size: 24px;
+}
+
+.navbar-nav>.user-menu .user-image {
+    width: 40px;
+    height: 40px;
+}
+
+.label-centre {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    white-space: nowrap;
+}
+
+[type="checkbox"]+label::before,
+[type="checkbox"]:not(.filled-in)+label::after {
+    margin: 0px;
+}
+
+[type="radio"]:not(:checked)+label {
+    display: inline-block;
+}
+
+#evaluer-teleoperateur [type="radio"]:not(:checked)+label {
+    display: inline-block;
+}
+
+[type="checkbox"]:checked+label::before {
+    border-right: 2px solid #00A4DD;
+    border-bottom: 2px solid #00A4DD;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active {
+    color: #fff !important;
+    background-color: #00A4DD;
+    border-color: #00A4DD;
+}
+
+.container-full {
+    padding: 0 15px;
+}
+
+.centrer {
+    text-align: center;
+}
+
+.centrer-v {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mission {
+    margin-top: 30px;
+    border: 1px solid #dce3e6;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    position: relative;
+}
+
+.content-header .row {
+    padding-top: 0 !important;
+}
+
+.filtrer-trier .row {
+    padding-top: 0 !important;
+}
+
+.mission .info-mission .row {
+    padding: 30px !important;
+    border-radius: 5px;
+}
+
+.nom-mission {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.info-mission {
+    width: 80%;
+    display: inline-block;
+}
+
+.cta {
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    right: 15px;
+    width: 20%;
+    padding: 0 2%;
+}
+
+.timer.br {
+    top: 47%;
+    font-size: 1.4em;
+}
+
+.categorie-mission {
+    top: 24px;
+    right: -103px;
+    left: auto;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.categorie-mission.ao {
+    background-color: #00A4DD;
+    color: white;
+}
+
+.categorie-mission.mp {
+    background-color: #2A8F27;
+    color: white;
+    top: 30px;
+}
+
+.mission .row {
+    padding-top: 0px !important;
+}
+
+.debut-contenu-mission {
+    padding: 0 30px;
+}
+
+.info-essentielle {
+    padding: 0 30px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.icone-timer {
+    font-size: 4em;
+    position: absolute;
+    left: 10%;
+    top: 24%;
+}
+
+.info-offre {
+    color: red;
+    margin-bottom: 4px;
+}
+
+.timer {
+    display: inline-block;
+    position: absolute;
+    top: 28%;
+    left: 31%;
+    font-size: 2.7em;
+}
+
+.legende-timer {
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    font-size: 0.8em;
+}
+
+.legende-timer .heure {
+    position: relative;
+    left: 11%;
+}
+
+.legende-timer .minute {
+    position: relative;
+    left: 27%;
+}
+
+.ouverte {
+    color: green;
+}
+
+.fermee {
+    color: red;
+}
+
+.mission .rounded-circle {
+    width: 80px;
+    border: 2px solid #ddd;
+    position: absolute;
+    top: -20%;
+}
+
+.pastille-abonnement {
+    position: absolute;
+    top: 31px;
+    font-size: 2.2em;
+    left: 67px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #ddd;
+}
+
+.pastille-abonnement.p {
+    color: #ec0000 !important;
+}
+
+.pastille-abonnement.o {
+    color: #ecba0b !important;
+}
+
+.pastille-abonnement.b {
+    color: #ea731b !important;
+}
+
+.pastille-abonnement.ab {
+    color: #00A4DD !important;
+}
+
+.lettre-abonnement {
+    position: absolute;
+    color: #fff;
+    top: 45px;
+    left: 79px;
+    font-size: 12px;
+}
+
+.lettre-abonnement.ab {
+    left: 76px;
+    font-size: 12px;
+    top: 45px;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.mission.first {
+    margin-top: 15px !important;
+}
+
+.header.btn-primary,
+.header.btn-primary:hover {
+    background-color: white;
+    color: #00A4DD !important;
+    border-color: #ddd;
+}
+
+.header.btn-primary:active {
+    box-shadow: none !important;
+    background-color: white;
+    color: #00A4DD !important;
+    border-color: #ddd;
+}
+
+.btn-success,
+.btn-success:focus,
+.btn-success:active {
+    background: #00A4DD !important;
+    border-color: #00A4DD !important;
+}
+
+.btn-success:hover {
+    background: #FFCF00 !important;
+    border-color: #FFCF00 !important;
+}
+
+.langue {
+    display: inline-block;
+    width: 1.5em;
+    position: relative;
+    left: 6px;
+    bottom: 2px;
+}
+
+.legende-valeur.mp {
+    font-size: 1.6em;
+    color: #00A4DD;
+    position: relative;
+    top: 38px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.valeur.mp {
+    font-size: 3.8em;
+    color: #00A4DD;
+    font-weight: bold;
+    position: relative;
+    bottom: -20%;
+    text-align: center;
+}
+
+.info-mission>.row>div {
+    border-right: 1px solid #dce3e6;
+}
+
+.info-mission .row .sans-bordure {
+    border: none;
+}
+
+.nom-do {
+    display: inline-block;
+    position: absolute;
+    bottom: -32%;
+    width: 80px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.type-mission,
+.fichier-mission {
+    font-size: 1.2em;
+}
+
+.titre-filtre {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.petit [type="checkbox"]+label::before {
+    width: 12px;
+    height: 12px;
+}
+
+.info-mission,
+.btn {
+    font-size: 1.1em;
+}
+
+.petit .form-check-label {
+    font-size: 0.9em;
+    padding-left: 20px;
+}
+
+.petit [type="checkbox"]:checked+label::before {
+    left: -6px;
+    width: 10px;
+    height: 10px;
+}
+
+.filtrer-trier .missions-recommandees {
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+}
+
+.filtrer-trier .btn {
+    margin-right: 6px;
+}
+
+.content-header {
+    padding: 20px !important;
+    height: 90px;
+}
+
+a.btn .mdi:hover {
+    color: inherit !important;
+}
+
+.tooltip-jobphoning+.tooltip>.tooltip-inner {
+    background-color: #67757c !important;
+    border: 1px solid #67757c !important;
+    border-radius: 4px;
+    color: #fff !important;
+}
+
+.tooltip-jobphoning+.tooltip>.tooltip-arrow {
+    border-top-color: #67757c !important;
+}
+
+.tooltip-jobphoning,
+.tooltip-jobphoning:hover {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.sidebar {
+    border-top: none;
+    background: #fff;
+}
+
+.content-header .dropdown-menu,
+.content-header .dropdown-toggle {
+    font-size: 1em;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+#fiche-prospect [type="radio"]:not(:checked)+label {
+    line-height: 1;
+}
+
+label {
+    margin: 0;
+}
+
+.btn-default {
+    background-color: white;
+    color: #00A4DD;
+    border-color: #ddd;
+}
+
+.btn-default:hover {
+    color: #fff !important;
+    border-color: #00A4DD;
+    background-color: #00A4DD;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    position: relative;
+}
+
+.navbar-custom-menu {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar.navbar-static-top {
+    height: 100%;
+}
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #00A4DD;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+#overlay h1 {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sk-double-bounce {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sk-double-bounce .sk-child {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-doubleBounce 2s infinite ease-in-out;
+    animation: sk-doubleBounce 2s infinite ease-in-out;
+}
+
+.sk-double-bounce .sk-double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-doubleBounce {
+
+    0%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes sk-doubleBounce {
+
+    0%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.main-header .navbar {
+    min-height: initial;
+}
+
+.nav>li>a:active,
+.nav>li>a:focus,
+.nav>li>a:hover {
+    color: #FFCF00;
+    background: transparent;
+}
+
+.main-header .sidebar-toggle {
+    padding: 0px;
+}
+
+.main-header .navbar {
+    margin-left: 0;
+    min-height: none;
+    padding: 0 15px !important
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: #fff;
+    border-color: #ddd;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.form-check-inline {
+    width: 100%;
+}
+
+.content-header .container {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.debut-contenu-mission {
+    margin-top: 24px;
+}
+
+blockquote {
+    display: block;
+    padding: 15px 0px 0px 45px !important;
+    position: relative;
+    border-radius: 4px;
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    color: #00A4DD;
+}
+
+.label-icon {
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+    bottom: 2px;
+}
+
+.secteur-mission .mdi {
+    font-size: 1.2em;
+}
+
+.label-icon i {
+    font-size: 0.85em;
+    color: #818181;
+}
+
+.white-popup-block {
+    border-radius: 4px;
+}
+
+.mfp-bg {
+    background: rgb(235, 236, 255) !important;
+}
+
+.footer-popup {
+    padding: 1em 0;
+    border-top: 1px solid #e7e7e7;
+    margin-top: 3em;
+    text-align: right;
+    width: 100%;
+}
+
+.mfp-close.discret,
+.discret {
+    position: initial;
+    background: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: inherit;
+    line-height: inherit;
+    display: inline-block;
+    width: auto;
+    border: 1px solid lightgrey;
+    margin-right: 10px;
+    font-size: 1em !important;
+    color: #333;
+}
+
+.btn.btn-block.btn-success.mfp-close.vert {
+    font-family: 'Source Sans Pro';
+}
+
+.footer-popup button.btn-success:nth-child(2) {
+    background-color: #00A4DD;
+    border-color: #00A4DD;
+    border-width: 1px;
+    color: #fff;
+    position: initial;
+    line-height: initial;
+}
+
+.footer-popup .btn-success {
+    width: auto;
+    display: inline-block;
+    font-size: 1em;
+    margin-top: 0;
+}
+
+.btn.vert {
+    background: #22b14c !important;
+    border-color: #22b14c !important;
+}
+
+.btn.rouge {
+    background: #f30 !important;
+    border-color: #f30 !important;
+    color: #fff;
+}
+
+.rouge {
+    color: red;
+}
+
+.mfp-close.discret:hover,
+.discret:hover {
+    color: #212121 !important;
+    background: #fff !important;
+    border-color: lightgrey !important;
+}
+
+button.mfp-close,
+button.mfp-arrow {
+    padding: .375rem .75rem;
+}
+
+.btn-block+.btn-block {
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    width: auto !important;
+    height: 37px;
+}
+
+input {
+    height: 37px;
+}
+
+a.bluelink {
+    color: #00A4DD;
+}
+
+a.bluelink:hover,
+a.bluelink:active,
+a.bluelink:focus {
+    color: #ffcf00;
+}
+
+/*[type="checkbox"] + label::before, [type="checkbox"]:not(.filled-in) + label::after {
+    position: absolute;
+}*/
+
+[type="checkbox"]:checked+label::before {
+    top: 0px;
+}
+
+.footer-popup a.btn-success,
+.footer-popup a.discret {
+    padding: 6px 8px;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.active:focus,
+.nav-tabs .nav-link.active:hover,
+.nav-tabs .nav-item.open .nav-link,
+.nav-tabs .nav-item.open .nav-link:focus,
+.nav-tabs .nav-item.open .nav-link:hover {
+    color: #00A4DD;
+    border-bottom: 1px solid #00A4DD;
+}
+
+.nav-tabs .nav-link,
+.nav-tabs .nav-link:hover {
+    font-size: 1em;
+    border: 1px solid lightgray;
+}
+
+.nav-tabs .nav-link {
+    border-left: none !important;
+    border-top: none !important;
+    border-right: none !important;
+}
+
+.nav-tabs-light-mode {
+    background: none;
+}
+
+.tab-pane {
+    margin-top: 30px;
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+    padding-left: 25px;
+}
+
+.red {
+    color: red;
+}
+
+.vert {
+    color: green;
+}
+
+.orange {
+    color: orange;
+}
+
+a,
+a:active,
+a:focus {
+    color: #00a4dd;
+}
+
+a:hover {
+    color: #ffcf00;
+}
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+    -webkit-appearance: initial;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+.dropdown i,
+.btn i {
+    transition: none;
+}
+
+.form-control {
+    font-size: 1em !important;
+}
+
+footer .row {
+    padding: 0 !important;
+}
+
+.nav-tabs.nav-justified>.active>a,
+.nav-tabs.nav-justified>.active>a:hover,
+.nav-tabs.nav-justified>.active>a:focus {
+    border-bottom-color: #00a4dd;
+}
+
+.nav-tabs.nav-justified>li>a {
+    border-radius: 0px;
+}
+
+.nav-item.active a {
+    color: #00a4dd !important;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+thead {
+    color: #fff;
+    background: #00A4DD;
+    font-size: 1.2em;
+}
+
+:focus {
+    outline: none;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #00a4dd;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.carre {
+    width: 37px !important;
+    height: 37px !important;
+    padding: 0 !important;
+    position: relative;
+}
+
+.carre i {
+    line-height: 37px;
+    color: #fff;
+}
+
+/* AJOUT ABO */
+
+/****** magnific popup *******/
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 40px;
+    width: auto;
+    max-width: 800px;
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.popup-connexion {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+    text-align: left;
+    border-radius: 4px;
+}
+
+.popup-connexion .btn-success {
+    margin-top: 15px;
+}
+
+.popup-connexion h2 {
+    margin-bottom: 15px;
+}
+
+#popup-connexion .col-sm-5 button {
+    width: 150px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+footer,
+.footer-copyright {
+    display: none;
+}
+
+.inscription-depuis-gestion-abonnement.col-sm-7 .btn {
+    margin: 0 auto;
+    width: 190px;
+    max-width: 100%;
+}
+
+#entreprise,
+#callcenter,
+#independant {
+    position: relative;
+
+    opacity: 1;
+
+    left: initial;
+
+    top: 2px;
+}
+
+.margin-top-pour-egaliser {
+    margin-top: -15px;
+}
+
+.margin-boutons {
+    margin-top: 20px;
+    text-align: right;
+}
+
+
+.texte-a-gauche,
+.texte-a-gauche span {
+
+    display: inline-block !important;
+    font-size: 14px !important;
+
+}
+
+.btn-inscription-popup {
+    font-size: 18px !important;
+}
+
+.btn-success {
+    border-radius: 4px !important;
+    background: #2AC5EE !important;
+}
+
+.btn-success:hover {
+    background-color: #FFCF00 !important;
+    border-color: #FFCF00 !important;
+}
+
+.btn-retour-popup-abonnement {
+    background-color: red !important;
+    color: white !important;
+    display: inline;
+    width: auto;
+    border-color: red !important;
+}
+
+.btn-suivant-popup-abonnement {
+    background-color: #00A4DD !important;
+    color: white !important;
+    display: inline;
+    width: auto;
+    border-color: #00A4DD !important;
+}
+
+.boutons-abonnement-inline.form-inline .btn {
+    margin-right: 10px;
+}
+
+.boutons-abonnement-inline.form-inline .btn:last-child {
+    margin-right: 0;
+}
+
+.popup-annulation-abonnement {
+    position: relative;
+    background: #FFF;
+    padding: 40px;
+    width: auto;
+    max-width: 1200px;
+    margin: 20px auto;
+
+}
+
+.warning-suppression {
+    position: relative;
+    background: #FFF;
+    padding: 40px;
+    width: auto;
+    heigth: auto;
+    max-width: 1200px;
+    margin: 20px auto;
+
+}
+
+.prolonger-abonnement {
+
+    position: relative;
+    background: #FFF;
+    padding: 40px;
+    width: auto;
+    max-width: 600px;
+    heigth: auto;
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+.bouton-popup-quetionnaire-warning {
+    margin-bottom: -20px;
+    padding-bottom: 20px;
+}
+
+#label-prolonger {
+    margin-bottom: 60px;
+}
+
+#label-abonnemnent {
+    margin-bottom: 180px;
+    text-align: left;
+    height: auto;
+    margin-bottom: 0;
+}
+
+
+
+.btn-retour-popup-engagement {
+    background-color: green !important;
+    color: white;
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+}
+
+
+.btn.btn-block.btn-retour-popup-abonnement:hover,
+.btn.btn-success.btn-suivant-popup-abonnement:hover {
+    color: #fff;
+    background-color: #FFCF00 !important;
+    border-color: #FFCF00 !important;
+}
+
+.btn-suivant-popup-abonnement-prolonger {
+    background-color: #00A4DD !important;
+    color: white !important;
+}
+
+.btn-retour-popup-warning {
+    background-color: #00A4DD !important;
+    color: white !important;
+}
+
+.btn-suivant-popup-annuler-engagement {
+    background-color: #00A4DD !important;
+    color: white !important;
+}
+
+.btn-abonnementActuel {
+    background-color: green !important;
+}
+
+
+
+.btn-changer-de-formule {
+    color: white !important;
+    margin-top: 10px;
+    background-color: #00A4DD;
+    border-radius: 4px;
+}
+
+.btn-prolonger {
+    width: 120px !important;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#lettre-abonnement-popup {
+    position: absolute;
+    left: 50%;
+    top: 82px;
+    color: #fff;
+    font-size: 34px;
+    transform: translateX(-50%);
+    line-height: 1;
+}
+
+
+
+#moisRetourPause {
+    max-width: 40px;
+    color: #212121;
+}
+
+/****** end popup *****/
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.price {
+    font-size: 35px;
+    line-height: 1;
+    padding-top: 0;
+    padding-bottom: 20px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.price .mois {
+    font-size: 16px;
+    display: inline-block;
+    color: inherit;
+}
+
+#prix-bronze,
+.bronze h2,
+.bronze .mdi-shield {
+    color: #ec741b;
+}
+
+#prix-argent,
+.argent h2,
+.argent .mdi-shield {
+    color: #b5b4b1;
+}
+
+#prix-or,
+.or h2,
+.or .mdi-shield {
+    color: #dbad0a;
+}
+
+#prix-premium,
+.premium h2,
+.premium .mdi-shield {
+    color: #ee0000;
+}
+
+.info-reduction {
+    font-size: 11px;
+    position: relative;
+    top: -6px;
+}
+
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.mdi .mdi-shield {
+    font-size: 80px;
+    -webkit-text-stroke-width: 8px;
+    -webkit-text-stroke-color: #ddd;
+
+}
+
+.box .text-center .btn-success {
+    display: inline-block;
+    width: 160px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 80%;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+}
+.box-body {
+    padding: 1.25rem;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+.info-abonnement {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #67757c;
+    line-height: 1.25;
+    text-shadow: none;
+}
+.btn-success {
+    background: #00A4DD;
+}
+
+.btn-success:hover {
+    background: #FFCF00;
+}
+
+.overflow-h {
+    overflow: hidden;
+    position: relative;
+}
+
+.box.text-center {
+    font-size: 14px;
+}
+.box.text-center {
+    min-height: 630px !important;
+    height: 100%;
+}
+.text-center {
+    text-align: center!important;
+}
+@media (min-width: 1200px){
+.col-lg-3-to {
+    width: 20%;
+    max-width: 20%;
+    white-space: nowrap;
+}}
+
+.box.p-12 .btn-success {
+    display: inline-block;
+    width: 150px;
+    margin: 20px auto;
+    font-size: 16px;
+}
+
+.box.p-12 {
+    text-align: center;
+    overflow: hidden;
+}
+
+.box.p-12 .mdi {
+    font-size: 62px;
+    color: #00A4DD;
+}
+
+.col-lg-3-to.col-md-4.col-sm-6.col-xs-12 {
+    margin-bottom: 30px;
+}
+
+.content-container .dropdown-toggle {
+    border-radius: 4px !important;
+    background: #e4e7ea !important;
+    color: #67757c !important;
+    border: 1px solid #e4e7ea !important;
+}
+
+.en-avant {
+    font-size: 22px;
+}
+
+.red {
+    color: red;
+}
+
+.vert {
+    color: green;
+}
+
+.lettre-abonnement {
+    position: absolute;
+    left: 50%;
+    top: 29px;
+    color: #fff;
+    font-size: 40px;
+    transform: translateX(-50%);
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+.commission {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.fonction-commune .mdi {
+    font-size: 20px;
+    margin-right: 6px;
+}
+
+.titre-important {
+    margin-bottom: 40px;
+    font-size: 26px;
+    line-height: 1;
+}
+
+
+.content-container .open>.dropdown-menu {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown-menu>li>a {
+    font-size: 14px;
+}
+
+.reduction {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+.ribbon {
+    top: 14px;
+    right: -116px;
+    left: auto;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    line-height: 34px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    box-shadow: none;
+    border: none;
+    background: #22b14c !important;
+    color: #fff;
+    height: auto;
+    display: none;
+}
+
+.vert-promo {
+    color: #22b14c;
+}
+
+.bleu {
+    color: #00A4DD;
+}
+
+.info-promo {
+    margin: 0;
+    text-align: center;
+}
+
+.mdi.mdi-information-outline {
+    line-height: 1;
+    cursor: help;
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+}
+
+.box-slided-up .box-btn-slide::before {
+    content: none;
+}
+
+.mdi.mdi-chevron-down {
+    font-size: 28px !important;
+    line-height: 1;
+    position: initial !important;
+    transform: none !important;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+.box-header .mdi-check {
+    font-size: 26px;
+    line-height: 1;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.box-title {
+    margin-left: 32px !important;
+}
+
+.dropdown-menu,
+.dropdown-grid {
+    border-color: #dce3e6 !important;
+}
+
+.p-12 {
+    padding: 12px;
+}
+
+.prix {
+    font-size: 18px;
+    color: #00A4DD;
+}
+
+.prix span {
+    font-size: 26px;
+}
+
+.tooltip-jobphoning+.tooltip>.tooltip-inner {
+    background-color: #67757c;
+}
+
+.tooltip-jobphoning+.tooltip>.tooltip-arrow {
+    border-top-color: #67757c;
+}
+
+.tooltip-jobphoning+.tooltip {
+    min-width: 200px;
+    max-width: 100%;
+}
+
+.dropdown-menu {
+    min-width: 104px;
+    border: 1px solid #ddd !important
+}
+
+.fonctionnalites-standards .en-avant,
+.mission-privee .en-avant,
+.position-offerte .en-avant {
+    line-height: 1;
+}
+
+.texte-fonctionnalite {
+    display: inline-block;
+    bottom: 3px;
+    position: relative;
+    font-size: 12px;
+}
+
+.info-abonnement,
+.details {
+    text-align: left;
+}
+
+.mdi.mdi-plus-circle-outline {
+    color: #00A4DD;
+    font-size: 16px;
+    line-height: 1;
+    position: relative;
+    top: 2px;
+}
+
+.fonctionnalites-standards {
+    margin-top: 12px !important;
+}
+
+.violet {
+    color: blueviolet;
+}
+
+.rouge {
+    color: red;
+}
+
+.marron {
+    color: brown;
+}
+
+.fonctionnalites-standards,
+.mission-privee,
+.position-offerte {
+    text-align: left;
+    width: 92%;
+    margin: 0 auto;
+}
+
+.box-header {
+    cursor: pointer;
+}
+.box {
+    position: relative;
+    border-top: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    background: #fff;
+    border-radius: 0;
+    padding: 0px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border: 1px solid #dce3e6;
+    border-radius: 4px;
+}
+.text-center {
+    text-align: center!important;
+}
+.box .box .box-title {
+    display: block;
+    margin: 0 auto !important;
+}
+
+.box .box,
+.box .box .box-header {
+    border: none !important;
+    padding: 0;
+    box-shadow: none !important;
+    margin: 0;
+}
+
+.box .box .mdi.mdi-chevron-down {
+    font-size: initial !important;
+    line-height: 1.5;
+}
+
+.box.p-12 .ribbon {
+    display: block;
+    top: 44px;
+    right: -90px;
+}
+
+.box.p-12 .ribbon .reduction {
+    font-size: 18px;
+}
+
+
+
+.info-abonnement-petit {
+    font-size: 12px;
+}
+
+.quinze-jours {
+    background: #00A4DD !important;
+    line-height: 1.5;
+    padding: 4px 0;
+    font-size: 10px;
+    top: 14px;
+    right: -110px;
+}
+
+.quinze-jours span {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    h1,
+    .titre-important {
+        line-height: 1.5 !important;
+    }
+
+    .titre-important {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .prix {
+        font-size: 14px;
+    }
+
+    .box-title {
+        white-space: nowrap;
+        width: 65%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .prix span {
+        font-size: 16px;
+    }
+
+    .fonctionnalites-standards,
+    .mission-privee,
+    .position-offerte {
+        width: 244px;
+        max-width: 100%;
+    }
+
+    .content {
+        padding: 0 !important;
+    }
+
+    .dropdown.credits {
+        display: none;
+    }
+}
+
+@media (min-width:1200px) {
+    .col-lg-3-to {
+        width: 25%;
+        max-width: 25%;
+    }
+}
+
+@media (max-width: 1199px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+.info-admin-engagement {
+    color: white;
+    background-color: #00A4DD;
+    margin-bottom: 10px !important;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin: 0 15px;
+}
+
+.info-admin-annulation-engagement {
+    color: white;
+    background-color: #ee0000;
+    margin-bottom: 10px !important;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin: 0 15px;
+}
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #00A4DD;
+    z-index: 9999;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+#overlay h1 {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.sk-double-bounce {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 25%;
+    left: 48%;
+    transform: translateX(-50%);
+}
+
+.boutons-abonnement-suspendu.form-inline p {
+    font-size: 0.8em;
+    padding: 0px 12px;
+}
+
+.boutons-abonnement-suspendu .btn-changer-de-formule {
+    margin-bottom: 20px !important;
+}
+
+.boutons-abonnement-suspendu .btn {
+    margin: 0 auto;
+}
+
+#my-popup #prix b,
+#popup-prolonger-abonnement #prix b {
+    padding-bottom: 0 !important;
+}
+
+#my-popup #prix+h2,
+#popup-prolonger-abonnement #prix+h2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#my-popup #popup-mois-engagement,
+#popup-prolonger-abonnement #popup-mois-engagement {
+    display: inline-block;
+}
+
+#my-popup #prix,
+#popup-prolonger-abonnement #prix {
+    text-align: center !important;
+    display: block;
+    padding-bottom: 0;
+}
+
+#texte-decompte-annulation-abonnement {
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.format-logo {
+    height: 100%;
+    display: inline-block;
+    margin: 0 45px;
+    position: absolute;
+    top: 0;
+}
+
+.container-full #header,
+nav.navbar+.content-container {
+    margin-top: 66px;
+}
+
+.content-container.greyback {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #67757c;
+    background: #f9f9f9;
+}
+.box .text-center b {
+    font-size: 13px;
+}
+.content {
+    min-height: 250px;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content-container {
+    padding: 40px;
+}
+
+.box.text-center .dropdown {
+    width: 160px;
+    margin: 0 auto;
+}
+
+.btn-success {
+    background: #00a4dd !important;
+    border-color: #00a4dd !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #212121;
+}
+
+
+
+.sk-double-bounce {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sk-double-bounce .sk-child {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-doubleBounce 2s infinite ease-in-out;
+    animation: sk-doubleBounce 2s infinite ease-in-out;
+}
+
+.sk-double-bounce .sk-double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-doubleBounce {
+
+    0%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes sk-doubleBounce {
+
+    0%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.btn.btn-secondary.btn-changer-de-formule.btnChoisirAbonnment.open-popup-je-m-abonne {
+    margin-bottom: 0 !important;
+    border-color: #00a4dd;
+}
+
+.btn.btn-secondary.btn-changer-de-formule.btnChoisirAbonnment.open-popup-je-m-abonne:hover {
+    background-color: #FFCF00 !important;
+    border-color: #FFCF00 !important;
+}
+
+.btn-abonnementActuel {
+    background-color: #FFCF00 !important;
+    border-color: #FFCF00 !important;
+    pointer-events: none;
+}
+
+#textarearetourquestion {
+    margin-top: 15px;
+}
+
+.boutons-abonnement-suspendu.form-inline {
+    position: absolute;
+    bottom: 20px;
+}
+
+#popup-annulation-engagement>p:first-child {
+    font-size: 1.5em !important;
+    text-align: left !important;
+    font-weight: normal !important;
+}
+
+#popup-annulation-engagement {
+    padding-bottom: 40px !important;
+    border-radius: 4px !important;
+}
+
+#popup-warning-suppression {
+    max-width: 750px !important;
+    padding-bottom: 40px !important;
+    border-radius: 4px !important;
+}
+
+#popup-warning-suppression p:first-child {
+    font-size: 1.5em !important;
+    font-weight: normal !important;
+}
+
+a.btn.btn-block.btn-success.btnChoisirAbonnment.open-popup-je-m-abonne,
+a#btn-actuelle-bronze {
+    padding-top: 8px;
+}
+
+a.btn.btn-block.btn-retour-popup-abonnement {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/****** magnific popup *******/
+
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 40px;
+    width: auto;
+    heigth: auto;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.popup-annulation-abonnement {
+    position: relative;
+    background: #FFF;
+    padding: 40px;
+    width: auto;
+    max-width: 800px;
+    margin: 20px auto;
+
+}
+
+.warning-suppression {
+    position: relative;
+    background: #FFF;
+    padding: 40px;
+    width: auto;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.btn-retour-popup-abonnement {
+    background-color: red !important;
+    color: white;
+}
+
+.btn-suivant-popup-abonnement {
+    background-color: #00A4DD !important;
+    color: white !important;
+}
+
+
+
+.btn-changer-de-formule {
+    color: white !important;
+    margin-top: 10px;
+    background-color: #00A4DD;
+    border-radius: 4px;
+}
+
+#lettre-abonnement-popup {
+    position: absolute;
+    left: 50%;
+    top: 82px;
+    color: #fff;
+    font-size: 34px;
+    transform: translateX(-50%);
+    line-height: 1;
+}
+
+/****** end popup *****/
+
+
+
+.btn-prolonger {
+    width: 120px !important;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+
+.btn-abonnementActuel {
+    background-color: #22b14c;
+}
+
+.basique .commission {
+    margin-top: 90px;
+}
+
+.content {
+    padding: 0;
+}
+
+.credits-communications,
+.conferences-audio,
+.affichage-offres {
+    text-align: left;
+    width: 92%;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+
+.basique .mdi-shield,
+.basique .price {
+    color: #151515;
+}
+
+
+@media (min-width:1200px) {
+    .col-lg-3 {
+        width: 20% !important;
+        max-width: 20%;
+    }
+
+    .col-lg-3-to {
+        width: 20%;
+        max-width: 20%;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .credits-communications,
+    .conferences-audio,
+    .affichage-offres {
+        width: 244px;
+        max-width: 100%;
+    }
+}
+
+.price {
+    text-align: center;
+}
+
+.price,
+.mdi-shield {
+    color: #00A4DD;
+}
+
+.box h2 {
+    color: #00A4DD;
+}
+
+.box.text-center .btn-success {
+    width: 160px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 80%;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    width: 120px;
+}
+
+.carousel {
+    margin-bottom: 40px;
+}
+
+.signe {
+    font-size: 18px;
+    position: relative;
+    bottom: 6px;
+    display: inline-block;
+}
+
+.lettre-abonnement {
+    position: absolute;
+    left: 50%;
+    top: 42px;
+    color: #fff;
+    font-size: 34px;
+    transform: translateX(-50%);
+    line-height: 1;
+}
+
+.carousel li {
+    margin-right: 0px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100px;
+    width: 100px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+.carousel-control.right {
+    right: -100px;
+}
+
+.carousel-indicators li.active {
+    background: #67757c;
+}
+
+.carousel-indicators li {
+    border-color: #67757c;
+}
+
+.carousel-control {
+    color: #67757c;
+    text-shadow: none;
+    opacity: 1;
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+    color: #00A4DD;
+}
+
+.acces-logiciel {
+    text-align: left;
+    width: 92%;
+    margin: 0 auto;
+}
+
+.acces-logiciel .en-avant {
+    line-height: 1;
+}
+
+.boutons-abonnement-suspendu.form-inline p {
+    font-size: 0.8em;
+    padding: 0px 12px;
+    white-space: initial;
+}
+
+@media (max-width: 768px) {
+    .acces-logiciel {
+        width: 244px;
+    }
+}
+
+a.btn.btn-block.btn-success.btnChoisirAbonnment.open-popup-je-m-abonne,
+a#btn-actuelle-bronze {
+    padding-top: 8px;
+}
+
+a.btn.btn-block.btn-retour-popup-abonnement {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.mdi.mdi-shield {
+    font-size: 80px;
+    -webkit-text-stroke-width: 8px;
+    -webkit-text-stroke-color: #ddd;
+}
+
+.mdi-shield::before {
+    margin-top: 40px;
+}
